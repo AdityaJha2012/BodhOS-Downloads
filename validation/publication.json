@@ -1,0 +1,59 @@
+{
+  "repository": "AdityaJha2012/BodhOS-Downloads",
+  "repository_visibility": "public",
+  "release_url": "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/tag/v0.3.0-preview.36",
+  "release_id": 421724599,
+  "published_at": "2026-10-23T10:50:32Z",
+  "prerelease": true,
+  "documentation_tag_commit": "4b91ad2d7d5b98c6bd3b46dca3cb8eedbcd830a0",
+  "iso_bytes_unchanged": true,
+  "remote_sha256_and_bytes_match": true,
+  "unauthenticated_release_api": "passed",
+  "unauthenticated_guide_download_sha256_and_zip_integrity": "passed",
+  "unauthenticated_iso_part_download_access": "all four passed",
+  "development_repository_stays_private": true,
+  "assets": [
+    {
+      "bytes": 12481,
+      "sha256": "fb0613e51a68ec544113fa6363bbd7dce688c2166cc0515977335be8afc1365e",
+      "name": "BodhOS-0.3.0-preview.36-Guides.zip",
+      "github_digest": "sha256:fb0613e51a68ec544113fa6363bbd7dce688c2166cc0515977335be8afc1365e",
+      "url": "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-0.3.0-preview.36-Guides.zip"
+    },
+    {
+      "bytes": 1610612736,
+      "sha256": "0ba3120dc0039db0db897f2a044d2a6c2c01041fe02a9c49894f5c186854f8a1",
+      "name": "BodhOS-MacBookPro15-2-0.3.0-preview.36-experimental-amd64.iso.part01",
+      "github_digest": "sha256:0ba3120dc0039db0db897f2a044d2a6c2c01041fe02a9c49894f5c186854f8a1",
+      "url": "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-MacBookPro15-2-0.3.0-preview.36-experimental-amd64.iso.part01"
+    },
+    {
+      "bytes": 1517420544,
+      "sha256": "a39fe42fbb735f2ba47e5ba8db71a17501a1e91f0c074b31b2bb733a57c1a316",
+      "name": "BodhOS-MacBookPro15-2-0.3.0-preview.36-experimental-amd64.iso.part02",
+      "github_digest": "sha256:a39fe42fbb735f2ba47e5ba8db71a17501a1e91f0c074b31b2bb733a57c1a316",
+      "url": "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-MacBookPro15-2-0.3.0-preview.36-experimental-amd64.iso.part02"
+    },
+    {
+      "bytes": 1610612736,
+      "sha256": "b26798b9af66eeec10e82e734af7798830c81a20f91d2b284ae89616c74bda30",
+      "name": "BodhOS-PC-0.3.0-preview.36-amd64.iso.part01",
+      "github_digest": "sha256:b26798b9af66eeec10e82e734af7798830c81a20f91d2b284ae89616c74bda30",
+      "url": "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-PC-0.3.0-preview.36-amd64.iso.part01"
+    },
+    {
+      "bytes": 1027866624,
+      "sha256": "69e286e3dcebb8d541cbd8f05d06789d4b04b663aff3dd5f1a239802fca366da",
+      "name": "BodhOS-PC-0.3.0-preview.36-amd64.iso.part02",
+      "github_digest": "sha256:69e286e3dcebb8d541cbd8f05d06789d4b04b663aff3dd5f1a239802fca366da",
+      "url": "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-PC-0.3.0-preview.36-amd64.iso.part02"
+    },
+    {
+      "bytes": 721,
+      "sha256": "c05382a38fd13dac7c68079e9bf991fefb4b8a9682d5430c1705598152ec708a",
+      "name": "SHA256SUMS",
+      "github_digest": "sha256:c05382a38fd13dac7c68079e9bf991fefb4b8a9682d5430c1705598152ec708a",
+      "url": "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/SHA256SUMS"
+    }
+  ]
+}
