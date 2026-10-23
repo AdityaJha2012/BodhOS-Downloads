@@ -1,0 +1,42 @@
+[
+  {
+    "profile": "pc",
+    "name": "BodhOS-PC-0.3.0-preview.37-amd64.iso",
+    "bytes": 2638479360,
+    "sha256": "e2e5eedcb8168e95a36ff993c1ff588e5494cbb822e5ba57c7e5c1d6921a9ced",
+    "parts": [
+      {
+        "name": "BodhOS-PC-0.3.0-preview.37-amd64.iso.part01",
+        "bytes": 1610612736,
+        "sha256": "e9b5555f9bf72ffe9df44979c8beebc71277a0ddf7595d976bede800d71ab2a8"
+      },
+      {
+        "name": "BodhOS-PC-0.3.0-preview.37-amd64.iso.part02",
+        "bytes": 1027866624,
+        "sha256": "613dba724c066ef7ffab5992f61a6d6c9df30196b0494c6be6aa962792b4f97a"
+      }
+    ],
+    "directory": "PC",
+    "local_full_and_reassembled_parts_verified": true
+  },
+  {
+    "profile": "macbookpro15-2",
+    "name": "BodhOS-MacBookPro15-2-0.3.0-preview.37-experimental-amd64.iso",
+    "bytes": 3128033280,
+    "sha256": "601ecc8914ed97218a3b09faf8af9e0e1efff5a424aea9e9e698d22500b2f136",
+    "parts": [
+      {
+        "name": "BodhOS-MacBookPro15-2-0.3.0-preview.37-experimental-amd64.iso.part01",
+        "bytes": 1610612736,
+        "sha256": "e7edd094fc3f61c18dbcaf9bb32aa45542b88ac4c8fcc0f153fbbbd521c83e1a"
+      },
+      {
+        "name": "BodhOS-MacBookPro15-2-0.3.0-preview.37-experimental-amd64.iso.part02",
+        "bytes": 1517420544,
+        "sha256": "0180169a8a70ee427c13a0bd0c482d6ef19d7352e4ac6c9eedcc61358eb02c9f"
+      }
+    ],
+    "directory": "MacBookPro15-2-EXPERIMENTAL",
+    "local_full_and_reassembled_parts_verified": true
+  }
+]

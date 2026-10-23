@@ -1,0 +1,6 @@
+Clean native source suite.
+School setup completed. New accounts remain locked until their passwords are set. Existing accounts, projects, snapshots, and USB policies were kept.
+----------------------------------------------------------------------
+Ran 221 tests in 3.039s
+
+OK

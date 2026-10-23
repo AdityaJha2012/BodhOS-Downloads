@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "BodhOS-Features.txt readable",
+    "BodhOS-Features.txt live desktop copy matches",
+    "BodhOS-Features.txt Classroom template matches",
+    "Features and included apps button exists",
+    "BodhOS-Features.txt opened in desktop editor",
+    "BodhOS-Install-on-PC.txt readable",
+    "BodhOS-Install-on-PC.txt live desktop copy matches",
+    "BodhOS-Install-on-PC.txt Classroom template matches",
+    "Install on a real PC button exists",
+    "BodhOS-Install-on-PC.txt opened in desktop editor"
+  ],
+  "scope": "Actual Welcome buttons and installed guide copies in a disposable guest"
+}

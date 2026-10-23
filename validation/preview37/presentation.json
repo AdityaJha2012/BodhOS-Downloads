@@ -1,0 +1,11 @@
+{
+  "version": "0.3.0-preview.37",
+  "slides": 20,
+  "sha256": "a6f1352c4f191be956c1cb027ed73bfece5aa0556cfd77665023e6b8204a104e",
+  "bytes": 510206,
+  "structural_checks": "passed",
+  "native_editable_text": true,
+  "font": "Segoe UI",
+  "rendered_slides_reviewed": 20,
+  "powerpoint_native_execution_tested": false
+}

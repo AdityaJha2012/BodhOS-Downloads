@@ -1,0 +1,14 @@
+{
+  "pc": {
+    "passed": true,
+    "full_iso": "BodhOS-PC-0.3.0-preview.37-amd64.iso",
+    "sha256": "e2e5eedcb8168e95a36ff993c1ff588e5494cbb822e5ba57c7e5c1d6921a9ced",
+    "scope": "Actual Windows helper accepted the complete verified ISO without fetching or replacing it. Split download and join behavior covered by six separate HTTP fixture cases. VirtualBox independently recognized both complete images as RAW optical media."
+  },
+  "macbookpro15-2": {
+    "passed": true,
+    "full_iso": "BodhOS-MacBookPro15-2-0.3.0-preview.37-experimental-amd64.iso",
+    "sha256": "601ecc8914ed97218a3b09faf8af9e0e1efff5a424aea9e9e698d22500b2f136",
+    "scope": "Actual Windows helper accepted the complete verified ISO without fetching or replacing it. Split download and join behavior covered by six separate HTTP fixture cases. VirtualBox independently recognized both complete images as RAW optical media."
+  }
+}

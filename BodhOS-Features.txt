@@ -1,0 +1,102 @@
+BODH OS
+Preview 0.3.0-preview.37
+Features and included software
+
+WHAT THIS IS
+Bodh OS is a school desktop built on Debian 13 and XFCE for x86_64 PCs.
+It is a development preview. It is not yet certified for school deployment.
+The separate Intel MacBookPro15,2 image is experimental. It is not macOS.
+Neither image supports Apple silicon or Raspberry Pi.
+
+START HERE
+Open Start to find applications. Use Coding Apps to choose a language.
+Open Welcome for links to this file, installation help and the main tools.
+These guides are also in /usr/share/bodhos and at the top of the ISO.
+The installed system keeps personal files and installed applications.
+An ordinary live USB or live VM session is temporary. Back up your work.
+
+DESKTOP AND EVERYDAY APPS
+* Bodh navy and teal desktop, Start menu, taskbar and pinned applications.
+* Standard appearance and Reduced effects. Glass is not included.
+* Thunar file manager, Mousepad text editor and XFCE terminal.
+* Firefox ESR for browsing and online learning.
+* LibreOffice Writer and Calc for documents and spreadsheets.
+* VLC for media, GIMP for images and Evince for PDF documents.
+* NetworkManager for network settings. Real WiFi support depends on hardware.
+* Synaptic and Debian APT for installing and updating packages.
+
+CODING TOOLS
+* Python 3, Thonny IDE, pip and virtual environments.
+* C and C++ with GCC, G++, Make and Geany.
+* HTML, CSS and JavaScript with Geany and Firefox. No Node.js runtime is bundled.
+* Arduino IDE. Extra board packages may require an Internet download.
+* SQLite command line and DB Browser for SQLite.
+* MariaDB client for connecting to an existing database server.
+  A MySQL or MariaDB server is not automatically installed or started.
+* Shell scripting with the terminal and Geany.
+* Git and GitHub CLI. GitHub opens in Firefox. Sign in with your own account.
+* Starter projects in your Projects folder. Coding Apps opens the matching tool.
+  Use F5 in Thonny. Use Build and Execute in Geany for C and C++.
+
+STUDENT WORK AND CLASSROOM ACCOUNTS
+* Bodh Student Files creates projects, backups and assignment hand in folders.
+* Persistent personal student accounts keep coding projects after reboot.
+* A separate shared Classroom account clears its temporary home after logout.
+  Never keep your only copy of a project in that shared account.
+* Project backup and restore includes destination selection and integrity checks.
+* USB storage and file shares are available through the file manager.
+  A particular school server, USB device or printer needs its own testing.
+* Administrators can configure workspace limits and storage warnings.
+
+BODH TOOLS
+* Welcome links to apps, saved projects, recovery and these guides.
+* Settings controls appearance, desktop reset and system information.
+* Assistant gives local help and can open tools. It runs when opened.
+* Offline voice commands use PocketSphinx and eSpeak NG when activated.
+  Microphone compatibility and recognition quality need real hardware tests.
+* An optional school AI server can be configured by an administrator.
+  No AI model, cloud subscription or permanent AI server ships in the ISO.
+  Server use requires student opt in. A network connection may be needed.
+* Study Tools and Quick Help provide local learning and troubleshooting help.
+
+ADMINISTRATION, SECURITY AND RECOVERY
+* School setup covers accounts, networking, updates, storage and USB enrollment.
+* Persistent student accounts and temporary Classroom sessions stay separate.
+* Debian security updates and administrator controlled update tools.
+* Timeshift system snapshots and rollback. These do not replace project backups.
+* Bodh Rescue offers diagnostics, backup and administrator authorized repair.
+  Disk repairs can change a system. Read the recovery guide before using them.
+* GRUB boot menu with live, installer and Rescue options, BIOS and UEFI support.
+* UFW firewall tools, ClamAV malware tools and optional USBGuard enrollment.
+  USBGuard blocking is not enabled in the factory image.
+* Optional explicit school management enrollment. No factory management keys,
+  test login, preconfigured school AI server or active remote access is included.
+* Security lab commands: nmap, lynis, tshark, tcpdump, dig and openssl.
+  These are Debian packages, not a Kali Linux installation or Kali repository.
+  They are terminal tools. Use only on systems your teacher permits you to test.
+
+HARDWARE AND LIMITS
+The PC image includes Debian graphics and network drivers and common firmware.
+This does not mean every GPU, WiFi chip, printer or laptop has been tested.
+Proprietary NVIDIA installation is optional and needs separate verification.
+The Intel Mac image adds a pinned T2 kernel for MacBookPro15,2. Physical Mac
+devices and installation remain unverified. Read Mac-hardware-notes.txt first.
+Apple silicon, Raspberry Pi and final custom kernel work are separate milestones.
+No fixed minimum RAM or fresh performance figures are claimed for this preview.
+Virtual machine results do not prove physical hardware or school readiness.
+
+INSTALL ON A REAL PC
+Read BodhOS-Install-on-PC.txt beside this file before writing a USB or disk.
+Try the live desktop first. Installing can erase the chosen drive.
+Keep a separate backup and do not experiment on your only copy of important work.
+
+DOWNLOADS AND SUPPORT
+https://github.com/AdityaJha2012/BodhOS-Downloads
+Choose the latest verified release. Windows users can use Download-BodhOS-PC.cmd.
+The helper downloads both parts, joins them and verifies the complete ISO.
+Do not open an ISO part as if it were a complete ISO.
+Report the version, machine model, exact error and steps that caused the problem.
+Never publish passwords, recovery keys or personal student files.
+
+Built on Debian and other free software. Original projects retain their licenses.
+Bodh OS branding does not change Debian package compatibility or attribution.

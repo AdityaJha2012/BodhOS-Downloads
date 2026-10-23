@@ -1,3 +1,9 @@
+# Current release evidence
+
+[Preview 0.37 results and screenshots](preview37/README.md).
+
+The following record is historical Preview 0.36 evidence.
+
 # Preview 0.36 release validation
 
 Status: source, image, live, fresh installation, packaged feature and download asset checks pass. Both images qualify as development previews. Physical hardware remains unverified.

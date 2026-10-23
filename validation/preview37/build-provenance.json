@@ -1,0 +1,18 @@
+{
+  "pc": {
+    "profile": "pc",
+    "version": "0.3.0-preview.37",
+    "source_commit": "9f11cd20806bb6bc4ca60e010db7af5f39f9fded",
+    "base_sha256": "79f21837daf1c2462c19d12aa0eee6e70b749b13c7d106f723e7b4569f10f345",
+    "method": "pinned factory image plus committed runtime and Debian CLI packages",
+    "physical_hardware_verified": false
+  },
+  "mac": {
+    "profile": "macbookpro15-2",
+    "version": "0.3.0-preview.37",
+    "source_commit": "9f11cd20806bb6bc4ca60e010db7af5f39f9fded",
+    "base_sha256": "0c4d02f8b6e9470a408fee3e4dee67322e7887a71a657241c32ed71b82ef5640",
+    "method": "pinned factory image plus committed runtime and Debian CLI packages",
+    "physical_hardware_verified": false
+  }
+}

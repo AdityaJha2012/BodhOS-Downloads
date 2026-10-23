@@ -1,0 +1,117 @@
+BODH OS
+Preview 0.3.0-preview.37
+Install on a real x86_64 PC without a virtual machine
+
+READ FIRST
+This guide is for an Intel or AMD x86_64 PC. It is not the installation guide
+for an Intel T2 Mac, Apple silicon, Raspberry Pi or an ARM computer.
+This is a development preview. Physical hardware compatibility is unverified.
+Use a spare computer or a separate empty drive for your first installation.
+You do not need to install Windows or use Boot Camp to boot this PC image.
+
+1. PREPARE AND BACK UP
+Ask the owner or school administrator before changing their computer.
+Back up documents, coding projects and anything important to another drive.
+Open some backed up files to confirm you can read them.
+If Windows uses BitLocker or device encryption, save the recovery key somewhere
+you can access from another device. Firmware changes can request that key.
+Have an empty USB stick of at least 8 GB. Writing the image erases that USB.
+For an installation, also have a backed up, disposable target drive.
+32 GB of target space and 4 GB RAM are VM test settings, not certified minimums.
+
+2. DOWNLOAD THE COMPLETE, VERIFIED PC ISO
+Open https://github.com/AdityaJha2012/BodhOS-Downloads
+On Windows, save Download-BodhOS-PC.cmd from the latest release in a new folder.
+Run it and wait for SUCCESS - VERIFIED ISO READY. It downloads and checks both
+parts and creates a complete .iso. Allow about 6 GB free for the download files.
+Do not select .part01, .part02, .downloading or an empty file in a USB writer.
+The Guides ZIP includes manual joining helpers and platform specific commands.
+Never run macOS or Linux cat joining commands in Windows PowerShell.
+
+3. WRITE THE USB ON WINDOWS
+Get Rufus from https://rufus.ie/en/ and open it.
+Disconnect other removable drives that you do not need for this step.
+Under Device, select the empty USB by its model and capacity. Check it twice.
+Select the full verified BodhOS-PC .iso as the boot image.
+Press Start. If Rufus offers ISO mode or DD mode, choose DD Image mode to copy
+the hybrid image exactly. Confirm only after checking the selected USB again.
+Wait until writing has finished, then safely eject the USB.
+Copying the .iso as an ordinary file onto a USB does not make a bootable USB.
+Writing the USB does not install Bodh OS on the internal drive.
+
+On macOS or Linux, use a trusted image writer that supports raw hybrid ISO
+images. Choose the whole removable USB, not an internal disk or a partition.
+Do not use UNetbootin. Do not run disk writing commands you do not understand.
+
+4. BOOT THE USB AND TRY THE DESKTOP
+Plug the USB into the PC and restart it.
+Open its one time boot menu. The key varies by model, often F12, F9 or Esc.
+Use the computer maker's instructions if those keys do not work.
+On a UEFI computer, choose the UEFI entry for the USB when available.
+In the Bodh boot menu choose Try Bodh OS.
+Check the keyboard, pointer, display, sound, wired network and WiFi if present.
+Check restart and any peripherals you need. Do not assume VM tests cover these.
+An ordinary live session is temporary. Save test files to a separate drive.
+
+Secure Boot compatibility has not been verified for this preview.
+If firmware blocks the USB, stop and ask the owner or administrator.
+Do not disable security settings on a school or borrowed PC without permission.
+Keep the BitLocker recovery key before any authorized firmware change.
+
+5. INSTALL ONLY AFTER THE LIVE CHECK
+If the live desktop fails, do not install to try to fix it. Record the error.
+If it works, restart into the USB boot menu and choose Install Bodh OS.
+Use the graphical installer entry if it is offered and works on your display.
+Choose your language, keyboard, time zone and network settings.
+Create your own account and password. No validator test login is provided.
+
+At partitioning, read the drive model and capacity carefully.
+The guided option to use the entire disk erases the selected target disk.
+Use it ONLY for your backed up disposable target. Review the final write summary
+before confirming. Keep the backup USB separate from the target disk.
+On an empty UEFI target, allow the installer to create its EFI system partition.
+If asked where to install GRUB in BIOS mode, select the intended whole target
+disk, not a partition and not the USB installer or another operating system disk.
+If any disk is ambiguous, cancel before confirming disk writes.
+
+Want to keep Windows or another OS on the same drive?
+Do not select guided entire disk. Use the live USB or a separate empty drive
+for now. Same drive dual boot needs a separate partition plan and recovery media.
+It has not been validated for this preview. Ask an experienced administrator.
+
+6. FIRST INSTALLED BOOT
+Remove the installer USB when prompted and reboot into Bodh OS.
+Sign in with the account you created. Open Welcome and these guides.
+Open Coding Apps, choose Python, run the starter in Thonny with F5 and save it.
+Restart and confirm the saved file is still there in your personal account.
+Test network access and the apps you need before trusting the PC for daily work.
+Back up projects separately. System snapshots are not a substitute for backups.
+Do not store lasting work in the shared Classroom account. Its home is temporary.
+
+7. IF SOMETHING GOES WRONG
+No USB in boot menu: check the full ISO checksum, rewrite the USB and try another
+USB port. Confirm the PC supports booting this x86_64 image.
+VERR_NOT_SUPPORTED in VirtualBox: use the complete verified ISO, not a part file.
+No bootable device after installation: remove the USB, check firmware boot entries
+and whether the install used BIOS or UEFI. Do not format a drive as a repair step.
+Use the live USB to back up files and open Bodh Rescue diagnostics.
+Run a boot repair only after identifying the installed root and correct boot mode.
+If the live desktop lacks network, sound or input, record the hardware model and
+error. Do not assume a reinstall will add a missing driver.
+
+CHECKLIST
+[ ] Owner approval and readable backup
+[ ] Recovery key and recovery media where applicable
+[ ] Full ISO verified, correct empty USB selected
+[ ] Live desktop and needed peripherals checked on this actual PC
+[ ] Intended install drive identified by model and capacity
+[ ] Final partition write summary reviewed before accepting
+[ ] Installed account works and saved project survives reboot
+[ ] Separate project backup and recovery instructions kept
+
+SOURCES AND FURTHER HELP
+Official downloads: https://github.com/AdityaJha2012/BodhOS-Downloads
+Debian USB guide: https://www.debian.org/releases/trixie/amd64/ch04s03.en.html
+Debian installer: https://www.debian.org/releases/trixie/amd64/ch06s03.en.html
+Rufus: https://rufus.ie/en/
+MacBookPro15,2 owners must read the separate experimental Mac hardware notes.
