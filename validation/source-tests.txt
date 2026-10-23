@@ -1,0 +1,6 @@
+Linux source suite, clean native export plus committed harness and packaging helpers.
+...........................................
+----------------------------------------------------------------------
+Ran 216 tests in 3.580s
+
+OK

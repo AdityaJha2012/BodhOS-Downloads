@@ -1,0 +1,16 @@
+{
+  "pc-extra": {
+    "passed": true,
+    "checks": 10,
+    "runtime": "/usr/share/bodhos",
+    "ai_test_server": "Local fake HTTP server, not a real model",
+    "student_projects": "Temporary QA home and packaged templates only"
+  },
+  "mac-extra": {
+    "passed": true,
+    "checks": 10,
+    "runtime": "/usr/share/bodhos",
+    "ai_test_server": "Local fake HTTP server, not a real model",
+    "student_projects": "Temporary QA home and packaged templates only"
+  }
+}

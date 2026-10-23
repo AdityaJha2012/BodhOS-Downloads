@@ -1,0 +1,24 @@
+{
+  "student-projects": {
+    "binary_directory": "/usr/share/bodhos",
+    "checks": [
+      "Native Student Files window opens at 760 by 540",
+      "Template dialog creates Python project and requests file manager",
+      "Cancelled hand in starts no operation"
+    ],
+    "scope": "Native GTK on the current X11 display with a temporary home. Environment recorded by the calling harness."
+  },
+  "assistant-chat": {
+    "binary_directory": "/usr/share/bodhos",
+    "checks": [
+      "Offline mode requires no server and spoken answers start off",
+      "AI sharing starts off even with a configured server",
+      "Opt in sends a question through a worker thread",
+      "Follow up includes bounded conversation history",
+      "App action stays local and uses fixed executable",
+      "Voice text requires review before any action or send",
+      "Clear chat removes local history and transcript"
+    ],
+    "scope": "Native GTK on the current X11 display with a fake HTTP server. No real model or microphone tested. Environment recorded by the calling harness."
+  }
+}

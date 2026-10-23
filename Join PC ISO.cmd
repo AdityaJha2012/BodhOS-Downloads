@@ -1,0 +1,44 @@
+@echo off
+setlocal
+pushd "%~dp0" || exit /b 1
+echo Checking the Bodh OS download. This can take several minutes.
+if exist "BodhOS-PC-0.3.0-preview.36-amd64.iso" goto existing
+if exist "BodhOS-PC-0.3.0-preview.36-amd64.iso.partial" goto partial
+if not exist "BodhOS-PC-0.3.0-preview.36-amd64.iso.part01" goto missing
+certutil -hashfile "BodhOS-PC-0.3.0-preview.36-amd64.iso.part01" SHA256 | findstr /i /x /c:"b26798b9af66eeec10e82e734af7798830c81a20f91d2b284ae89616c74bda30" >nul
+if errorlevel 1 goto badhash
+if not exist "BodhOS-PC-0.3.0-preview.36-amd64.iso.part02" goto missing
+certutil -hashfile "BodhOS-PC-0.3.0-preview.36-amd64.iso.part02" SHA256 | findstr /i /x /c:"69e286e3dcebb8d541cbd8f05d06789d4b04b663aff3dd5f1a239802fca366da" >nul
+if errorlevel 1 goto badhash
+copy /b "BodhOS-PC-0.3.0-preview.36-amd64.iso.part01"+"BodhOS-PC-0.3.0-preview.36-amd64.iso.part02" "BodhOS-PC-0.3.0-preview.36-amd64.iso.partial" >nul
+if errorlevel 1 goto failed
+certutil -hashfile "BodhOS-PC-0.3.0-preview.36-amd64.iso.partial" SHA256 | findstr /i /x /c:"89af8be90566a6d33b9b6c6bf56f3586b9e2a33049190d3c4c0cd4c1999c7b4c" >nul
+if errorlevel 1 goto badhash
+ren "BodhOS-PC-0.3.0-preview.36-amd64.iso.partial" "BodhOS-PC-0.3.0-preview.36-amd64.iso"
+if errorlevel 1 goto failed
+goto success
+:existing
+certutil -hashfile "BodhOS-PC-0.3.0-preview.36-amd64.iso" SHA256 | findstr /i /x /c:"89af8be90566a6d33b9b6c6bf56f3586b9e2a33049190d3c4c0cd4c1999c7b4c" >nul
+if errorlevel 1 goto existingbad
+goto success
+:missing
+echo Missing a download part. Keep both parts beside this helper.
+goto failed
+:partial
+echo A partial output already exists. Use a new folder or review it first.
+goto failed
+:existingbad
+echo An ISO with a different checksum exists. Use a new folder.
+goto failed
+:badhash
+echo Verification failed. Do not use the output. Download matching parts again.
+:failed
+echo ISO assembly did not complete. No disk was formatted.
+popd
+if not defined BODH_JOIN_NO_PAUSE pause
+exit /b 1
+:success
+echo Verified ISO ready: BodhOS-PC-0.3.0-preview.36-amd64.iso
+popd
+if not defined BODH_JOIN_NO_PAUSE pause
+exit /b 0

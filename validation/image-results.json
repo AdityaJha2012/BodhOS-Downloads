@@ -1,0 +1,18 @@
+{
+  "version": "0.3.0-preview.36",
+  "runtime_source_commit": "8667af4a72e7b7005c9903a2c231d0d410fb503b",
+  "builds": {
+    "pc": "passed",
+    "macbookpro15-2": "passed"
+  },
+  "packaged_runtime_audits": "both passed, exact overlay matches source",
+  "internal_md5_and_sha256_manifests": {
+    "pc_entries_each": 928,
+    "mac_entries_each": 931,
+    "result": "passed"
+  },
+  "local_full_and_reassembled_part_hashes": "both passed",
+  "source_tests": 216,
+  "packaged_source_files": 208,
+  "physical_hardware_verified": false
+}

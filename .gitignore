@@ -1,0 +1,4 @@
+*.iso
+*.iso.part*
+*.zip
+validation/native-ui/

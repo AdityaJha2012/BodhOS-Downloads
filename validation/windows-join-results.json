@@ -1,0 +1,8 @@
+{
+  "valid_parts": "Checking the Bodh OS download. This can take several minutes.\nVerified ISO ready: BodhOS-fixture.iso",
+  "existing_valid": "Checking the Bodh OS download. This can take several minutes.\nVerified ISO ready: BodhOS-fixture.iso",
+  "existing_wrong_refused": "Checking the Bodh OS download. This can take several minutes.\nAn ISO with a different checksum exists. Use a new folder.\nISO assembly did not complete. No disk was formatted.",
+  "corrupt_refused": "Checking the Bodh OS download. This can take several minutes.\nVerification failed. Do not use the output. Download matching parts again.\nISO assembly did not complete. No disk was formatted.",
+  "missing_refused": "Checking the Bodh OS download. This can take several minutes.\nMissing a download part. Keep both parts beside this helper.\nISO assembly did not complete. No disk was formatted.",
+  "partial_refused": "Checking the Bodh OS download. This can take several minutes.\nA partial output already exists. Use a new folder or review it first.\nISO assembly did not complete. No disk was formatted."
+}

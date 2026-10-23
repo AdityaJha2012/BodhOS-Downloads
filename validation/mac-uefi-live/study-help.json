@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "checks": [
+    "Quick Help opens a real native window",
+    "All ten guides appear",
+    "Guide renders: Saving school work",
+    "Guide renders: Backups and assignments",
+    "Guide renders: Python in Thonny",
+    "Guide renders: C and C++ in Geany",
+    "Guide renders: Web pages and JavaScript",
+    "Guide renders: SQL and databases",
+    "Guide renders: Git and GitHub",
+    "Guide renders: Arduino boards",
+    "Guide renders: Shared computer checklist",
+    "Guide renders: When something goes wrong",
+    "Search filters and selects the Python guide",
+    "No match shows useful feedback",
+    "Clear search restores all guides",
+    "Search accepts keyboard focus",
+    "Repeated activation reuses the same window",
+    "Quick Help closes cleanly",
+    "Study Tools opens idle with no timer callback",
+    "Short break preset is five minutes",
+    "Long break preset is fifteen minutes",
+    "Start schedules a real timer and counts down",
+    "Pause cancels the callback and freezes remaining time",
+    "Resume restarts the timer",
+    "Reset returns to the selected duration",
+    "Real timer expiry displays a visible message",
+    "Cancelling close keeps the timer",
+    "Confirming close cancels its callback",
+    "No background timer survives closure"
+  ],
+  "parts": [
+    {
+      "passed": true,
+      "checks": [
+        "Quick Help opens a real native window",
+        "All ten guides appear",
+        "Guide renders: Saving school work",
+        "Guide renders: Backups and assignments",
+        "Guide renders: Python in Thonny",
+        "Guide renders: C and C++ in Geany",
+        "Guide renders: Web pages and JavaScript",
+        "Guide renders: SQL and databases",
+        "Guide renders: Git and GitHub",
+        "Guide renders: Arduino boards",
+        "Guide renders: Shared computer checklist",
+        "Guide renders: When something goes wrong",
+        "Search filters and selects the Python guide",
+        "No match shows useful feedback",
+        "Clear search restores all guides",
+        "Search accepts keyboard focus",
+        "Repeated activation reuses the same window",
+        "Quick Help closes cleanly"
+      ],
+      "display": ":0",
+      "scope": "Real GTK on current X11 display. One second duration for expiry integration test.",
+      "binary_directory": "/usr/local/bin"
+    },
+    {
+      "passed": true,
+      "checks": [
+        "Study Tools opens idle with no timer callback",
+        "Short break preset is five minutes",
+        "Long break preset is fifteen minutes",
+        "Start schedules a real timer and counts down",
+        "Pause cancels the callback and freezes remaining time",
+        "Resume restarts the timer",
+        "Reset returns to the selected duration",
+        "Real timer expiry displays a visible message",
+        "Cancelling close keeps the timer",
+        "Confirming close cancels its callback",
+        "No background timer survives closure"
+      ],
+      "display": ":0",
+      "scope": "Real GTK on current X11 display. One second duration for expiry integration test.",
+      "binary_directory": "/usr/local/bin"
+    }
+  ]
+}

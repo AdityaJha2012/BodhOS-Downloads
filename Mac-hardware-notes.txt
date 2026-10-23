@@ -1,0 +1,36 @@
+Bodh OS experimental MacBookPro15,2 image
+
+Target: the owner's 2018 Intel MacBook Pro, quad core i5, 8 GB RAM.
+This is not an Apple silicon image. Physical Mac support is unverified.
+
+The profile adds a pinned community T2 LTS kernel, matching headers,
+T2 audio configuration, PipeWire and Touch Bar software. It keeps the
+stock Debian kernel as an explicit live boot fallback. It does not
+enable a third party APT repository or automatic T2 kernel updates.
+Kernel security updates require a reviewed package lock and a new build.
+Do not deploy this experimental profile as an unattended school system.
+
+WiFi and Bluetooth require Apple firmware supplied separately by the
+owner. Follow the current upstream firmware guide. Do not assume the
+generic Debian Broadcom firmware includes the model specific files.
+https://wiki.t2linux.org/guides/wifi-bluetooth/
+
+Prepare a backup, external keyboard/mouse and wired internet or USB
+tethering. Use macOS to prepare free space. Do not select whole disk
+installation or erase the existing macOS and recovery partitions.
+The Debian installer still uses its stock kernel and may require the
+external keyboard and mouse even if input works in the live desktop.
+Review T2 startup security settings and upstream preparation first:
+https://wiki.t2linux.org/guides/preinstall/
+https://wiki.t2linux.org/distributions/debian/installation/
+
+Choose Try Bodh OS for a live hardware check before installing. Test
+keyboard, trackpad, brightness, WiFi, Bluetooth, audio at low volume,
+microphone, camera, charging, fans, suspend/resume and external displays.
+Do not infer physical driver support from QEMU boot results. Report
+failures by model and image checksum, excluding serial numbers.
+
+Generic GRUB recovery and PC installation instructions have not been
+validated on this Mac. No APFS writes or firmware extraction run
+automatically. T2 support limitations remain documented upstream:
+https://wiki.t2linux.org/state/
