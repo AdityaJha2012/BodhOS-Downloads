@@ -50,3 +50,7 @@ Full external ISO copies and reassembled part streams match their native ISO SHA
 ## Unverified work
 
 No fresh performance measurements were taken for Preview 0.36. Preview 0.35 measurements remain historical. Physical Macs and PCs, hardware drivers, WiFi, microphones, printers, removable devices and a school pilot remain unverified. Mac stock Debian fallback is packaged but is not a claim of tested Mac recovery. T2 kernel packages are pinned and require reviewed updates. Apple silicon and Raspberry Pi are outside this release. Separate Administrator and Classroom edition candidates remain earlier images.
+
+## Download instructions update, 24 October 2026
+
+The verified ISO bytes are unchanged. The public page now leads with one Windows download helper. It fetches the two parts, resumes interrupted transfers, joins and verifies the ISO. An earlier empty ISO is preserved and repaired. Six real Windows cmd/curl/certutil fixture cases pass. The helper and revised Guides ZIP were downloaded without authentication and their hashes verified. All seven release asset digests match the expected bytes. See [delivery tool checks](download-helper-20261024.json) and [publication](publication.json).

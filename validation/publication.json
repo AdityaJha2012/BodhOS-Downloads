@@ -14,10 +14,10 @@
   "development_repository_stays_private": true,
   "assets": [
     {
-      "bytes": 12481,
-      "sha256": "fb0613e51a68ec544113fa6363bbd7dce688c2166cc0515977335be8afc1365e",
+      "bytes": 13673,
+      "sha256": "e96cffe48d0d0386a2968dfe12e7ebb8b6ff822a176f3abf84fec527f24b76db",
       "name": "BodhOS-0.3.0-preview.36-Guides.zip",
-      "github_digest": "sha256:fb0613e51a68ec544113fa6363bbd7dce688c2166cc0515977335be8afc1365e",
+      "github_digest": "sha256:e96cffe48d0d0386a2968dfe12e7ebb8b6ff822a176f3abf84fec527f24b76db",
       "url": "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-0.3.0-preview.36-Guides.zip"
     },
     {
@@ -54,6 +54,18 @@
       "name": "SHA256SUMS",
       "github_digest": "sha256:c05382a38fd13dac7c68079e9bf991fefb4b8a9682d5430c1705598152ec708a",
       "url": "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/SHA256SUMS"
+    },
+    {
+      "bytes": 4710,
+      "sha256": "b89717ec3bad56a12dc8f5c69f07ceccc33c68412ccbe5a329f084222a9a1a3c",
+      "name": "Download-BodhOS-PC.cmd",
+      "github_digest": "sha256:b89717ec3bad56a12dc8f5c69f07ceccc33c68412ccbe5a329f084222a9a1a3c",
+      "url": "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/Download-BodhOS-PC.cmd"
     }
-  ]
+  ],
+  "download_tools_updated": "2026-10-24",
+  "download_instructions_commit": "f8c94b916561ffabd60093f81702dcf1bcde6834",
+  "download_helper_and_guide_anonymous_download": "passed",
+  "windows_helper_fixture_checks": 6,
+  "download_helper_test_scope": "Real Windows cmd, curl and certutil with a local HTTP fixture, including resumed downloads and preservation/recovery of an empty ISO. No new OS image or hardware claim."
 }
