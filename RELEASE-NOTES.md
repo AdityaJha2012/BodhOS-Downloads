@@ -1,49 +1,69 @@
 # Bodh OS Preview 0.36
 
-Two new Linux images with the latest Bodh desktop tools:
+A school desktop for learning and coding. Preview 0.36.
 
-- **PC amd64** for evaluation in a new PC virtual machine.
-- **Experimental Intel MacBookPro15,2 amd64** for the 2018 Intel MacBook Pro profile. This is not macOS, not an Apple silicon image and not a claim of full Mac hardware support.
+## Windows PC or VirtualBox
 
-## Download and start
+### [Download Bodh OS for Windows](https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/Download-BodhOS-PC.cmd)
 
-Download both matching `.iso.part01` and `.iso.part02` files for your chosen image, plus **BodhOS-0.3.0-preview.36-Guides.zip**. You only need one image. Extract the guide ZIP beside the parts and open **START-HERE.html**.
+1. Save **Download-BodhOS-PC.cmd** in a new folder, such as Downloads → Bodh OS.
+2. Double click it. It downloads the required files, joins them and verifies the finished ISO. No administrator access or extra installer is needed. Allow about 6 GB of free space.
+3. Wait for **SUCCESS - VERIFIED ISO READY**. The folder opens with your ISO selected.
 
-On Windows, open **Join PC ISO.cmd** or **Join Mac ISO.cmd**. The helper checks each part, assembles the ISO and checks its complete SHA256. It does not format disks, install an OS or change PowerShell settings. macOS and Linux joining commands are in the guide. Keep different releases and profiles in separate folders.
+Your finished file is **BodhOS-PC-0.3.0-preview.36-amd64.iso**. Select this file in VirtualBox. Do not select a `.part01`, `.part02` or `.downloading` file.
 
-Use a new disposable VM first. Installed accounts retain projects. Live sessions and the separate Classroom account are temporary. Installation asks you to choose your own account and password. No test access is included.
+If the connection drops, open the helper again to resume. An earlier empty ISO is preserved and repaired. A nonempty file with the wrong checksum is kept and reported, not overwritten.
 
-## Included
+## Start it in VirtualBox
 
-- Native Quick Help with ten searchable offline guides.
-- Native Study Tools with focus and break timers, pause, resume, reset and a logout checklist.
-- Student Files with eight templates, safe new project folders, verified assignment copies, receipts and backup reminders.
-- Assistant local coding guidance and optional administrator configured school AI conversation. Student opt in is required. No AI model or server is bundled.
-- Terminal only Nmap, Lynis, TShark, tcpdump, dig and OpenSSL, with a synthetic sample. No Kali repository or automatic scanner is added.
-- Existing Debian 13 and XFCE desktop, coding tools, education apps, school setup, persistent student accounts, temporary Classroom sessions, backups, Rescue and protected updates.
-- Standard and Reduced appearance modes. Glass remains removed.
+1. Open VirtualBox and click **New**. Name the VM **Bodh OS**.
+2. Select the finished ISO. Choose **Linux → Debian 64 bit** and **Skip Unattended Installation**.
+3. Use **4096 MB RAM**, **2 CPUs** and a **new 32 GB virtual disk**. These are test settings, not hardware minimums.
+4. In Settings, use **VMSVGA**, **128 MB video memory**, **3D off** and **USB Tablet** pointing. Keep NAT networking.
+5. Start the VM and choose **Try Bodh OS**.
 
-## Verified on these exact images
+Try opens a temporary live desktop. To keep projects after shutdown, install to the new virtual disk and create your own account. Read the included [installation guide](https://github.com/AdityaJha2012/BodhOS-Downloads/blob/main/installation.html) before installing.
 
-- All 216 Linux source tests and 208 packaged source checks pass.
-- Both runtime audits and internal media checksum manifests pass.
-- PC BIOS, PC UEFI and Mac UEFI live tests pass, including 29 packaged Quick Help and Study Tools checks and 33 desktop checks per configuration.
-- All three fresh installation suites pass four installed boots. Checks cover retained projects, HTTPS, accounts, enforced quotas, verified backups, Assistant opening and running Python in Thonny, JavaScript in Geany, Classroom logout cleanup, Rescue GRUB repair and snapshot rollback keeping projects.
-- Student Files and Assistant pass ten additional packaged GUI checks per image. Assistant conversation uses a local fake HTTP server, not a real AI model.
-- Download parts reassemble to the exact local ISOs. All six uploaded GitHub asset SHA256 digests and byte lengths match the verified local files.
+<details>
+<summary><strong>Manual PC download, if you do not want the automatic helper</strong></summary>
 
-[Read the test record and screenshots](https://github.com/AdityaJha2012/BodhOS-Downloads/tree/v0.3.0-preview.36/validation).
+Download these three files:
 
-## Limits
+1. [PC part 1](https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-PC-0.3.0-preview.36-amd64.iso.part01)
+2. [PC part 2](https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-PC-0.3.0-preview.36-amd64.iso.part02)
+3. [Guides ZIP](https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-0.3.0-preview.36-Guides.zip)
 
-This is a development preview. Physical Macs and PCs, real drivers, WiFi, microphones, printers and a school pilot remain unverified. No fresh performance measurements were taken for this version. Preview 0.35 results are historical. Separate Administrator and Classroom edition candidates remain earlier images.
+Extract the ZIP. Move both parts into the folder containing **Join PC ISO.cmd**, then double click that helper. Wait for **SUCCESS - VERIFIED ISO READY**. It checks and combines the files into one ISO.
 
-The Mac image retains T2 kernel `6.18.58-1-t2-trixie` and a stock Debian fallback. Its community kernel packages are pinned and require reviewed updates. WiFi and Bluetooth need owner supplied model specific firmware. The stock installer may need external input devices. Read the included Mac hardware notes before trying physical hardware. Mac dual boot and recovery have not been validated. Apple silicon and Raspberry Pi are outside this release.
+GitHub limits each uploaded release file to under 2 GiB. Our PC ISO is 2.46 GiB, so it is split for transfer. Both parts are needed. The automatic helper handles this for you.
 
-## Full ISO SHA256
+</details>
 
-PC: `89af8be90566a6d33b9b6c6bf56f3586b9e2a33049190d3c4c0cd4c1999c7b4c`
+<details>
+<summary><strong>Experimental 2018 Intel MacBook Pro download</strong></summary>
 
-MacBookPro15,2: `e3133f35f6016d412484a4df931816fb30b8f51cf8e4ef6a8e9da93e96dcde4e`
+Only for **MacBookPro15,2**. This is Linux, not macOS. It does not support Apple silicon. Physical Mac hardware and dual boot remain unverified.
 
-These are the exact verified Preview 0.36 ISO bytes. Only the download guide links were updated for this public download repository. The release tag here identifies the download documentation, not an operating system source tree. The development repository remains private. Runtime source commit recorded inside both images: `8667af4a72e7b7005c9903a2c231d0d410fb503b`.
+[Mac part 1](https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-MacBookPro15-2-0.3.0-preview.36-experimental-amd64.iso.part01) · [Mac part 2](https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-MacBookPro15-2-0.3.0-preview.36-experimental-amd64.iso.part02) · [Guides ZIP](https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.36/BodhOS-0.3.0-preview.36-Guides.zip)
+
+Download both Mac parts and the Guides ZIP. Read **Mac-hardware-notes.txt** before physical testing. Windows users can prepare this image with **Join Mac ISO.cmd**. macOS and Linux joining commands are in START-HERE.html under the separate advanced section.
+
+</details>
+
+## What are the other Assets files?
+
+- **Guides ZIP:** optional instructions and manual joining tools. The automatic Windows helper does not need it.
+- **SHA256SUMS:** integrity fingerprints. The Windows helper checks the correct hashes automatically.
+- **Source code ZIP / tar.gz:** GitHub automatically adds these. They contain this download repository, not the OS. You do not need them to run Bodh OS.
+
+## If something goes wrong
+
+- **VirtualBox says VERR_NOT_SUPPORTED:** check that you selected the final verified ISO. A zero byte file is not an ISO. Run the current helper and wait for SUCCESS.
+- **No bootable device:** attach the verified ISO under Settings → Storage → optical drive, then start again.
+- **No SUCCESS message:** the ISO is not ready. Keep the window's error message and retry from a new folder if verification fails.
+
+## What was tested
+
+216 source tests, 208 packaged checks, media checksums and fresh PC BIOS, PC UEFI and Mac UEFI installation suites passed. New apps, saved projects, Classroom cleanup, Rescue and snapshot rollback were checked. [Results and screenshots](https://github.com/AdityaJha2012/BodhOS-Downloads/tree/main/validation).
+
+This remains a development preview. Physical hardware and school deployment need their own checks. The ISO bytes are unchanged. Download instructions and Windows helpers were improved on 24 October 2026. The development repository remains private.
