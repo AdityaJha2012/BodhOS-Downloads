@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bodh OS | Mac compatibility</title>
+<style>
+body{font:18px/1.65 system-ui,sans-serif;background:#0e1c2b;color:#edf5fa;max-width:900px;margin:auto;padding:36px 24px}h1,h2{line-height:1.2}h1{font-size:clamp(2rem,6vw,3rem)}a,h2{color:#63ded0}article,aside{background:#172e42;border-radius:12px;padding:20px;margin:20px 0}code{overflow-wrap:anywhere}a:focus-visible{outline:3px solid #63ded0;outline-offset:4px}footer{margin-top:36px;color:#bdccd7}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><a href="index.html">Back to downloads</a></nav>
+<main>
+<h1>Bodh OS on your Mac</h1>
+<p>Updated 24 October 2026. Intel and Apple silicon need different builds.</p>
+<aside><strong>The current download has not changed.</strong> Preview 0.37 has an experimental image for the 2018 Intel <code>MacBookPro15,2</code>. There is no Bodh OS Apple silicon download.</aside>
+<h2>What we just added</h2>
+<p>The development source now includes a small Mac model and architecture report. We also expanded the development plan to cover Intel and Apple silicon. Model detection does not install drivers or prove that hardware works. The report is not in the current ISO.</p>
+<article>
+<h2>Your 2018 Intel MacBook Pro</h2>
+<p>The dedicated <code>MacBookPro15,2</code> image remains experimental. Virtual machine boot and installation checks passed. Physical Mac devices and dual boot remain unverified.</p>
+<p><a href="index.html#experimental-mac">Open the experimental Mac download section</a> and read the <a href="Mac-hardware-notes.txt">hardware notes</a>.</p>
+</article>
+<article>
+<h2>Other Intel Macs</h2>
+<p>Each model needs its own boot and driver review. T2 machines need additional integration. Older Intel machines can have different EFI requirements. The existing Mac image is not certified for every Intel Mac.</p>
+<p><a href="https://support.apple.com/en-us/103265">Apple's T2 model guide</a> · <a href="https://wiki.t2linux.org/state/">T2 Linux feature status</a></p>
+</article>
+<article>
+<h2>Apple M1 and M2</h2>
+<p>These are the first targets for a future Asahi based Bodh OS port using Debian arm64. Boot software, kernel, graphics, firmware, audio safety, installation and recovery need integration and physical testing. No Bodh OS image is ready for these machines.</p>
+</article>
+<article>
+<h2>Apple M3 and later</h2>
+<p>Bodh OS does not support these models today. Upstream support varies by model and feature. The current M4 Pro status has no installer and major driver gaps. A generic ARM64 image does not add that support.</p>
+<p><a href="https://asahilinux.org/docs/platform/feature-support/overview/">Asahi feature matrix</a> · <a href="https://asahilinux.org/docs/platform/feature-support/m4/">M4 feature status</a></p>
+</article>
+<h2>Before a future Mac release</h2>
+<p>We need results from the exact model for installation, recovery, repeated boot, graphics, input, networking, sound, charging and sleep. Those results will identify the tested version and image checksum. No physical Mac has passed the Bodh OS release checks yet.</p>
+</main>
+<footer>Development update only. The Preview 0.37 ISO files and checksums remain the same.</footer>
+</body>
+</html>

@@ -64,6 +64,17 @@ Download both Mac parts and the Guides ZIP. Read **Mac-hardware-notes.txt** befo
 
 </details>
 
+## Mac development update
+
+We added Mac model and architecture reporting to the development source and expanded the support plan to cover Intel and Apple silicon separately. These changes are not included in the current ISO.
+
+* **2018 Intel MacBookPro15,2:** the existing experimental Preview 0.37 image is available. Physical hardware remains unverified.
+* **Other Intel Macs:** model specific evaluation is required.
+* **Apple M1 and M2:** planned targets for a separate Asahi based Bodh OS port. No download is available.
+* **M3 and later:** no Bodh OS support. Current M4 Pro upstream installer and major driver gaps prevent a native release.
+
+Read the **[current Mac compatibility page](https://adityajha2012.github.io/BodhOS-Downloads/mac-support.html)**. No new Mac ISO or additional hardware certification is being announced.
+
 ## What are the other Assets files?
 
 - **Guides ZIP:** optional instructions and manual joining tools. The automatic Windows helper does not need it.
