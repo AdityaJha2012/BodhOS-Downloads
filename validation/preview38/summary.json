@@ -1,0 +1,26 @@
+{
+  "version": "0.3.0-preview.38",
+  "native_tests": 221,
+  "packaged_source_checks": 216,
+  "runtime_source_commit": "0793be5eb430e7d9f7e4887091ea60133b0a7b0c",
+  "current_native_qa_commit": "58b2f64a5b3fba01db3ac0c46f99505e25a8daff",
+  "installed_harness_commit": "60310d902cdb06712f80d85b128343be246532b7",
+  "runtime_trees_identical": true,
+  "runtime_tree_sha256": "c5e57e20e2fcf2c3b1fed7212ebefb1fab4d7e79e513ea210ac657d616c82466",
+  "runtime_changes_since_build": "None. Followups synchronize documentation and repair validation automation.",
+  "security_package_updates": {
+    "pc": 10,
+    "mac": 9
+  },
+  "all_available_apt_upgrades_applied_at_recorded_check": true,
+  "held_packages": 0,
+  "physical_hardware_verified": false,
+  "apple_silicon_supported": false,
+  "new_performance_benchmark": false,
+  "automation_notes": [
+    "Downloadable guide copies were synchronized after the initial native check.",
+    "Initial live fixture assumed nine updates for both images; exact per-image package manifests corrected it.",
+    "Installed retries corrected dropped virtual keyboard input during repair proof and restored terminal focus after Thonny.",
+    "Repair proof still requires root, a disposable-install marker and the actual on-disk repair flag. No release image runtime changes were needed."
+  ]
+}

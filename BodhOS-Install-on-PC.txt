@@ -1,5 +1,5 @@
 BODH OS
-Preview 0.3.0-preview.37
+Preview 0.3.0-preview.38
 Install on a real x86_64 PC without a virtual machine
 
 READ FIRST

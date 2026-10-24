@@ -1,0 +1,29 @@
+{
+  "pc-bios": {
+    "passed": true,
+    "security_package_versions_match": true,
+    "guest_unit_tests": 221,
+    "ui_learning_checks": 29,
+    "guide_checks": 10,
+    "desktop_checks": 33,
+    "scope": "Disposable QEMU guest, not physical hardware"
+  },
+  "pc-uefi": {
+    "passed": true,
+    "security_package_versions_match": true,
+    "guest_unit_tests": 221,
+    "ui_learning_checks": 29,
+    "guide_checks": 10,
+    "desktop_checks": 33,
+    "scope": "Disposable QEMU guest, not physical hardware"
+  },
+  "mac-uefi": {
+    "passed": true,
+    "security_package_versions_match": true,
+    "guest_unit_tests": 221,
+    "ui_learning_checks": 29,
+    "guide_checks": 10,
+    "desktop_checks": 33,
+    "scope": "Disposable QEMU guest, not physical hardware"
+  }
+}

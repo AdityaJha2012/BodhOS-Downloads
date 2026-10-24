@@ -1,0 +1,83 @@
+{
+  "pc-bios": {
+    "passed": true,
+    "installed_boots": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "checks": [
+      "edited student project survived reboot and ran again",
+      "installed system resolved and reached the Debian mirror over HTTPS",
+      "school accounts, project backup/restore, and enforced storage quota",
+      "Coding Apps opened and the language tools are installed",
+      "Rescue backed up a sample coding project and the copy ran",
+      "Assistant opened the selected file in Thonny; F5 ran it in the IDE",
+      "JavaScript Lab opened hello.js in Geany",
+      "temporary Classroom session data cleared after logout",
+      "school setup and verified student project backup/restore",
+      "snapshot baseline and pre-APT snapshot protected the disposable package change",
+      "Bodh Rescue repaired GRUB in bios mode",
+      "edited student project survived reboot and ran again",
+      "installed system booted after Bodh Rescue repair in bios mode",
+      "edited student project survived reboot and ran again",
+      "snapshot restore survived reboot, removed the test package, and kept student projects"
+    ],
+    "scope": "Fresh disposable QEMU installation, not physical hardware"
+  },
+  "pc-uefi": {
+    "passed": true,
+    "installed_boots": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "checks": [
+      "edited student project survived reboot and ran again",
+      "installed system resolved and reached the Debian mirror over HTTPS",
+      "school accounts, project backup/restore, and enforced storage quota",
+      "Coding Apps opened and the language tools are installed",
+      "Rescue backed up a sample coding project and the copy ran",
+      "Assistant opened the selected file in Thonny; F5 ran it in the IDE",
+      "JavaScript Lab opened hello.js in Geany",
+      "temporary Classroom session data cleared after logout",
+      "school setup and verified student project backup/restore",
+      "snapshot baseline and pre-APT snapshot protected the disposable package change",
+      "Bodh Rescue repaired GRUB in uefi mode",
+      "edited student project survived reboot and ran again",
+      "installed system booted after Bodh Rescue repair in uefi mode",
+      "edited student project survived reboot and ran again",
+      "snapshot restore survived reboot, removed the test package, and kept student projects"
+    ],
+    "scope": "Fresh disposable QEMU installation, not physical hardware"
+  },
+  "mac-uefi": {
+    "passed": true,
+    "installed_boots": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "checks": [
+      "edited student project survived reboot and ran again",
+      "installed system resolved and reached the Debian mirror over HTTPS",
+      "school accounts, project backup/restore, and enforced storage quota",
+      "Coding Apps opened and the language tools are installed",
+      "Rescue backed up a sample coding project and the copy ran",
+      "Assistant opened the selected file in Thonny; F5 ran it in the IDE",
+      "JavaScript Lab opened hello.js in Geany",
+      "temporary Classroom session data cleared after logout",
+      "school setup and verified student project backup/restore",
+      "snapshot baseline and pre-APT snapshot protected the disposable package change",
+      "Bodh Rescue repaired GRUB in uefi mode",
+      "edited student project survived reboot and ran again",
+      "installed system booted after Bodh Rescue repair in uefi mode",
+      "edited student project survived reboot and ran again",
+      "snapshot restore survived reboot, removed the test package, and kept student projects"
+    ],
+    "scope": "Fresh disposable QEMU installation, not physical hardware"
+  }
+}

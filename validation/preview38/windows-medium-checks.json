@@ -1,0 +1,12 @@
+{
+  "pc": {
+    "recognized_as_optical_media": true,
+    "format": "RAW",
+    "scope": "Format inspection, not a Windows VirtualBox boot test"
+  },
+  "macbookpro15-2": {
+    "recognized_as_optical_media": true,
+    "format": "RAW",
+    "scope": "Format inspection, not a Windows VirtualBox boot test"
+  }
+}

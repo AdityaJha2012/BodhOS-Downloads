@@ -1,5 +1,5 @@
 BODH OS
-Preview 0.3.0-preview.37
+Preview 0.3.0-preview.38
 Features and included software
 
 WHAT THIS IS
@@ -7,6 +7,8 @@ Bodh OS is a school desktop built on Debian 13 and XFCE for x86_64 PCs.
 It is a development preview. It is not yet certified for school deployment.
 The separate Intel MacBookPro15,2 image is experimental. It is not macOS.
 Neither image supports Apple silicon or Raspberry Pi.
+This security preview refreshes available signed Debian package updates.
+Run bodh-mac-compat for a model report. Identification does not certify drivers.
 
 START HERE
 Open Start to find applications. Use Coding Apps to choose a language.

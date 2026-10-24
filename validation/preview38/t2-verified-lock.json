@@ -1,0 +1,42 @@
+{
+  "model": "MacBookPro15,2",
+  "status": "experimental, physical hardware unverified",
+  "kernel": "6.18.58-1-t2-trixie",
+  "repository": "https://github.com/AdityaGarg8/t2-ubuntu-repo/releases/download/trixie",
+  "key_url": "https://adityagarg8.github.io/t2-ubuntu-repo/KEY.gpg",
+  "key_sha256": "7c9e7cd9927a36de8eee2fb472ecdd5c36d87d9f501248fda795f077d4aa43cb",
+  "fingerprint": "9F9873A566A73E27CFF0294FE2E496114ACDBFD4",
+  "packages_sha256": "831259eecb2f8f10eeda98a10d3e4fc24f4d2ea9cd26605db9ec40db50cf92e8",
+  "packages": [
+    {
+      "name": "linux-image-6.18.58-1-t2-trixie",
+      "version": "6.18.58-1",
+      "filename": "linux-image-6.18.58-1-t2-trixie_6.18.58-1_amd64.deb",
+      "sha256": "a2c97363691b02470207eea78129014a7a799bdfed043aabc5fe1c415da23996"
+    },
+    {
+      "name": "linux-headers-6.18.58-1-t2-trixie",
+      "version": "6.18.58-1",
+      "filename": "linux-headers-6.18.58-1-t2-trixie_6.18.58-1_amd64.deb",
+      "sha256": "d7af1f489f0d7ec7d6e83fc5b39293f278be448cd8b10300872d9e5fa39a586c"
+    },
+    {
+      "name": "linux-t2-lts",
+      "version": "6.18.58-1-trixie",
+      "filename": "linux-t2-lts_6.18.58-1-trixie_amd64.deb",
+      "sha256": "b8535933779dc4e89295d510e384b74f9c02b7bc4bc58a77a8455c1144cd248d"
+    },
+    {
+      "name": "apple-t2-audio-config",
+      "version": "0.5.3-trixie",
+      "filename": "apple-t2-audio-config_0.5.3-trixie_amd64.deb",
+      "sha256": "d655370219701922b2f2f973fb00cc333c60c94ccbf000297904b4f44185cdd3"
+    },
+    {
+      "name": "tiny-dfr",
+      "version": "0.3.8-1-trixie",
+      "filename": "tiny-dfr_0.3.8-1-trixie_amd64.deb",
+      "sha256": "3ab91be4ca8fa2fe75af51be8c987e5cb3e987015b850d9634a9b7e2bfc4163f"
+    }
+  ]
+}

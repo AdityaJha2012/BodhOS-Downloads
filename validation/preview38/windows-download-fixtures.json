@@ -1,0 +1,11 @@
+{
+  "scope": "Real Windows cmd, certutil and curl against a local HTTP fixture. Synthetic data, not a new OS boot test.",
+  "checks": {
+    "automatic_http_download_and_verified_join": "passed",
+    "existing_valid_iso_skips_network": "passed",
+    "empty_iso_preserved_and_repaired": "passed",
+    "nonempty_wrong_iso_preserved": "passed",
+    "interrupted_http_download_resumes": "passed",
+    "corrupted_existing_part_refused_and_preserved": "passed"
+  }
+}
