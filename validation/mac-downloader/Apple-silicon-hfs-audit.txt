@@ -1,0 +1,5 @@
+MacOS:
+100755   0   0          150  9/24/2026 13:16 BodhOSDownloader
+Total filesystem size: 104448, free: 0
+
+All app resources match in the HFS+ volume.

@@ -1,3 +1,7 @@
+## macOS downloader package update
+
+Add Intel and Apple silicon DMG download helpers. They are unsigned developer previews with real macOS mounting and launch still unverified. Apple silicon offers the existing PC image for x86_64 emulation only. No native ARM OS image is introduced. Existing ISO files are unchanged. See [Mac downloader instructions](mac-downloader.html) and [build evidence](validation/mac-downloader).
+
 # Download Bodh OS
 
 [Open the download page and readable guides](https://adityajha2012.github.io/BodhOS-Downloads/)

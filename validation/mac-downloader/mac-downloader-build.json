@@ -1,0 +1,28 @@
+[
+  {
+    "name": "BodhOS-Downloader-Intel-0.3.0-preview.38.dmg",
+    "bytes": 66993,
+    "sha256": "4601af12404d92cab48e6657b6886193880fb074e85b04d38f3487af11667ac8",
+    "format": "UDIF v4 with HFS+ and Apple Partition Map",
+    "filesystem_roundtrip_sha256": "8ea901f6d9b646612ba40e45fb73607e7ad689b57fec2f7008211c1a9c80b2ad",
+    "resource_files_verified": 8,
+    "launcher_executable": true,
+    "signed": false,
+    "notarized": false,
+    "native_macos_mount_and_launch_verified": false,
+    "native_apple_silicon_os_image": false
+  },
+  {
+    "name": "BodhOS-Downloader-Apple-silicon-0.3.0-preview.38.dmg",
+    "bytes": 67011,
+    "sha256": "9ccf9e2ef81b0e06e4c0c7d5f13875df6eff4397f775e8990f6c27cc003655f9",
+    "format": "UDIF v4 with HFS+ and Apple Partition Map",
+    "filesystem_roundtrip_sha256": "ffadef70714a53302d572221171e08569cb2901a034727f76ff83f92ca8daf25",
+    "resource_files_verified": 8,
+    "launcher_executable": true,
+    "signed": false,
+    "notarized": false,
+    "native_macos_mount_and_launch_verified": false,
+    "native_apple_silicon_os_image": false
+  }
+]

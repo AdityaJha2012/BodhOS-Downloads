@@ -1,5 +1,9 @@
 # Download Bodh OS
 
+## Downloading on macOS
+
+[Intel and Apple silicon DMG download helpers](https://adityajha2012.github.io/BodhOS-Downloads/mac-downloader.html) prepare and verify the existing ISO files. Both helpers are unsigned developer previews. Real macOS launch remains unverified. The Apple silicon helper offers x86_64 emulation only, not a native ARM OS image.
+
 [Open the download page and readable guides](https://adityajha2012.github.io/BodhOS-Downloads/)
 
 A school desktop for learning and coding. Preview 0.38.
