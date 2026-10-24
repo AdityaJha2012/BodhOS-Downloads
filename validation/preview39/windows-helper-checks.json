@@ -1,0 +1,6 @@
+{
+  "join_and_complete_hash": true,
+  "downloader_accepts_verified_existing_iso": true,
+  "virtualbox_recognizes_optical_image": true,
+  "iso_sha256": "c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5"
+}

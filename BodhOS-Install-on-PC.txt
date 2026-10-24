@@ -1,5 +1,5 @@
 BODH OS
-Preview 0.3.0-preview.38
+Preview 0.3.0-preview.39
 Install on a real x86_64 PC without a virtual machine
 
 READ FIRST
@@ -63,11 +63,16 @@ If the live desktop fails, do not install to try to fix it. Record the error.
 If it works, restart into the USB boot menu and choose Install Bodh OS.
 Use the graphical installer entry if it is offered and works on your display.
 Choose your language, keyboard and time zone.
-For Domain name, leave it blank unless school IT supplies one. A website
-domain or online account is not needed. Give each lab PC a distinct hostname.
-Leave the separate root password blank to use the first normal account for
-administrator access through sudo. Create your own account and password.
+For Domain name, leave it blank unless school IT supplies one. A web domain
+or online account is not needed. Use a distinct computer name for each lab PC.
+Leave the separate root password blank to use your first normal account for
+administrator access through sudo. Create that account and your own password.
 No validator test login is provided.
+
+Choose Install Bodh OS (simple setup) for the shorter offline installation.
+It uses the apps already on the media and skips domain, mirror and separate
+root password questions. Connect to your network after the first installed boot.
+Choose Install Bodh OS (advanced) if your school needs custom network setup.
 
 At partitioning, read the drive model and capacity carefully.
 The guided option to use the entire disk erases the selected target disk.

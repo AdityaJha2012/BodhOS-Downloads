@@ -1,0 +1,23 @@
+Bodh OS Preview 0.39
+
+WINDOWS
+Open Download-BodhOS-PC.cmd in a new empty folder. It fetches and joins both parts and verifies the ISO. Wait for SUCCESS.
+
+If both parts are already downloaded, keep them beside Join PC ISO.cmd and open that helper.
+
+MACOS OR LINUX ONLY
+Use a new folder with no existing ISO. These are not Windows PowerShell commands.
+
+pc
+cat BodhOS-PC-0.3.0-preview.39-amd64.iso.part01 BodhOS-PC-0.3.0-preview.39-amd64.iso.part02 > BodhOS-PC-0.3.0-preview.39-amd64.iso
+shasum -a 256 BodhOS-PC-0.3.0-preview.39-amd64.iso
+Expected SHA256: c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5
+
+macbookpro15-2
+cat BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso.part01 BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso.part02 > BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso
+shasum -a 256 BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso
+Expected SHA256: 86bbad29a03d0676d7b40469785ab599d5794b44981df45f9ee391710b7d0236
+
+Linux can use sha256sum instead of shasum -a 256. A mismatched file must not be used.
+
+Use Install Bodh OS (simple setup). Connect to the network after installation. Disk changes still require confirmation.

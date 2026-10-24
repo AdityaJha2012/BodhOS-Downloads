@@ -1,9 +1,7 @@
-# Security maintenance
+# Security
 
-Use the latest verified release linked in the README. Preview 0.38 refreshes the current PC and experimental Intel Mac images. Old assets and older school edition candidates are historical.
+Use the current verified Preview 0.39 release linked in the README. It fixes firewall configuration line endings and retains Preview 0.38 signed package security updates. Old images and school edition candidates are historical.
 
-Use Settings > Updates for Debian security packages. Bodh application code is not automatically distributed through Debian APT. The T2 kernel needs a reviewed pinned update and separate validation. No Apple silicon release is available.
+On existing installations, check firewall activation. Debian package updates alone do not apply this Bodh configuration correction. Follow [the current security guide](https://adityajha2012.github.io/BodhOS-Downloads/security-updates.html), which preserves your rules and makes a backup.
 
-See [security update instructions](https://adityajha2012.github.io/BodhOS-Downloads/security-updates.html). Report the release version and reproduction steps through the repository. Do not post student data, passwords, serial numbers or private logs.
-
-Available updates are not a guarantee of zero vulnerabilities. Physical hardware and school deployment remain unverified.
+This development preview has no guarantee of being free from vulnerabilities. Physical hardware and school deployment remain unverified. Report issues privately to the project maintainer.

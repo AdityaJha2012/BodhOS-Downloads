@@ -1,11 +1,12 @@
-43ab0eb7326c9833aa0ec5e5ec595dfef63340ded1b59af33cf30e2bb148f5b7  BodhOS-PC-0.3.0-preview.38-amd64.iso
-c890722c37f2257a3ba71669db51f852b077a733e58c71df4631f2163e59be83  BodhOS-PC-0.3.0-preview.38-amd64.iso.part01
-e5a4d7c239e29f474015d0726e0649203cdf7ebf6b5d4a651bc8f3e97e59245c  BodhOS-PC-0.3.0-preview.38-amd64.iso.part02
-094b84e45e729798a4a186c4816eb6e854d94fce7d04bd14e720a8231b6fae16  BodhOS-MacBookPro15-2-0.3.0-preview.38-experimental-amd64.iso
-e5d75839245568811dc0da49af7f21d0dcb0f79cef5a6995e36dfcabdecbfcb6  BodhOS-MacBookPro15-2-0.3.0-preview.38-experimental-amd64.iso.part01
-9b462f19d00e8692e564360379b8dd50be4ddc89c63d792052bf9f3d817fbe18  BodhOS-MacBookPro15-2-0.3.0-preview.38-experimental-amd64.iso.part02
-fb7e8c761f64ec4adfeac6ea0b6259673e86e26465ada4d99d295f2ccd55b42c  Download-BodhOS-PC.cmd
-c81fe68ce838bea2b0e6d48cd43cf641cf21aca09a916b0ff4a0cf7ef5aaf136  BodhOS-0.3.0-preview.38-Guides.zip
-b1d2446c703abaa7a7faaf8de15235cdac0fb73781a7c7b12e432554bcd44590  BodhOS-0.3.0-preview.38.pptx
-4601af12404d92cab48e6657b6886193880fb074e85b04d38f3487af11667ac8  BodhOS-Downloader-Intel-0.3.0-preview.38.dmg
-9ccf9e2ef81b0e06e4c0c7d5f13875df6eff4397f775e8990f6c27cc003655f9  BodhOS-Downloader-Apple-silicon-0.3.0-preview.38.dmg
+c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5  BodhOS-PC-0.3.0-preview.39-amd64.iso
+7634fb3fe5c5cf61bddf2ea57dfb2e9b21091e2eefcfde3a3074769e79939ac6  BodhOS-PC-0.3.0-preview.39-amd64.iso.part01
+66593493a5428f6ac19e732c6c1802bb94de24dd9c723c61871773003f8fdc07  BodhOS-PC-0.3.0-preview.39-amd64.iso.part02
+86bbad29a03d0676d7b40469785ab599d5794b44981df45f9ee391710b7d0236  BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso
+4d9f3a82a682ef04ab14cc8824419cc339dc42cf3f044fa083d2fb64d379bb35  BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso.part01
+44c2499dc429897bd597c833af94bc03899bf9feecdc15c1dc64c78ae81e8f98  BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso.part02
+a9796a488d3861a16c93f0b723d2f04fefba1fd4c4384bb01ee24c79344cbaaa  BodhOS-Downloader-Apple-silicon-0.3.0-preview.39.dmg
+8853bf81a359af7c867528470f80207b2696f1a23efd2e09f7827ccc38fd8e52  BodhOS-Downloader-Intel-0.3.0-preview.39.dmg
+ac667294a304d733d2faacc4900d21a3ce8142572e83ecee5d9fcd9a61ae7725  Download-BodhOS-PC.cmd
+f943838275e7e0319ac069fcf90f4101fb3abfe79b8df7ea60e23fd6ca0e6fa0  Join Mac ISO.cmd
+979692d9fc9312a7781879225e2ca2a991dd079b9e9c37ae3e31f86650889d25  Join PC ISO.cmd
+a8bb64d97237eaa015e27e96e4f7f7e602de2fb4daf8b727ec08326a12d25a4a  BodhOS-0.3.0-preview.39-Guides.zip

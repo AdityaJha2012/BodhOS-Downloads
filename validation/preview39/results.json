@@ -1,0 +1,106 @@
+{
+  "version": "0.3.0-preview.39",
+  "date": "2026-10-24",
+  "source_merge_commit": "230ebc8f86a67d3700363e3a4099dbce1343c6e1",
+  "runtime_source_commit": "bdaf9cec1865eb3b6a3fe960a7f5003bb32cdab2",
+  "installer_source_commit": "bdaf9cec1865eb3b6a3fe960a7f5003bb32cdab2",
+  "unit_tests_passed": 233,
+  "packaged_file_checks": 217,
+  "final_iso_runtime_audits": {
+    "pc": 0,
+    "mac": 0
+  },
+  "final_live_boot_exit_codes": {
+    "pc-bios": 0,
+    "pc-uefi": 0,
+    "mac-uefi": 0
+  },
+  "final_live_firewall_checks": {
+    "pc-bios": {
+      "service_active": true,
+      "incoming_deny_policy_verified": true,
+      "method": "Focused additional boot of final ISO with a separate disposable QA disc. Actual systemctl and ufw output checked."
+    },
+    "pc-uefi": {
+      "service_active": true,
+      "incoming_deny_policy_verified": true,
+      "method": "Focused additional boot of final ISO with a separate disposable QA disc. Actual systemctl and ufw output checked."
+    },
+    "mac-uefi": {
+      "service_active": true,
+      "incoming_deny_policy_verified": true,
+      "method": "Focused additional boot of final ISO with a separate disposable QA disc. Actual systemctl and ufw output checked."
+    }
+  },
+  "final_pc_uefi_installed_suite_exit_code": 0,
+  "final_pc_uefi_installed_checks": [
+    "PASS: edited student project survived reboot and ran again",
+    "PASS: installed system resolved and reached the Debian mirror over HTTPS",
+    "PASS: school accounts, project backup/restore, and enforced storage quota",
+    "PASS: Coding Apps opened and the language tools are installed",
+    "PASS: Rescue backed up a sample coding project and the copy ran",
+    "PASS: Assistant opened the selected file in Thonny; F5 ran it in the IDE",
+    "PASS: JavaScript Lab opened hello.js in Geany",
+    "PASS: temporary Classroom session data cleared after logout",
+    "PASS: school setup and verified student project backup/restore",
+    "PASS: snapshot baseline and pre-APT snapshot protected the disposable package change",
+    "PASS: Bodh Rescue repaired GRUB in uefi mode",
+    "PASS: edited student project survived reboot and ran again",
+    "PASS: installed system booted after Bodh Rescue repair in uefi mode",
+    "PASS: edited student project survived reboot and ran again",
+    "PASS: snapshot restore survived reboot, removed the test package, and kept student projects"
+  ],
+  "windows_helpers": {
+    "join_and_complete_hash": true,
+    "downloader_accepts_verified_existing_iso": true,
+    "virtualbox_recognizes_optical_image": true,
+    "iso_sha256": "c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5"
+  },
+  "github_assets": {
+    "assets": 9,
+    "server_sha256_and_sizes_match": true,
+    "guides_zip_crc_passed": true,
+    "staged_download_links_passed": true
+  },
+  "virtualbox_final_live": {
+    "desktop_passed": true,
+    "firewall_active": true,
+    "incoming_deny_policy": true,
+    "source_commit": "bdaf9cec1865eb3b6a3fe960a7f5003bb32cdab2",
+    "iso_sha256": "c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5",
+    "ram_mib": 4096,
+    "cpus": 1,
+    "firmware": "UEFI",
+    "apic": "xAPIC",
+    "x2apic": false,
+    "ioapic": true,
+    "disk_attached": false,
+    "evidence": "Desktop and actual sudo ufw status verbose inspected. Firewall active, default incoming deny and outgoing allow. LightDM active."
+  },
+  "virtualbox_simple_installer_flow": {
+    "earlier_candidate_sha256": "1bce7f7cdeacdfb203bed1bc4aa74dafa76a549f6b8b173cc44db95b809dbd23",
+    "interactive_install_completed": true,
+    "iso_ejected_and_installed_desktop_opened": true,
+    "first_account_sudo_authentication_passed": true,
+    "two_firewall_files_normalized_and_active_policy_verified": true,
+    "final_installer_profile_and_helper_unchanged": true
+  },
+  "earlier_failed_attempts": [
+    "Installer hostname question registration and the filename API were corrected.",
+    "Earlier installed test input lost keystrokes or focus and one HTTPS request failed. The final suite uses slower input and a private test-media backup script.",
+    "A late VirtualBox firewall check caught CRLF in defaults and rules. That candidate was withheld. Archives, source and image checks, and real service/policy tests now cover it.",
+    "The focused Mac firewall probe initially exceeded the host UNIX socket path limit. It was rerun with a short output alias. The ISO was unchanged."
+  ],
+  "security_refresh": {
+    "additional_package_upgrades": 0,
+    "preview38_security_fixes_retained": true,
+    "signed_repositories_and_dpkg_audit_passed": true
+  },
+  "limitations": [
+    "Two-CPU x2APIC VirtualBox configuration froze on the available Windows host. The passing configuration uses one CPU, xAPIC and I/O APIC enabled.",
+    "The final complete installed-system suite was run in PC UEFI mode. BIOS and Mac final live boot pass, but their complete installation suites were not rerun.",
+    "The simple interactive VirtualBox install used the preceding candidate, followed by the same firewall correction. The final ISO was checked through live boot in a fresh diskless VirtualBox VM.",
+    "Physical hardware, Mac dual boot and school deployment remain unverified. No native ARM or Apple silicon release.",
+    "Mac download helpers are unsigned, with real macOS mount and launch unverified. No new performance benchmark is claimed."
+  ]
+}

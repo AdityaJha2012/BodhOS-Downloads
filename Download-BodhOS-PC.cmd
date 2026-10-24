@@ -3,37 +3,37 @@ setlocal DisableDelayedExpansion
 pushd "%~dp0" || exit /b 1
 echo Bodh OS PC - automatic download and ISO preparation
 echo Save this file in an empty folder. Keep this window open until SUCCESS.
-if exist "BodhOS-PC-0.3.0-preview.38-amd64.iso" (
-  certutil -hashfile "BodhOS-PC-0.3.0-preview.38-amd64.iso" SHA256 | findstr /i /x /c:"43ab0eb7326c9833aa0ec5e5ec595dfef63340ded1b59af33cf30e2bb148f5b7" >nul
+if exist "BodhOS-PC-0.3.0-preview.39-amd64.iso" (
+  certutil -hashfile "BodhOS-PC-0.3.0-preview.39-amd64.iso" SHA256 | findstr /i /x /c:"c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5" >nul
   if not errorlevel 1 goto BODH_ASSEMBLE
 )
-call :BODH_FETCH "BodhOS-PC-0.3.0-preview.38-amd64.iso.part01" "c890722c37f2257a3ba71669db51f852b077a733e58c71df4631f2163e59be83"
+call :BODH_FETCH "BodhOS-PC-0.3.0-preview.39-amd64.iso.part01" "7634fb3fe5c5cf61bddf2ea57dfb2e9b21091e2eefcfde3a3074769e79939ac6"
 if errorlevel 1 goto failed
-call :BODH_FETCH "BodhOS-PC-0.3.0-preview.38-amd64.iso.part02" "e5a4d7c239e29f474015d0726e0649203cdf7ebf6b5d4a651bc8f3e97e59245c"
+call :BODH_FETCH "BodhOS-PC-0.3.0-preview.39-amd64.iso.part02" "66593493a5428f6ac19e732c6c1802bb94de24dd9c723c61871773003f8fdc07"
 if errorlevel 1 goto failed
 :BODH_ASSEMBLE
 echo Checking the Bodh OS download. This can take several minutes.
-if exist "BodhOS-PC-0.3.0-preview.38-amd64.iso" (
-  for %%F in ("BodhOS-PC-0.3.0-preview.38-amd64.iso") do if %%~zF EQU 0 goto preserve_empty
+if exist "BodhOS-PC-0.3.0-preview.39-amd64.iso" (
+  for %%F in ("BodhOS-PC-0.3.0-preview.39-amd64.iso") do if %%~zF EQU 0 goto preserve_empty
   goto existing
 )
 :join_start
-if exist "BodhOS-PC-0.3.0-preview.38-amd64.iso.partial" goto partial
-if not exist "BodhOS-PC-0.3.0-preview.38-amd64.iso.part01" goto missing
-certutil -hashfile "BodhOS-PC-0.3.0-preview.38-amd64.iso.part01" SHA256 | findstr /i /x /c:"c890722c37f2257a3ba71669db51f852b077a733e58c71df4631f2163e59be83" >nul
+if exist "BodhOS-PC-0.3.0-preview.39-amd64.iso.partial" goto partial
+if not exist "BodhOS-PC-0.3.0-preview.39-amd64.iso.part01" goto missing
+certutil -hashfile "BodhOS-PC-0.3.0-preview.39-amd64.iso.part01" SHA256 | findstr /i /x /c:"7634fb3fe5c5cf61bddf2ea57dfb2e9b21091e2eefcfde3a3074769e79939ac6" >nul
 if errorlevel 1 goto badhash
-if not exist "BodhOS-PC-0.3.0-preview.38-amd64.iso.part02" goto missing
-certutil -hashfile "BodhOS-PC-0.3.0-preview.38-amd64.iso.part02" SHA256 | findstr /i /x /c:"e5a4d7c239e29f474015d0726e0649203cdf7ebf6b5d4a651bc8f3e97e59245c" >nul
+if not exist "BodhOS-PC-0.3.0-preview.39-amd64.iso.part02" goto missing
+certutil -hashfile "BodhOS-PC-0.3.0-preview.39-amd64.iso.part02" SHA256 | findstr /i /x /c:"66593493a5428f6ac19e732c6c1802bb94de24dd9c723c61871773003f8fdc07" >nul
 if errorlevel 1 goto badhash
-copy /b "BodhOS-PC-0.3.0-preview.38-amd64.iso.part01"+"BodhOS-PC-0.3.0-preview.38-amd64.iso.part02" "BodhOS-PC-0.3.0-preview.38-amd64.iso.partial" >nul
+copy /b "BodhOS-PC-0.3.0-preview.39-amd64.iso.part01"+"BodhOS-PC-0.3.0-preview.39-amd64.iso.part02" "BodhOS-PC-0.3.0-preview.39-amd64.iso.partial" >nul
 if errorlevel 1 goto failed
-certutil -hashfile "BodhOS-PC-0.3.0-preview.38-amd64.iso.partial" SHA256 | findstr /i /x /c:"43ab0eb7326c9833aa0ec5e5ec595dfef63340ded1b59af33cf30e2bb148f5b7" >nul
+certutil -hashfile "BodhOS-PC-0.3.0-preview.39-amd64.iso.partial" SHA256 | findstr /i /x /c:"c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5" >nul
 if errorlevel 1 goto badhash
-ren "BodhOS-PC-0.3.0-preview.38-amd64.iso.partial" "BodhOS-PC-0.3.0-preview.38-amd64.iso"
+ren "BodhOS-PC-0.3.0-preview.39-amd64.iso.partial" "BodhOS-PC-0.3.0-preview.39-amd64.iso"
 if errorlevel 1 goto failed
 goto success
 :existing
-certutil -hashfile "BodhOS-PC-0.3.0-preview.38-amd64.iso" SHA256 | findstr /i /x /c:"43ab0eb7326c9833aa0ec5e5ec595dfef63340ded1b59af33cf30e2bb148f5b7" >nul
+certutil -hashfile "BodhOS-PC-0.3.0-preview.39-amd64.iso" SHA256 | findstr /i /x /c:"c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5" >nul
 if errorlevel 1 goto existingbad
 goto success
 :missing
@@ -54,16 +54,16 @@ if not defined BODH_JOIN_NO_PAUSE pause
 exit /b 1
 :success
 echo SUCCESS - VERIFIED ISO READY
-echo Verified ISO ready: %CD%\BodhOS-PC-0.3.0-preview.38-amd64.iso
-if not defined BODH_JOIN_NO_PAUSE explorer.exe /select,"%CD%\BodhOS-PC-0.3.0-preview.38-amd64.iso"
+echo Verified ISO ready: %CD%\BodhOS-PC-0.3.0-preview.39-amd64.iso
+if not defined BODH_JOIN_NO_PAUSE explorer.exe /select,"%CD%\BodhOS-PC-0.3.0-preview.39-amd64.iso"
 popd
 if not defined BODH_JOIN_NO_PAUSE pause
 exit /b 0
 
 :preserve_empty
-set "BODH_EMPTY_BACKUP=BodhOS-PC-0.3.0-preview.38-amd64.iso.empty-preserved-%RANDOM%.txt"
+set "BODH_EMPTY_BACKUP=BodhOS-PC-0.3.0-preview.39-amd64.iso.empty-preserved-%RANDOM%.txt"
 if exist "%BODH_EMPTY_BACKUP%" goto preserve_empty
-ren "BodhOS-PC-0.3.0-preview.38-amd64.iso" "%BODH_EMPTY_BACKUP%"
+ren "BodhOS-PC-0.3.0-preview.39-amd64.iso" "%BODH_EMPTY_BACKUP%"
 if errorlevel 1 goto failed
 echo Preserved the earlier empty file as "%BODH_EMPTY_BACKUP%".
 goto join_start
@@ -85,7 +85,7 @@ if errorlevel 1 (
   exit /b 1
 )
 echo Downloading "%~1". An interrupted download can be resumed by opening this helper again.
-curl.exe --fail --location --retry 3 --connect-timeout 30 --continue-at - --output "%~1.downloading" "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.38/%~1"
+curl.exe --fail --location --retry 3 --connect-timeout 30 --continue-at - --output "%~1.downloading" "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0-preview.39/%~1"
 if errorlevel 1 exit /b 1
 certutil -hashfile "%~1.downloading" SHA256 | findstr /i /x /c:"%~2" >nul
 if errorlevel 1 (
