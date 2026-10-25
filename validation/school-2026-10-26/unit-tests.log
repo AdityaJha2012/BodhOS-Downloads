@@ -1,0 +1,26 @@
+...................................................................................WARNING:root:Panel readiness check timed out; will retry
+....WARNING:root:Panel startup is still in progress; retrying readiness check
+..............................................................................Checking backup integrity before restoring…
+New backup folder: /tmp/tmpijsfxw4j/backup/bodh-backup-20261025-191419-6bf90c
+Backup completed successfully.
+..New backup folder: /tmp/tmpd2lspamn/usb/bodh-backup-20261025-191419-259604
+Portable archive backup (preserves Linux permissions inside the archive).
+Backup completed successfully.
+...........Configure automatic security updates
+Save school configuration
+School setup completed. New accounts remain locked until their passwords are set. Existing accounts, projects, snapshots, and USB policies were kept.
+Configure automatic security updates
+Save school configuration
+School setup completed. New accounts remain locked until their passwords are set. Existing accounts, projects, snapshots, and USB policies were kept.
+.Enable temporary Classroom account
+.Configure automatic security updates
+Save school configuration
+School setup completed. New accounts remain locked until their passwords are set. Existing accounts, projects, snapshots, and USB policies were kept.
+Configure automatic security updates
+Save school configuration
+School setup completed. New accounts remain locked until their passwords are set. Existing accounts, projects, snapshots, and USB policies were kept.
+..........................s..........................
+----------------------------------------------------------------------
+Ran 233 tests in 7.152s
+
+OK (skipped=1)

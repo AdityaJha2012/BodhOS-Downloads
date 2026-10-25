@@ -1,0 +1,7 @@
+Hit:1 https://deb.debian.org/debian trixie InRelease
+Get:2 https://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+Get:3 https://security.debian.org/debian-security trixie-security InRelease [43.4 kB]
+Get:4 https://security.debian.org/debian-security trixie-security/main Sources [240 kB]
+Get:5 https://security.debian.org/debian-security trixie-security/main amd64 Packages [270 kB]
+Fetched 601 kB in 1s (1195 kB/s)
+Reading package lists...

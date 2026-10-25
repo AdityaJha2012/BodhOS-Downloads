@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-26",
+  "timezone": "Asia/Calcutta",
+  "version": "0.3.0-preview.39",
+  "iso_bytes_changed": false,
+  "source_base": "0066943",
+  "source_tests": {
+    "run": 233,
+    "passed": 232,
+    "skipped": 1,
+    "packaged_files_validated": 217
+  },
+  "iso_content_checks": {
+    "pc": "passed",
+    "experimental_mac": "passed"
+  },
+  "fresh_pc_live": {
+    "bios": "passed",
+    "uefi": "passed"
+  },
+  "fresh_pc_bios_install": {
+    "passed": true,
+    "boots": 4,
+    "checks": [
+      "Installer completion marker reached; booting the installed disk",
+      "Installed Bodh desktop opened on boot 1 after about 40 seconds",
+      "Installed Bodh desktop opened on boot 2 after about 30 seconds",
+      "PASS: edited student project survived reboot and ran again",
+      "PASS: installed system resolved and reached the Debian mirror over HTTPS",
+      "PASS: school accounts, project backup/restore, and enforced storage quota",
+      "PASS: Coding Apps opened and the language tools are installed",
+      "PASS: Rescue backed up a sample coding project and the copy ran",
+      "PASS: Assistant opened the selected file in Thonny; F5 ran it in the IDE",
+      "PASS: JavaScript Lab opened hello.js in Geany",
+      "PASS: temporary Classroom session data cleared after logout",
+      "PASS: school setup and verified student project backup/restore",
+      "PASS: snapshot baseline and pre-APT snapshot protected the disposable package change",
+      "PASS: Bodh Rescue repaired GRUB in bios mode",
+      "Installed Bodh desktop opened on boot 3 after about 40 seconds",
+      "PASS: edited student project survived reboot and ran again",
+      "PASS: installed system booted after Bodh Rescue repair in bios mode",
+      "Installed Bodh desktop opened on boot 4 after about 30 seconds",
+      "PASS: edited student project survived reboot and ran again",
+      "PASS: snapshot restore survived reboot, removed the test package, and kept student projects"
+    ]
+  },
+  "fresh_uefi_driver_helper": {
+    "passed": true,
+    "ran_as": "unprivileged live student",
+    "kernel": "6.12.113+deb13-amd64",
+    "graphics": "QEMU bochs DRM with Mesa llvmpipe software rendering",
+    "firewall_active": true,
+    "default_incoming": "deny",
+    "physical_hardware_verified": false
+  },
+  "security": {
+    "pc_changed_packages": 0,
+    "pc_pending_upgrades": 0,
+    "pc_dpkg_audit": "clean",
+    "mac_signed_index_simulation_changes": 0,
+    "t2_signed_metadata": "matches five pinned packages"
+  },
+  "limits": [
+    "Physical school PCs and physical Intel, AMD and NVIDIA GPUs have not been tested.",
+    "No claim that every legacy or latest device is supported.",
+    "No native Apple silicon, Raspberry Pi or 32 bit release.",
+    "Mac remains experimental. Its complete install suite was not rerun in this audit.",
+    "No new performance measurement or guarantee that all vulnerabilities have fixes."
+  ]
+}

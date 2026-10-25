@@ -23,3 +23,13 @@ Choose **Install Bodh OS (simple setup)**. Select language, region, keyboard, yo
 - [Release files and checksums](https://github.com/AdityaJha2012/BodhOS-Downloads/releases/tag/v0.3.0-preview.39)
 
 Preview 0.39. Source remains private. This repository contains downloads, guides and test evidence only. Physical hardware and school deployment remain unverified. The Intel MacBookPro15,2 image is experimental. No native Apple silicon or Raspberry Pi release is available.
+
+## School test update, 26 October 2026
+
+The current verified ISO is unchanged. Fresh signed repository checks found no additional Debian upgrades for PC or the experimental Intel Mac package set. The T2 metadata check also passed.
+
+- [Updated presentation and full study guide](https://adityajha2012.github.io/BodhOS-Downloads/school-security.html)
+- [Drivers and hardware checklist](https://adityajha2012.github.io/BodhOS-Downloads/hardware-support.html)
+- [Fresh audit and VM results](validation/school-2026-10-26/README.md)
+
+All hardware compatibility remains subject to direct testing. No universal legacy or latest GPU support is claimed.

@@ -1,0 +1,126 @@
+Booting BodhOS-PC-0.3.0-preview.39-amd64.iso in bios mode (4 GiB RAM, 2 vCPUs, kvm)
+ssesensendsendksendkesendkeysendkey sendkey rsendkey resendkey retsendkey ret sendkey ret 1sendkey ret 10sendkey ret 100sendkey ret 1000
+(qemu)
+GRUB menu accepted Return and began booting
+Desktop marker found after approximately 30 seconds
+Visible desktop capture 1/2
+Visible desktop capture 2/2
+Desktop was visible in two startup captures
+Welcome to Bodh OS eee
+
+co Welcome to Bodh OS
+
+Get started
+
+‘A focused workspace for learning, creating, and building,
+Use Start or search for apps. Your taskbar keeps favourite and open apps close by.
+
+Open Coding Apps
+Create, save or hand in projects
+Explore oo Settings
+Ask Bodh Assistant
+Browse the web
+
+Open your Projects
+
+Recovery tools
+
+Ready
+
+start @® if
+
+Welcome to Bodh OS Bw
+
+cA
+
+Bodh OS
+
+@  sun250c 1918 BodhOs Student
+Bodh Assistant opened and showed the Thonny quick start
+Bodh Assistant
+
+eee
+
+Welc
+
+Bodh Assistant
+
+[9
+
+Open apps, get coding help, or find saved work.
+
+school A’
+
+for conversation
+
+1
+
+Offline mode. A school administrator can connect an optional Al server.
+
+how do irun Python|
+
+Ask
+
+Listen for 5 seconds
+
+Speak answers
+
+Clear chat
+
+Ready
+
+I
+
+You: how do i run Python
+
+Bodh: Open Thonny from Start or the taskbar, open ~/Projects/hello.py, then press F5. Your result
+
+appears in Thonny Shell.
+
+Coding Apps
+
+Open Projects
+
+Python in Thonny
+
+CinGeany
+
+Terminal in Projects
+
+Re
+
+Check Python syntax.
+
++
+
+Onen a Pvthon file in Thonnv.
+
+cA
+
+Bodh OS
+
+Start
+
+of
+
+Th
+
+©
+
+®
+
+©
+
+© =< 9
+
+ee
+
+© Bodh Assistant
+
+Welcome to Bodh
+
+Bo
+
+a
+
+Sun 25 Oct 19:18 BodhOS Student

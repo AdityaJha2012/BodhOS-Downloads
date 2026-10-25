@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-10-25T19:23:46.456648+00:00",
+  "base_sha256": "86bbad29a03d0676d7b40469785ab599d5794b44981df45f9ee391710b7d0236",
+  "method": "Read-only APT simulation using the exact ISO dpkg status, fresh signed Debian indexes and isolated state. No packages changed.",
+  "pending_changes": [],
+  "scope": "Debian packages only. Pinned T2 community kernel has a separate metadata check. Not proof that every vulnerability is fixed."
+}

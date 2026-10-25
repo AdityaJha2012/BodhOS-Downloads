@@ -1,0 +1,327 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bodh OS full study guide</title><style>body{font:18px/1.7 system-ui,sans-serif;max-width:900px;margin:auto;padding:32px;background:#102030;color:#edf5fa}h1{color:#63ded0}pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere}@media print{body{background:white;color:black;font-size:11pt;padding:0}}</style><h1>Bodh OS study guide</h1><p>Read sections 1 to 8 first. Press Ctrl+P to print.</p><pre>BODH OS: YOUR FULL PROJECT STUDY GUIDE
+
+Read sections 1 to 8 first. Practise the short demonstration in section 18.
+Use the remaining sections as your reference when a teacher asks for detail.
+Check the running version in About or the USB verification file. New builds
+need their own test results before they can be described as verified.
+
+1. WHAT AN OPERATING SYSTEM DOES
+
+An operating system connects applications with computer hardware. It manages
+programs, memory, storage, users, devices and networking. A browser should not
+need to know how every storage controller or network card works. The OS and
+its drivers provide those services.
+
+Bodh OS is a school desktop distribution built on Debian Linux. Debian
+provides maintained software packages, including the Linux kernel, drivers,
+system services and APT. XFCE provides the desktop foundation. Bodh adds its
+identity, desktop defaults, selected apps, coding launchers, native school
+tools, student workflows and recovery integration.
+
+Explain your contribution accurately: you are developing and integrating a
+Linux distribution. Linux, Debian, XFCE and the included upstream applications
+have their own developers. Bodh brings these parts together for school use.
+
+2. THE PARTS INSIDE BODH
+
+The Linux kernel manages hardware, processes and memory. A process is a
+running program. A driver lets the kernel communicate with a device.
+
+systemd starts and manages services. NetworkManager is a background service
+for network connections. LightDM provides the login screen. XFCE provides
+the desktop, menus and panels. XFWM manages application windows and optional
+compositing. GTK is the toolkit used by Bodh&#39;s native graphical tools.
+
+An application such as Thonny runs above these services. Opening an app
+starts a process. Closing a window usually ends that app, while essential
+system services continue running.
+
+3. CPU ARCHITECTURE AND THE 32 BIT CONFUSION
+
+x86_64 and amd64 name the same 64 bit PC architecture. It works on suitable
+Intel and AMD processors. The name amd64 does not mean AMD hardware only.
+
+i386 and i686 refer to the 32 bit PC family. ARM64 is a different processor
+architecture. A shared bit count does not make different architectures
+compatible. An ARM64 device cannot directly boot an ordinary x86_64 ISO.
+
+A PC running 32 bit Windows can still have a 64 bit processor. Your school
+has confirmed 64 bit processors, so the existing PC edition is the relevant
+starting point. A genuinely 32 bit processor needs a separate kernel and
+32 bit applications. A separate 32 bit Bodh edition has not been completed.
+
+4. THE BOOT SEQUENCE
+
+Power on &gt; BIOS or UEFI &gt; USB bootloader &gt; Bodh GRUB menu &gt; Linux kernel
+and initramfs &gt; system services &gt; login and XFCE desktop.
+
+BIOS and UEFI are firmware. They start before the OS. UEFI is the newer
+approach and normally loads a boot program from an EFI system partition.
+GRUB selects and starts the operating system. The initramfs is an early
+startup environment containing tools and drivers needed to find the system.
+
+Ventoy is installed on your USB. It lets you select an ISO copied onto that
+USB. An ISO is a disk image containing boot and system files. Copying an ISO
+onto an ordinary USB without a bootloader does not automatically make it
+bootable. A DMG downloader application is also different from the Bodh ISO.
+
+Secure Boot controls which startup software the firmware trusts. School IT
+must supervise changes to its settings or enrollment of additional keys.
+
+5. LIVE MODE, INSTALLATION AND PERSISTENCE
+
+Live mode starts the OS from the USB before installation. The system is
+read from the media and ordinary session changes use a temporary writable
+layer. Your current live USB has no configured persistence. Files saved in
+the live home folder do not automatically survive reboot.
+
+Installation writes the OS onto a selected drive. Installed personal
+accounts can keep files, settings and applications. Partitioning divides
+a drive into sections. Formatting creates a filesystem and can erase data.
+
+Use Try Bodh OS for the first school hardware test. Installation requires
+a separate approved target and backup plan. Live USB performance can be
+slower than an installed SSD, so do not treat it as an SSD benchmark.
+
+6. FILES, FOLDERS AND FILESYSTEMS
+
+/home contains personal user folders. Projects belong under your own home.
+/etc contains system configuration. /usr contains installed software and
+resources. /var contains changing system data and logs. /boot contains
+startup files. /tmp is for temporary files.
+
+Linux paths use forward slashes and names can be case sensitive. Projects
+and projects can be different folders. A command needs the actual filename
+and path. This is why the Coding Apps launchers are useful for beginners.
+
+ext4 is a common Linux filesystem. FAT is used for EFI boot media. exFAT is
+common on portable drives shared with Windows and macOS. NTFS is common on
+Windows, while APFS is used by modern macOS. Support for reading a drive
+does not mean every partitioning or repair operation is available.
+
+7. USERS, PERMISSIONS AND CLASSROOM MODE
+
+Each personal account has an identity, ownership and permissions. These
+help keep one student&#39;s files separate from another student&#39;s files.
+Administrators still have greater access. Linux permissions include read,
+write and execute. sudo authorizes an administrator command.
+
+On an installed system, a persistent student account keeps its Projects
+folder after reboot. Optional Classroom Mode provides a separate shared
+account with a temporary home that clears after logout. Keep long projects
+in a personal account and save any shared session work separately.
+
+Classroom cleanup is intended for the shared session. It is not a command
+to erase every account. Installed accounts and a temporary live session
+are also different concepts. An account name alone does not give a live
+USB persistent storage.
+
+8. CODING TOOLS AND HOW TO DEMONSTRATE THEM
+
+Python: Thonny is the IDE. Open a starter, edit a print message and press F5.
+C: Geany is the editor and GCC is the compiler. Use Build and Execute.
+C++: Geany uses G++ to compile and run the program.
+HTML and CSS: edit a web page and view it in Firefox.
+JavaScript: the included web tools run examples in the browser. Node.js is
+not bundled as a separate JavaScript server runtime.
+Arduino: the IDE is included. Particular boards can require extra packages.
+SQLite: DB Browser for SQLite provides a graphical database tool.
+MariaDB: the client connects to a separately configured server. A client
+being installed does not mean a database server is running on every PC.
+Shell scripts: use Geany and the terminal.
+
+An IDE helps write, run and debug code. A compiler turns source code into
+an executable. A runtime or interpreter executes supported program code.
+The launcher and matching starter project make these tools easier to find.
+
+9. EVERYDAY APPS AND BODH TOOLS
+
+Firefox ESR provides web browsing. LibreOffice Writer and Calc handle
+documents and spreadsheets. GIMP edits images. VLC plays media. Evince
+opens PDFs. Thunar manages files. Mousepad edits text.
+
+Welcome links to apps, projects and guides. Settings groups appearance,
+accounts, system information and administrator tools. Coding Apps groups
+the included development environments. Student Files helps create projects,
+assignment copies and backups. Study Tools provides a focus timer and save
+checklist. Quick Help provides searchable offline beginner guidance.
+
+The navy and teal identity appears across the desktop, menus, login and
+boot presentation. Standard is the normal appearance. Reduced disables
+compositing. Glass was removed because it could lag or look inconsistent.
+
+10. NETWORKING AND SCHOOL SHARES
+
+A network interface connects the PC to a network. Ethernet is wired. WiFi
+requires a compatible wireless device, driver, firmware and network setup.
+NetworkManager manages connections. DHCP can assign an address. DNS maps
+names such as a website domain to addresses. A gateway leads beyond the
+local network.
+
+A school share is a folder on another machine or server. Its permissions
+and credentials are separate from a local folder. A school proxy, VLAN,
+WiFi login portal or firewall can change what connections work.
+
+Virtual machine networking does not certify a school network. Test the
+actual permitted connection and record the result. Use school approved
+credentials and sites. A printer also needs its own device and driver test.
+
+11. PACKAGES, UPDATES AND SECURITY
+
+APT manages Debian packages and dependencies. A dependency is another
+package required by an application. Synaptic is a graphical package manager.
+apt update refreshes repository indexes. apt upgrade updates installed
+packages. Signed repositories help authenticate package metadata.
+
+Debian security fixes can be backported into an older numbered package.
+An old looking version number alone does not prove a package is unpatched.
+Bodh&#39;s own application changes are not automatically delivered by Debian
+APT. They need a Bodh release or a separately maintained update mechanism.
+
+The image has firewall and malware tools. Incoming connections are denied
+by default. ClamAV definitions need updates. USBGuard blocking requires
+explicit device enrollment and is not enabled in the factory image.
+No security tool guarantees protection against every attack.
+
+Terminal security tools include Nmap, Lynis, TShark, tcpdump, dig and
+OpenSSL. These are Debian packages. Their presence does not turn Bodh into
+Kali Linux. Only use them on systems your teacher authorizes you to test.
+
+12. BACKUP, SNAPSHOTS AND RESCUE
+
+A project backup copies important files to another destination. Bodh&#39;s
+project tools verify copied content with SHA256 and restore into a new
+folder. These backups are not automatically encrypted.
+
+A SHA256 fingerprint can detect whether content differs from a known
+expected fingerprint. It does not make a file harmless or encrypt it.
+
+Timeshift snapshots protect system state. They are different from project
+backups. Protected updates require configured snapshot storage, and a failed
+required snapshot must stop the update. Keep a separate copy of student work.
+
+Rescue offers diagnostics, file backup and administrator repair tools.
+GRUB repair must target the correct installed system and boot mode. A repair
+can change a disk. Show diagnostics at school. Use disposable test disks
+for repair and rollback experiments.
+
+13. ASSISTANT AND VOICE
+
+Bodh Assistant provides local guidance and opens supported tools. Short
+voice commands use PocketSphinx for recognition and eSpeak NG for speech
+when activated. Microphone compatibility and recognition quality require
+real hardware testing. This is different from a full Siri level AI system.
+
+An administrator can optionally configure a school AI server. No large AI
+model is bundled and no school server is preconfigured in the factory image.
+Understand whether a particular operation is local or sends information to
+a configured server before describing its privacy behavior.
+
+14. SCHOOL ADMINISTRATION AND DEPLOYMENT
+
+School setup groups accounts, networking, updates, snapshot storage and
+USB enrollment. Repeatable provisioning uses administrator supplied settings.
+Credentials should be kept separately from shared configuration.
+
+Optional central management uses Ansible over SSH after explicit enrollment.
+It requires a configured administrator machine and client access. It is not
+secret remote control built into every image. The base image does not ship
+factory management keys or enabled test access.
+
+15. DRIVERS AND HARDWARE LIMITS
+
+A driver is code that communicates with a device. Firmware is software
+used by the device itself. Mesa supplies much of the open graphics stack.
+Intel, AMD and NVIDIA cards use different drivers and firmware combinations.
+
+The PC image includes maintained Debian drivers and common firmware.
+Older AMD cards may use Radeon while newer ones use AMDGPU. Intel graphics
+normally uses the kernel graphics drivers and Mesa. Nouveau is the open
+NVIDIA route. Proprietary NVIDIA installation is optional and depends on
+the exact supported card, kernel and package branch.
+
+Adding every vendor driver is not a compatibility guarantee. Some old
+proprietary branches no longer receive security fixes. Very new hardware
+can require software beyond the current stable image. Record the actual
+device model and PCI identifier before deciding which driver is needed.
+
+The age of a PC does not establish compatibility. Its CPU architecture,
+instruction support, RAM, controllers and peripherals matter. Native Apple
+silicon and Raspberry Pi releases are not ready. The Intel T2 Mac image
+remains experimental.
+
+16. HOW THE IMAGE IS BUILT AND TESTED
+
+The build selects a Debian base and package list, copies Bodh files into
+the future system, runs setup hooks, prepares matching kernel and initramfs
+files, creates a compressed live filesystem, and assembles a bootable ISO.
+The installer and guides are included. Checksums identify the exact output.
+
+WSL is the Linux build environment on this Windows machine. A VM is used
+to boot and test the resulting OS. WSL alone does not test the ISO&#39;s kernel,
+firmware boot, graphics or real device drivers.
+
+Source tests check program behavior. Package checks inspect the actual
+image. VM tests check boot, installation and workflows. Physical testing
+checks the real computer. Passing one level does not replace the others.
+
+The recorded release checks cover desktop boot, UEFI installation, coding,
+networking, installed project persistence, Classroom cleanup, backups,
+Rescue and snapshot restoration. Physical school devices still need tests.
+Older performance results have their own version and VM settings. Do not
+present them as a fresh measurement or a guaranteed minimum RAM figure.
+
+17. LANGUAGES, SOURCE FILES AND GITHUB
+
+Python implements the native tools. GTK supplies their interface widgets.
+Bash coordinates Linux build and setup commands. HTML and CSS present
+guides and web content. JavaScript supports web examples and page behavior.
+PowerShell and batch scripts support Windows helpers. JSON and YAML hold
+configuration and automation definitions. The upstream kernel is mainly C.
+
+Begin at D:\EduCoreOS. Read README.md before the implementation.
+live/auto/config selects the Debian Live build options.
+live/config/package-lists/ selects installed packages.
+live/config/includes.chroot/ contains files copied into the installed system.
+Its usr/share/bodhos/ folder contains app.py, desktop.py, assistant.py,
+assistant_ai.py, project_storage.py, school_admin.py, school_management.py,
+security_tools.py and rescue_backend.py.
+scripts/ contains build and packaging tools. tests/ contains checks.
+docs/validation/ contains records supporting particular release claims.
+
+Git records changes as commits. Branches keep work separate. GitHub hosts
+repositories. The private project repository holds development files. The
+public download repository provides curated release files and instructions.
+A release tag, source commit, ISO checksum and test record help connect the
+download to the exact code and checks used to produce it.
+
+18. YOUR PRESENTATION AND PRACTICE
+
+Say this in your own words:
+&quot;Bodh OS is my school desktop project built on Debian Linux and XFCE. I want
+students to find learning and coding tools easily and help schools reuse
+suitable computers. It includes a familiar desktop, coding environments,
+student project tools and recovery support. The current version is a preview.
+I have recorded VM results and I am now testing real school hardware.&quot;
+
+Practise opening Welcome, Coding Apps, Thonny, a C or C++ starter, Settings,
+the file manager and Rescue diagnostics. Edit a Python print statement and
+run it with F5. Explain where its file is saved and whether that session is
+temporary or persistent.
+
+Be able to explain these points without reading:
+What Debian supplies and what Bodh adds.
+Why XFCE was chosen and why Glass was removed.
+Why x86_64 can work on a PC that previously ran 32 bit Windows.
+Why live mode and an installed account have different storage behavior.
+Why a personal account and Classroom session have different purposes.
+How a project backup differs from a system snapshot.
+Which coding tool and runtime match each included language.
+What the Assistant can actually do today.
+What has been tested and what still needs real hardware evidence.
+
+For tomorrow&#39;s test, record the PC model, CPU, RAM, boot mode, image version,
+keyboard, mouse, display, sound, permitted network access and application
+results. Keep exact errors and photos. Say &quot;That part is not verified yet&quot;
+when it is the accurate answer. Reliable evidence makes the project stronger.
+</pre></html>

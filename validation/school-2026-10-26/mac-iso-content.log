@@ -1,0 +1,14 @@
+drwxr-xr-x root/root               314 2026-10-21 17:29 squashfs-root
+drwxrwxr-x root/root               226 2026-10-24 17:14 squashfs-root/usr
+drwxrwxr-x root/root               138 2026-10-24 17:14 squashfs-root/usr/local
+drwxrwxr-x root/root               351 2026-10-24 17:14 squashfs-root/usr/local/bin
+-rwxr-xr-x root/root               505 2026-10-24 17:14 squashfs-root/usr/local/bin/bodh-session
+drwxrwxr-x root/root               102 2026-10-24 17:14 squashfs-root/usr/local/libexec
+-rwxr-xr-x root/root               130 2026-10-24 17:14 squashfs-root/usr/local/libexec/bodh-rescue-helper
+squashfs-root
+squashfs-root/usr
+squashfs-root/usr/share
+squashfs-root/usr/share/backgrounds
+squashfs-root/usr/share/backgrounds/bodhos
+squashfs-root/usr/share/backgrounds/bodhos/bodhos-wallpaper.png
+Packaged native runtime matches this checkout.

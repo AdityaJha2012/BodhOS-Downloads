@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-25T18:56:03.761288+00:00",
+  "base_sha256": "c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5",
+  "method": "Signed configured APT repositories, full upgrade with removals prohibited",
+  "package_count": 1717,
+  "changed_packages": [],
+  "pending_upgrades": 0,
+  "dpkg_audit_passed": true,
+  "scope": "Available repository updates. Not a guarantee that all known vulnerabilities are fixed."
+}

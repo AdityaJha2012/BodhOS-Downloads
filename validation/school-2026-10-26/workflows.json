@@ -1,0 +1,26 @@
+[
+  {
+    "workflow": "build-live.yml",
+    "unique_keys": true,
+    "manual_only": true,
+    "checkout_credentials_not_persisted": true
+  },
+  {
+    "workflow": "iso-delta.yml",
+    "unique_keys": true,
+    "manual_only": true,
+    "checkout_credentials_not_persisted": true
+  },
+  {
+    "workflow": "validate-iso-boot.yml",
+    "unique_keys": true,
+    "manual_only": true,
+    "checkout_credentials_not_persisted": true
+  },
+  {
+    "workflow": "validate-iso-install.yml",
+    "unique_keys": true,
+    "manual_only": true,
+    "checkout_credentials_not_persisted": true
+  }
+]

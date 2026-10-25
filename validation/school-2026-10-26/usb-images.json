@@ -1,0 +1,12 @@
+[
+  {
+    "name": "BodhOS-PC-0.3.0-preview.39-amd64.iso",
+    "sha256": "c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5",
+    "matches_published_manifest": true
+  },
+  {
+    "name": "BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso",
+    "sha256": "86bbad29a03d0676d7b40469785ab599d5794b44981df45f9ee391710b7d0236",
+    "matches_published_manifest": true
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "digest": "sha256:a8bb64d97237eaa015e27e96e4f7f7e602de2fb4daf8b727ec08326a12d25a4a",
+    "name": "BodhOS-0.3.0-preview.39-Guides.zip",
+    "size": 34017
+  },
+  {
+    "digest": "sha256:a9796a488d3861a16c93f0b723d2f04fefba1fd4c4384bb01ee24c79344cbaaa",
+    "name": "BodhOS-Downloader-Apple-silicon-0.3.0-preview.39.dmg",
+    "size": 67027
+  },
+  {
+    "digest": "sha256:8853bf81a359af7c867528470f80207b2696f1a23efd2e09f7827ccc38fd8e52",
+    "name": "BodhOS-Downloader-Intel-0.3.0-preview.39.dmg",
+    "size": 67000
+  },
+  {
+    "digest": "sha256:4d9f3a82a682ef04ab14cc8824419cc339dc42cf3f044fa083d2fb64d379bb35",
+    "name": "BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso.part01",
+    "size": 1610612736
+  },
+  {
+    "digest": "sha256:44c2499dc429897bd597c833af94bc03899bf9feecdc15c1dc64c78ae81e8f98",
+    "name": "BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso.part02",
+    "size": 1517486080
+  },
+  {
+    "digest": "sha256:7634fb3fe5c5cf61bddf2ea57dfb2e9b21091e2eefcfde3a3074769e79939ac6",
+    "name": "BodhOS-PC-0.3.0-preview.39-amd64.iso.part01",
+    "size": 1610612736
+  },
+  {
+    "digest": "sha256:66593493a5428f6ac19e732c6c1802bb94de24dd9c723c61871773003f8fdc07",
+    "name": "BodhOS-PC-0.3.0-preview.39-amd64.iso.part02",
+    "size": 1027997696
+  },
+  {
+    "digest": "sha256:ac667294a304d733d2faacc4900d21a3ce8142572e83ecee5d9fcd9a61ae7725",
+    "name": "Download-BodhOS-PC.cmd",
+    "size": 4710
+  },
+  {
+    "digest": "sha256:e069b16c990578b4a4591e23670c324605453ba5dc39227d646c24080b796b64",
+    "name": "SHA256SUMS",
+    "size": 1318
+  }
+]

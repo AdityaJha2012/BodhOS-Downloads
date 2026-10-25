@@ -32,3 +32,13 @@ The MacBookPro15,2 image remains experimental. Physical hardware, dual boot and 
 The final PC image reached its live desktop in a fresh Windows VirtualBox VM and passed actual firewall checks. The simple interactive installer completed on the preceding candidate, which reached the installed desktop with its ISO ejected. That candidate exposed the firewall line ending bug and was withheld. Both final images were rebuilt after the correction. The full final installed suite ran in QEMU UEFI. Two CPUs with x2APIC remained problematic on this Windows host. Follow the installation guide for the tested one CPU, xAPIC and I/O APIC configuration.
 
 Earlier test failures and unverified areas are recorded in [the test results](https://github.com/AdityaJha2012/BodhOS-Downloads/tree/main/validation/preview39). Final complete BIOS and Mac installation suites were not rerun on this media. Physical hardware support is not established by these VM checks.
+
+## School audit, 26 October 2026
+
+The verified Preview 0.39 ISO bytes and checksums are unchanged. Both package sets have no additional Debian upgrades available at the recorded signed repository check. The separate pinned T2 metadata also matches its authenticated repository. This is not a claim that every vulnerability is fixed.
+
+Fresh PC BIOS and UEFI live boots passed. The final PC BIOS four boot installation suite passed student persistence, networking, coding, Classroom cleanup, quotas, backups, Rescue GRUB repair and real snapshot restore retaining projects. A fresh UEFI live check confirmed active incoming deny firewall rules and the read only hardware helper running as the student. These are VM results, not physical driver certification.
+
+The current kernel, Mesa and firmware match configured Debian candidates. Proprietary NVIDIA remains optional. Universal support for twenty year old or newly released hardware is not claimed. See [the driver guide](https://adityajha2012.github.io/BodhOS-Downloads/hardware-support.html).
+
+The updated [presentation and school test pack](https://adityajha2012.github.io/BodhOS-Downloads/school-security.html) include the full study guide. [Fresh evidence](https://github.com/AdityaJha2012/BodhOS-Downloads/tree/main/validation/school-2026-10-26) records the scope. Mac full installs, physical GPUs, school peripherals, Secure Boot and school deployment remain unverified.
