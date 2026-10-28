@@ -1,0 +1,51 @@
+BODH OS 0.3.0 DESKTOP AND LOGIN UPDATE
+28 October 2026
+
+CURRENT IMAGE
+BodhOS-PC-0.3.0-desktop3-amd64.iso
+Bytes: 3122200576
+SHA256: 2cb9c8d99a926ed0848f02a00677a9a94f738e01c0c2e6ce334a62b5a335c57a
+Image runtime source: c002aaa1f2b1a72600089844491338159e2b0229
+
+CURRENT IMAGE CHECKS
+BIOS and UEFI live desktop boots, Welcome and Assistant startup passed.
+Both internal media manifests verified 948 files each. Factory permissions,
+package provenance and absence of test accounts and enrollment state passed.
+Source tests: 273 run, 272 passed, one existing skip. 331 packaged files passed.
+Windows download helper: automatic, existing verified ISO, empty output,
+incorrect existing output, interrupted download resume and corrupt part passed.
+Both split parts were read back in order and reproduced the complete ISO hash.
+
+LOGIN CHECKS
+Actual LightDM in BIOS and UEFI installed QA overlays displayed the new shared
+Spectrum background, blue and violet theme and matching book icon. An incorrect
+password was rejected. Correct private QA credentials opened the desktop.
+Only greeter configuration, theme and logo were copied into those installed
+overlays. This is an affected feature check, not a fresh full install of this ISO.
+
+EXISTING FUNCTIONAL COVERAGE
+The immediately preceding desktop2 ISO passed fresh BIOS and UEFI installations,
+four installed boots per mode and fifteen recorded integration checks each.
+These covered coding, saved projects, network access, Classroom cleanup,
+school accounts, quotas, backup and restore, Assistant opening Thonny and
+running Python, JavaScript in Geany, GRUB repair and snapshot rollback keeping
+student work. Its exact hash and results remain in validation/desktop-refinement.
+The current runtime differs from that verified runtime only in the greeter
+configuration, theme and logo. Build metadata identifies the new commit.
+The full installation and rollback suite was not repeated for this visual change.
+
+WHAT CHANGED
+Auto follows wallpaper brightness. Scheduled follows configured times.
+The taskbar groups running apps. Coding shortcuts are on the desktop.
+Twelve still wallpapers and faster appearance changes remain included.
+Optional touchpad gestures require supported hardware and explicit enablement.
+The shared sign in screen now has Spectrum artwork and blue and violet controls.
+User files, custom desktop preferences and account permissions are preserved.
+
+LIMITS
+No new idle RAM benchmark was taken for this image. Earlier measurements belong
+to their named images and are retained as historical records.
+Physical touchpads, peripherals and universal hardware compatibility are not
+certified by VM checks. Glass is removed. Production Bodh OTA is not enabled.
+Parental, Server and experimental Mac images were not updated by this release.
+No cloud account, paid hosting or production endpoint was created.

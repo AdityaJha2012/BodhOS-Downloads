@@ -1,11 +1,11 @@
 BODH OS
-Preview 0.3.0-preview.39
+Version 0.3.0
 Install on a real x86_64 PC without a virtual machine
 
 READ FIRST
 This guide is for an Intel or AMD x86_64 PC. It is not the installation guide
 for an Intel T2 Mac, Apple silicon, Raspberry Pi or an ARM computer.
-This is a development preview. Physical hardware compatibility is unverified.
+Wider physical hardware compatibility is unverified. Test your actual machine.
 Use a spare computer or a separate empty drive for your first installation.
 You do not need to install Windows or use Boot Camp to boot this PC image.
 

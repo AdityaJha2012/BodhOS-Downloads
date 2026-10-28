@@ -1,0 +1,58 @@
+[
+  {
+    "label": "desktop",
+    "width": 1280,
+    "layout": 1265,
+    "scroll": 1265,
+    "title": "Download Bodh OS 0.3.0",
+    "links": [
+      "index.html",
+      "features.html",
+      "installation.html",
+      "install-on-pc.html",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0/Download-BodhOS-PC.cmd",
+      "installation.html",
+      "install-on-pc.html",
+      "features.html",
+      "school-security.html",
+      "validation/release030/RESULTS.txt",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0/BodhOS-PC-0.3.0-amd64.iso.part01",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0/BodhOS-PC-0.3.0-amd64.iso.part02",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0/BodhOS-0.3.0-Guides.zip",
+      "mac-downloader.html",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0/SHA256SUMS",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/tag/v0.3.0",
+      "security-updates.html",
+      "recovery.html",
+      "mac-support.html"
+    ]
+  },
+  {
+    "label": "mobile",
+    "width": 430,
+    "layout": 430,
+    "scroll": 430,
+    "title": "Download Bodh OS 0.3.0",
+    "links": [
+      "index.html",
+      "features.html",
+      "installation.html",
+      "install-on-pc.html",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0/Download-BodhOS-PC.cmd",
+      "installation.html",
+      "install-on-pc.html",
+      "features.html",
+      "school-security.html",
+      "validation/release030/RESULTS.txt",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0/BodhOS-PC-0.3.0-amd64.iso.part01",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0/BodhOS-PC-0.3.0-amd64.iso.part02",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0/BodhOS-0.3.0-Guides.zip",
+      "mac-downloader.html",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/download/v0.3.0/SHA256SUMS",
+      "https://github.com/AdityaJha2012/BodhOS-Downloads/releases/tag/v0.3.0",
+      "security-updates.html",
+      "recovery.html",
+      "mac-support.html"
+    ]
+  }
+]

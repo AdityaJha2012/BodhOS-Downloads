@@ -1,0 +1,16 @@
+{
+  "iso_sha256": "b3979abaf37e2cd5556b62f1509eb04d40160dfb9c65a22484e81a83b43ac6f7",
+  "requested_ram_mib": 4096,
+  "mode": "reduced",
+  "firmware": "uefi",
+  "accelerator": "kvm",
+  "guest_vcpus": 2,
+  "video": "std VGA, GTK X11, GL disabled",
+  "network": "QEMU user NAT, e1000",
+  "host_kernel": "6.18.54.1-microsoft-standard-WSL2",
+  "host_cpus": 14,
+  "qemu": "QEMU emulator version 10.2.1 (Debian 1:10.2.1+ds-1ubuntu3.2)",
+  "harness_commit": "unknown",
+  "installation_origin": "Independent disk copies of one exact pristine UEFI installation, saved before first boot. No management guest agent added.",
+  "instrumentation": "Onboarding dismissed, terminal and measurement helper present. Default guest services retained. Three measured installed boots; third boot includes five Settings openings and 300 seconds of idle sampling."
+}

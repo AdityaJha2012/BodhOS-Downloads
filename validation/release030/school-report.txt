@@ -1,0 +1,15 @@
+USER REPORTED SCHOOL HARDWARE TEST
+Reported by Aditya Jha on 27 October 2026.
+
+Regular Bodh OS was used on a school computer described as an AMD Ryzen 3
+with a 64-bit processor and 4 GB RAM. The exact PC model, processor model,
+RAM generation, ISO checksum and installed/live mode were not recorded.
+The reported DDR3 description is unconfirmed.
+
+The user reports using everything on the OS, smooth operation and no bugs
+observed. This is a broad user report rather than an independently captured
+per-feature test log. No measured idle memory or timing figures were supplied.
+
+This is encouraging field feedback for regular Bodh OS. It does not verify
+the separate Parental and Server editions, future MySQL changes, all hardware,
+or the absence of bugs. Retest affected functions in each new image.

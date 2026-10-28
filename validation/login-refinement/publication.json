@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-28",
+  "iso": "BodhOS-PC-0.3.0-desktop3-amd64.iso",
+  "sha256": "2cb9c8d99a926ed0848f02a00677a9a94f738e01c0c2e6ce334a62b5a335c57a",
+  "checked_uploaded_assets": [
+    "BodhOS-PC-0.3.0-desktop3-amd64.iso.part01",
+    "BodhOS-PC-0.3.0-desktop3-amd64.iso.part02",
+    "Download-BodhOS-PC.cmd",
+    "BodhOS-0.3.0-Guides.zip",
+    "SHA256SUMS",
+    "ISO-SHA256SUMS",
+    "release-files.json",
+    "TEST-RESULTS.txt",
+    "goffy.pptx"
+  ],
+  "uploaded_sizes_and_github_digests_match": true,
+  "windows_full_join_and_virtualbox_recognition": true,
+  "private_companion_assets_published": false
+}

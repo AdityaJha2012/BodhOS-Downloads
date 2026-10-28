@@ -1,0 +1,59 @@
+{
+  "version": "0.3.0",
+  "edition": "pc",
+  "runtime_source": "f388e484e1f8ad1760f26c42f1e2b74da6c651d0",
+  "sha256": "6ed0d004ec27ed904f83eded2f45b284d1129e738353433471f108ec667693ca",
+  "bytes": 3122200576,
+  "permissions": "root-owned 0755 critical directories and executables",
+  "no_test_state": true,
+  "date": "2026-10-28",
+  "iso": "BodhOS-PC-0.3.0-desktop2-amd64.iso",
+  "source_branch": "work/boot-refresh",
+  "qemu": "KVM, 4096 MiB, 2 virtual CPUs, emulated standard VGA, no 3D",
+  "installation_method": "Exact ISO text installer extracted and booted with private QA preseed on disposable disks. Graphical installer clicks were not manually tested.",
+  "tests": {
+    "bios": {
+      "result": "PASS",
+      "checks": [
+        "PASS: edited student project survived reboot and ran again",
+        "PASS: installed system resolved and reached the Debian mirror over HTTPS",
+        "PASS: school accounts, project backup/restore, and enforced storage quota",
+        "PASS: Coding Apps opened and the language tools are installed",
+        "PASS: Rescue backed up a sample coding project and the copy ran",
+        "PASS: Assistant opened the selected file in Thonny; F5 ran it in the IDE",
+        "PASS: JavaScript Lab opened hello.js in Geany",
+        "PASS: temporary Classroom session data cleared after logout",
+        "PASS: school setup and verified student project backup/restore",
+        "PASS: snapshot baseline and pre-APT snapshot protected the disposable package change",
+        "PASS: Bodh Rescue repaired GRUB in bios mode",
+        "PASS: edited student project survived reboot and ran again",
+        "PASS: installed system booted after Bodh Rescue repair in bios mode",
+        "PASS: edited student project survived reboot and ran again",
+        "PASS: snapshot restore survived reboot, removed the test package, and kept student projects"
+      ]
+    },
+    "uefi": {
+      "result": "PASS",
+      "checks": [
+        "PASS: edited student project survived reboot and ran again",
+        "PASS: installed system resolved and reached the Debian mirror over HTTPS",
+        "PASS: school accounts, project backup/restore, and enforced storage quota",
+        "PASS: Coding Apps opened and the language tools are installed",
+        "PASS: Rescue backed up a sample coding project and the copy ran",
+        "PASS: Assistant opened the selected file in Thonny; F5 ran it in the IDE",
+        "PASS: JavaScript Lab opened hello.js in Geany",
+        "PASS: temporary Classroom session data cleared after logout",
+        "PASS: school setup and verified student project backup/restore",
+        "PASS: snapshot baseline and pre-APT snapshot protected the disposable package change",
+        "PASS: Bodh Rescue repaired GRUB in uefi mode",
+        "PASS: edited student project survived reboot and ran again",
+        "PASS: installed system booted after Bodh Rescue repair in uefi mode",
+        "PASS: edited student project survived reboot and ran again",
+        "PASS: snapshot restore survived reboot, removed the test package, and kept student projects"
+      ]
+    }
+  },
+  "physical_touchpad_verified": false,
+  "ota_enabled": false,
+  "parental_server_isos_changed": false
+}

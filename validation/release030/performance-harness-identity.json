@@ -1,0 +1,6 @@
+{
+  "base_harness_sha256": "b3b8889b6d543b785c226bfc5694cc868454902e9889bdcfca1a9508e2310dee",
+  "derived_harness_sha256": "a324070e42b200a37a27981b1d72a91103d0d33687fd0fca1da789b20108c653",
+  "scope": "Measurement and boot loops unchanged. First fresh installation saved while powered off before first boot. Each RAM/effects case uses an independent copy. Test credentials remain local in a root-only directory.",
+  "base_commit": "61ea3d9cc6eeb1e07226de0aecdfe96455e9b529"
+}

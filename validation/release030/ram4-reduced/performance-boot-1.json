@@ -1,0 +1,11 @@
+{
+  "kernel": "6.12.113+deb13-amd64",
+  "machine": "x86_64",
+  "mode": "reduced",
+  "boot": 1,
+  "boot_id": "93a8ac5c-4766-4a89-9c21-3f00c0932d43",
+  "version": "0.3.0",
+  "compositing": false,
+  "cpu_count": 2,
+  "systemd_boot": "Startup finished in 3.162s (kernel) + 5.342s (userspace) = 8.504s \ngraphical.target reached after 5.181s in userspace."
+}

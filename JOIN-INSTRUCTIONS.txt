@@ -1,23 +1,36 @@
-Bodh OS Preview 0.39
+BODH OS 0.3.0: PREPARE THE PC ISO
+
+Download both PC parts and this Guides ZIP. Extract the ZIP beside both parts.
+Neither part can boot by itself. Source code downloads are not the OS.
 
 WINDOWS
-Open Download-BodhOS-PC.cmd in a new empty folder. It fetches and joins both parts and verifies the ISO. Wait for SUCCESS.
+Open Join PC ISO.cmd. Wait for SUCCESS - VERIFIED ISO READY.
+The helper checks both parts, joins them and checks the complete ISO.
+Or use Download-BodhOS-PC.cmd in a new empty folder for automatic downloading.
+Keep 8 GB free. Existing mismatched files are preserved.
 
-If both parts are already downloaded, keep them beside Join PC ISO.cmd and open that helper.
+MACOS OR LINUX
+Open Terminal in the folder containing both parts and ISO-SHA256SUMS.
+Use a new folder without an existing output ISO. Run:
 
-MACOS OR LINUX ONLY
-Use a new folder with no existing ISO. These are not Windows PowerShell commands.
+set -C
+cat BodhOS-PC-0.3.0-desktop3-amd64.iso.part01 BodhOS-PC-0.3.0-desktop3-amd64.iso.part02 > BodhOS-PC-0.3.0-desktop3-amd64.iso
+shasum -a 256 -c ISO-SHA256SUMS
 
-pc
-cat BodhOS-PC-0.3.0-preview.39-amd64.iso.part01 BodhOS-PC-0.3.0-preview.39-amd64.iso.part02 > BodhOS-PC-0.3.0-preview.39-amd64.iso
-shasum -a 256 BodhOS-PC-0.3.0-preview.39-amd64.iso
-Expected SHA256: c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5
+On Linux, sha256sum -c ISO-SHA256SUMS can replace the last command.
+All three entries must say OK. Stop if any check fails. Do not use a partial
+or mismatched image. set -C prevents overwriting an existing output file.
 
-macbookpro15-2
-cat BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso.part01 BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso.part02 > BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso
-shasum -a 256 BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso
-Expected SHA256: 86bbad29a03d0676d7b40469785ab599d5794b44981df45f9ee391710b7d0236
+Complete ISO SHA256:
+2cb9c8d99a926ed0848f02a00677a9a94f738e01c0c2e6ce334a62b5a335c57a
 
-Linux can use sha256sum instead of shasum -a 256. A mismatched file must not be used.
+USE THE ISO
+For a new VM, follow installation.html. Choose Debian 64 bit and skip unattended
+installation. On the previously tested Windows VirtualBox host use 1 CPU,
+x2APIC off, I/O APIC on, VMSVGA and 3D off. Keep firmware unchanged after setup.
+For a real x86_64 PC, read BodhOS-Install-on-PC.txt first and back up its files.
+Booting a live desktop does not install the OS or keep work after shutdown.
+Choose Install Bodh OS (simple setup) and review the target before disk writes.
 
-Use Install Bodh OS (simple setup). Connect to the network after installation. Disk changes still require confirmation.
+This regular PC release does not add native Apple silicon or Raspberry Pi
+support. The older experimental Intel Mac image is a separate archived build.

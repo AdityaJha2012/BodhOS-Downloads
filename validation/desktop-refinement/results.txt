@@ -1,0 +1,62 @@
+BODH DESKTOP REFINEMENT CHECKS
+28 October 2026
+
+Source checks: 273 unit tests run, 272 passed and one existing skip.
+Packaged source validation: 328 files passed.
+
+Native XFCE and GTK checks passed in a disposable Debian root with Xvfb.
+All twelve wallpapers decode and produce readable accents. Dark wallpapers use
+Dark at noon. Bright wallpapers use Light. XFCE wallpaper changes are retained.
+The taskbar uses grouped app icons and desktop shortcuts are executable.
+Desktop labels remain readable. Existing projects, user CSS and unrelated pins
+are retained. Standard and Reduced preserve the selected appearance. The two
+effects CLI changes together took 0.56 seconds in this native check.
+Personalize and Touchpad Gestures fit the available 800 by 600 desktop area
+and support keyboard focus. Without a touchpad, no gesture client starts.
+
+A disposable installed VM passed the actual user-manager timer checks.
+Scheduled crossed a real clock boundary. Auto followed Spectrum to Dark and
+Prism to Light without replacing either XFCE wallpaper. A manual override
+stopped the timer. This test injected runtime into a copy of an earlier
+installed baseline with its matching kernel. It is not a fresh ISO test.
+
+The actual GRUB renderer passed BIOS and UEFI menu layout checks in a small
+private boot fixture. All five advanced entries are visible. The fixture has
+no OS payload. Full image boot and installation results are recorded separately.
+The menu builder also verifies preservation of every Linux and initrd command.
+
+The final factory-repacked PC image passed actual ISO live boots in BIOS and
+UEFI, then fresh installations and four installed boots for each firmware mode.
+Each mode passed fifteen recorded integration checks. These include student
+project persistence, HTTPS networking, school accounts, verified project
+backup/restore, coding tools, native desktop checks, Assistant opening the
+selected Python file in Thonny and running it with F5, JavaScript in Geany,
+Classroom logout cleanup, pre-update snapshots, GRUB repair, and restoration of
+a system snapshot while preserving student projects.
+
+ISO: BodhOS-PC-0.3.0-desktop2-amd64.iso
+Bytes: 3122200576
+SHA256: 6ed0d004ec27ed904f83eded2f45b284d1129e738353433471f108ec667693ca
+Image runtime source: f388e484e1f8ad1760f26c42f1e2b74da6c651d0
+Both internal manifests validated all 948 media files. The image audit verified
+root-owned paths, executable wrappers, package provenance and absent QA state.
+
+Installation used the exact ISO's text installer and private disposable QA
+preseed, 4 GiB and two virtual CPUs with KVM and no 3D acceleration. Graphical
+installer clicks were not manually retested. Read validation.json for results.
+Earlier runs exposed screen-reading failures caused by busy backgrounds and
+the removal of taskbar labels. Visible successful app windows were verified,
+then focused screen reads corrected the test harness without changing the ISO.
+The final BIOS run resumed its retained disposable installed disk with slower
+automated typing after a missed reboot command. Test credentials and raw logs
+remain outside source, handoff files and the release image.
+
+The normal build path now stages the same hash-pinned backend and boot theme.
+Its package staging, shell syntax and source checks passed. A complete build
+from an empty live-build cache was not rerun for this refinement.
+
+These screenshots are native software checks. Physical touchpad recognition,
+gestures, graphics latency and multi-monitor hardware still need real devices.
+No new idle RAM result is claimed for this refinement before image testing.
+OTA remains a separate engineering pilot and hosting research, not an active
+production update service. Private Parental and Server images are unchanged.

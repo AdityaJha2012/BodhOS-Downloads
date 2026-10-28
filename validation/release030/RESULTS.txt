@@ -1,0 +1,72 @@
+BODH OS 0.3.0 REGULAR PC RELEASE
+Validation recorded 27 October 2026.
+
+EXACT IMAGE
+File: BodhOS-PC-0.3.0-amd64.iso
+Bytes: 3099394048
+SHA256: b3979abaf37e2cd5556b62f1509eb04d40160dfb9c65a22484e81a83b43ac6f7
+Runtime source commit: 526ee1987e8594573c4233e350cdae6973b1abda
+
+PASSED
+247 source tests ran, 246 passed and one was skipped.
+288 packaged Python, XML, SVG and launcher validations passed.
+Internal ISO SHA256 and MD5 lists each verified 935 files.
+Critical system directories and launchers are owned by root with 0755 modes.
+No QA account, enrollment, configured server keys or database state is included.
+Both BIOS and UEFI live desktop boots opened Welcome and Assistant.
+Fresh BIOS and UEFI installs each completed the four boot functional suite.
+Saved projects survived reboots. The installed system reached a Debian mirror.
+School setup, locked student account, repeat setup, project backup/restore,
+damaged backup rejection and enforced quota passed.
+Classroom final logout cleared its temporary home and detached processes,
+including a live private database. A subsequent login started cleanly.
+Rescue diagnostics and sample project backup passed. GRUB repair booted again.
+Update protection and Timeshift rollback removed the test package, preserved
+student projects and booted after restoration.
+The final UEFI install ran Node.js, Java, PHP and Go starters as a student,
+plus Python, C, C++, Node.js, Java, PHP, Go and shell database examples.
+Native GTK MySQL Lab executed SQL and fitted an 800 by 600 window.
+Native database tests covered restricted privileges, backup/restore, overwrite
+refusal, corrupt backup rejection, bounded results and saved database restart.
+Remote TLS accepted a trusted certificate and matching hostname, rejected an
+untrusted CA and wrong hostname, and refused missing TLS before authentication.
+Windows cmd, curl and certutil passed six synthetic download failure/resume
+cases and assembled and verified the actual full release ISO.
+The download page passed desktop and 430 px mobile layout checks.
+
+PERFORMANCE
+Each configuration used the exact ISO, a separate installed VM, two vCPUs,
+QEMU KVM, standard VGA without GL and user NAT. A pristine UEFI installation
+was saved while powered off before first boot. Each configuration used an
+independent disk copied from that baseline. No management guest agent was
+added. Functional tests finished before benchmarks. Configurations ran
+serially with the default guest services. The harness identity is included.
+Three installed boots were measured per configuration. The third included
+five Settings openings and 300 seconds idle. Welcome was dismissed first.
+RAM is MemTotal minus MemAvailable. These are VM observations, not a physical
+minimum and not proof of a percentage improvement over another edition.
+Boot records use systemd kernel and userspace time, excluding firmware and
+manual login. Raw JSON records and all five application samples are included.
+
+ram2-standard: 527.00 MiB average RAM, 0.063% CPU, 0.234 s median Settings opening.
+ram2-reduced: 505.55 MiB average RAM, 0.072% CPU, 0.216 s median Settings opening.
+ram4-standard: 614.64 MiB average RAM, 0.067% CPU, 0.248 s median Settings opening.
+ram4-reduced: 600.99 MiB average RAM, 0.085% CPU, 0.218 s median Settings opening.
+
+SECURITY CHECK
+Signed Debian repositories were refreshed on 27 October 2026. Zero additional
+upgrades remained and dpkg audit passed. New dependencies came from Debian.
+This does not claim that every known vulnerability is fixed.
+
+LIMITS
+The reported Ryzen 3 family school PC with 4 GB RAM worked smoothly according
+to the user. Exact hardware, tested image and per-feature results were not
+recorded. This is feedback, separate from the new image's measured VM tests.
+WiFi, graphics acceleration, microphones, printers, physical installation and
+a wider school rollout still require direct testing. No universal hardware
+support, native Apple silicon or Raspberry Pi image is claimed.
+Remote SQL tests used MariaDB. Oracle MySQL and every authentication plugin
+were not independently tested. SQL backups are not encrypted. Local restore
+accepts verified backups up to 50 MB. AI conversation needs a configured model.
+The older experimental Intel Mac image stays at Preview 0.39.
+The separate Parental and Server handoff kits remain local and private.

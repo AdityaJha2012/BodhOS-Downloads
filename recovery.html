@@ -13,7 +13,7 @@
 <p><strong>Rescue backups</strong> contain copied files on Linux filesystems, or a <code>files.tar</code> archive on portable filesystems. Keep the backup folder intact. An administrator must copy or extract these into a new folder and check the recovered files before putting them back. Rescue does not currently provide a general file restore wizard.</p>
 <p>A mounted school share or USB drive must have enough free space and remain connected. If a copy is interrupted, read the failure log, reconnect or free space, then create a new backup. Keep earlier verified copies.</p>
 <h2>Boot repair</h2>
-<p>This preview repairs x86_64 BIOS and UEFI installations. ARM64 boot repair is disabled because its boot targets need separate implementation and testing.</p>
+<p>This release repairs x86_64 BIOS and UEFI installations. ARM64 boot repair is disabled because its boot targets need separate implementation and testing.</p>
 <p>Boot repair reinstalls GRUB. It does not recover deleted documents or fix every possible disk failure. In Rescue, select the mounted installed root and its correct whole disk. Review the BIOS or UEFI mode and explicit confirmation before authorizing repair. If the root, disk or EFI mount is wrong, stop and correct the selection.</p>
 <p>After successful repair, restart without the ISO. Confirm login and open a saved student project. If repair fails, keep its diagnostic output. Do not format or reinstall over the only copy of student work.</p>
 <h2>Undo a failed update</h2>

@@ -1,0 +1,425 @@
+{
+  "checked_at": "2026-10-27T12:34:09.965012+00:00",
+  "base_sha256": "013d0eb2ead8f75a63f64d5ac9e4ea93c76c2fb3838de4ad9cf8dc99d4306f93",
+  "method": "Signed configured APT repositories, full upgrade with removals prohibited",
+  "package_count": 1790,
+  "changed_packages": [
+    {
+      "package": "default-jdk-headless",
+      "before": null,
+      "after": [
+        "2:1.21-76",
+        "java-common",
+        "0.76"
+      ]
+    },
+    {
+      "package": "golang-1.24-go",
+      "before": null,
+      "after": [
+        "1.24.4-1",
+        "golang-1.24",
+        "1.24.4-1"
+      ]
+    },
+    {
+      "package": "golang-1.24-src",
+      "before": null,
+      "after": [
+        "1.24.4-1",
+        "golang-1.24",
+        "1.24.4-1"
+      ]
+    },
+    {
+      "package": "golang-filippo-edwards25519-dev",
+      "before": null,
+      "after": [
+        "1.0.0~rc1+git20210721-0.1",
+        "golang-filippo-edwards25519",
+        "1.0.0~rc1+git20210721-0.1"
+      ]
+    },
+    {
+      "package": "golang-github-go-sql-driver-mysql-dev",
+      "before": null,
+      "after": [
+        "1.9.0-1",
+        "golang-github-go-sql-driver-mysql",
+        "1.9.0-1"
+      ]
+    },
+    {
+      "package": "golang-go:amd64",
+      "before": null,
+      "after": [
+        "2:1.24~2",
+        "golang-defaults",
+        "2:1.24~2"
+      ]
+    },
+    {
+      "package": "golang-src",
+      "before": null,
+      "after": [
+        "2:1.24~2",
+        "golang-defaults",
+        "2:1.24~2"
+      ]
+    },
+    {
+      "package": "libjs-inherits",
+      "before": null,
+      "after": [
+        "2.0.4-6",
+        "node-inherits",
+        "2.0.4-6"
+      ]
+    },
+    {
+      "package": "libmariadb-dev",
+      "before": null,
+      "after": [
+        "1:11.8.6-0+deb13u1",
+        "mariadb",
+        "1:11.8.6-0+deb13u1"
+      ]
+    },
+    {
+      "package": "libmariadb-java",
+      "before": null,
+      "after": [
+        "2.7.6-1",
+        "mariadb-connector-java",
+        "2.7.6-1"
+      ]
+    },
+    {
+      "package": "libnode115:amd64",
+      "before": null,
+      "after": [
+        "20.19.2+dfsg-1+deb13u3",
+        "nodejs",
+        "20.19.2+dfsg-1+deb13u3"
+      ]
+    },
+    {
+      "package": "libssl-dev:amd64",
+      "before": null,
+      "after": [
+        "3.5.7-1~deb13u3",
+        "openssl",
+        "3.5.7-1~deb13u3"
+      ]
+    },
+    {
+      "package": "liburing2:amd64",
+      "before": null,
+      "after": [
+        "2.9-1",
+        "liburing",
+        "2.9-1"
+      ]
+    },
+    {
+      "package": "mariadb-server-core",
+      "before": null,
+      "after": [
+        "1:11.8.6-0+deb13u1",
+        "mariadb",
+        "1:11.8.6-0+deb13u1"
+      ]
+    },
+    {
+      "package": "node-acorn",
+      "before": null,
+      "after": [
+        "8.8.1+ds+~cs25.17.7-2",
+        "acorn",
+        "8.8.1+ds+~cs25.17.7-2"
+      ]
+    },
+    {
+      "package": "node-balanced-match",
+      "before": null,
+      "after": [
+        "2.0.0-1",
+        "node-balanced-match",
+        "2.0.0-1"
+      ]
+    },
+    {
+      "package": "node-bignumber",
+      "before": null,
+      "after": [
+        "9.1.1-1",
+        "bignumber.js",
+        "9.1.1-1"
+      ]
+    },
+    {
+      "package": "node-brace-expansion",
+      "before": null,
+      "after": [
+        "2.0.1+~1.1.0-2",
+        "node-brace-expansion",
+        "2.0.1+~1.1.0-2"
+      ]
+    },
+    {
+      "package": "node-cjs-module-lexer",
+      "before": null,
+      "after": [
+        "1.2.3+dfsg-1",
+        "node-cjs-module-lexer",
+        "1.2.3+dfsg-1"
+      ]
+    },
+    {
+      "package": "node-core-util-is",
+      "before": null,
+      "after": [
+        "1.0.3-1",
+        "node-core-util-is",
+        "1.0.3-1"
+      ]
+    },
+    {
+      "package": "node-corepack",
+      "before": null,
+      "after": [
+        "0.24.0-5",
+        "node-corepack",
+        "0.24.0-5"
+      ]
+    },
+    {
+      "package": "node-inherits",
+      "before": null,
+      "after": [
+        "2.0.4-6",
+        "node-inherits",
+        "2.0.4-6"
+      ]
+    },
+    {
+      "package": "node-isarray",
+      "before": null,
+      "after": [
+        "2.0.5-4",
+        "node-isarray",
+        "2.0.5-4"
+      ]
+    },
+    {
+      "package": "node-minimatch",
+      "before": null,
+      "after": [
+        "9.0.3-6",
+        "node-minimatch",
+        "9.0.3-6"
+      ]
+    },
+    {
+      "package": "node-mysql",
+      "before": null,
+      "after": [
+        "2.18.1+~2.3.2-2",
+        "node-mysql",
+        "2.18.1+~2.3.2-2"
+      ]
+    },
+    {
+      "package": "node-process-nextick-args",
+      "before": null,
+      "after": [
+        "2.0.1-3",
+        "node-process-nextick-args",
+        "2.0.1-3"
+      ]
+    },
+    {
+      "package": "node-readable-stream",
+      "before": null,
+      "after": [
+        "3.6.0+~cs3.0.0-4",
+        "node-readable-stream",
+        "3.6.0+~cs3.0.0-4"
+      ]
+    },
+    {
+      "package": "node-safe-buffer",
+      "before": null,
+      "after": [
+        "5.2.1+~cs2.1.2-3",
+        "node-safe-buffer",
+        "5.2.1+~cs2.1.2-3"
+      ]
+    },
+    {
+      "package": "node-string-decoder",
+      "before": null,
+      "after": [
+        "1.3.0-6",
+        "node-string-decoder",
+        "1.3.0-6"
+      ]
+    },
+    {
+      "package": "node-undici",
+      "before": null,
+      "after": [
+        "7.3.0+dfsg1+~cs24.12.11-1",
+        "node-undici",
+        "7.3.0+dfsg1+~cs24.12.11-1"
+      ]
+    },
+    {
+      "package": "node-util-deprecate",
+      "before": null,
+      "after": [
+        "1.0.2-3",
+        "node-util-deprecate",
+        "1.0.2-3"
+      ]
+    },
+    {
+      "package": "node-xtend",
+      "before": null,
+      "after": [
+        "4.0.2-3",
+        "node-xtend",
+        "4.0.2-3"
+      ]
+    },
+    {
+      "package": "nodejs",
+      "before": null,
+      "after": [
+        "20.19.2+dfsg-1+deb13u3",
+        "nodejs",
+        "20.19.2+dfsg-1+deb13u3"
+      ]
+    },
+    {
+      "package": "openjdk-21-jdk-headless:amd64",
+      "before": null,
+      "after": [
+        "21.0.12.1+1-1~deb13u1",
+        "openjdk-21",
+        "21.0.12.1+1-1~deb13u1"
+      ]
+    },
+    {
+      "package": "php-cli",
+      "before": null,
+      "after": [
+        "2:8.4+96",
+        "php-defaults",
+        "96"
+      ]
+    },
+    {
+      "package": "php-common",
+      "before": null,
+      "after": [
+        "2:96",
+        "php-defaults",
+        "96"
+      ]
+    },
+    {
+      "package": "php-mysql",
+      "before": null,
+      "after": [
+        "2:8.4+96",
+        "php-defaults",
+        "96"
+      ]
+    },
+    {
+      "package": "php8.4-cli",
+      "before": null,
+      "after": [
+        "8.4.27-1~deb13u1",
+        "php8.4",
+        "8.4.27-1~deb13u1"
+      ]
+    },
+    {
+      "package": "php8.4-common",
+      "before": null,
+      "after": [
+        "8.4.27-1~deb13u1",
+        "php8.4",
+        "8.4.27-1~deb13u1"
+      ]
+    },
+    {
+      "package": "php8.4-mysql",
+      "before": null,
+      "after": [
+        "8.4.27-1~deb13u1",
+        "php8.4",
+        "8.4.27-1~deb13u1"
+      ]
+    },
+    {
+      "package": "php8.4-opcache",
+      "before": null,
+      "after": [
+        "8.4.27-1~deb13u1",
+        "php8.4",
+        "8.4.27-1~deb13u1"
+      ]
+    },
+    {
+      "package": "php8.4-readline",
+      "before": null,
+      "after": [
+        "8.4.27-1~deb13u1",
+        "php8.4",
+        "8.4.27-1~deb13u1"
+      ]
+    },
+    {
+      "package": "python3-bcrypt",
+      "before": null,
+      "after": [
+        "4.2.0-2.1+b1",
+        "python-bcrypt",
+        "4.2.0-2.1"
+      ]
+    },
+    {
+      "package": "python3-cffi-backend:amd64",
+      "before": null,
+      "after": [
+        "1.17.1-3",
+        "python-cffi",
+        "1.17.1-3"
+      ]
+    },
+    {
+      "package": "python3-cryptography",
+      "before": null,
+      "after": [
+        "43.0.0-3+deb13u1",
+        "python-cryptography",
+        "43.0.0-3+deb13u1"
+      ]
+    },
+    {
+      "package": "python3-pymysql",
+      "before": null,
+      "after": [
+        "1.1.1-2",
+        "python-pymysql",
+        "1.1.1-2"
+      ]
+    }
+  ],
+  "pending_upgrades": 0,
+  "dpkg_audit_passed": true,
+  "scope": "Available repository updates. Not a guarantee that all known vulnerabilities are fixed."
+}

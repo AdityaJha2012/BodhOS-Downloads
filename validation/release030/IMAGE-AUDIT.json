@@ -1,0 +1,9 @@
+{
+  "version": "0.3.0",
+  "edition": "pc",
+  "runtime_source": "526ee1987e8594573c4233e350cdae6973b1abda",
+  "sha256": "b3979abaf37e2cd5556b62f1509eb04d40160dfb9c65a22484e81a83b43ac6f7",
+  "bytes": 3099394048,
+  "permissions": "root-owned 0755 critical directories and executables",
+  "no_test_state": true
+}

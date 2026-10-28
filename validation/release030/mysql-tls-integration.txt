@@ -1,0 +1,2 @@
+PASS: remote server without TLS rejected before account authentication
+PASS: real verified TLS query and negotiated cipher, untrusted CA rejection and hostname mismatch rejection

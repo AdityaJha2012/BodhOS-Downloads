@@ -1,0 +1,25 @@
+{
+  "kernel": "6.12.113+deb13-amd64",
+  "machine": "x86_64",
+  "mode": "reduced",
+  "boot": 3,
+  "boot_id": "5c6d6854-d149-499b-b6df-360260230a0e",
+  "version": "0.3.0",
+  "compositing": false,
+  "cpu_count": 2,
+  "systemd_boot": "Startup finished in 3.290s (kernel) + 3.945s (userspace) = 7.235s \ngraphical.target reached after 3.778s in userspace.",
+  "settings_window_map_seconds": [
+    0.3296102149999953,
+    0.236752500999998,
+    0.21350875200000985,
+    0.21267765500000735,
+    0.21600188499999717
+  ],
+  "ram_total_mib": 1967.63671875,
+  "sample_seconds": 300,
+  "used_memory_definition": "MemTotal minus MemAvailable (not raw free output)",
+  "used_mib_average": 505.5524088541667,
+  "used_mib_min": 504.06640625,
+  "used_mib_max": 506.2421875,
+  "cpu_average_percent": 0.07166308351249104
+}

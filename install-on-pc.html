@@ -1,11 +1,11 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Install Bodh OS on a PC</title><style>body{font:18px/1.6 system-ui,sans-serif;background:#0b1727;color:#edf5fa;max-width:900px;margin:auto;padding:32px 22px}a{color:#55decc}pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere}h1{color:#55decc}</style><h1>Install Bodh OS on a PC</h1><p><a href="START-HERE.html">Downloads and quick start</a> | <a href="BodhOS-Install-on-PC.txt">Plain text copy</a></p><pre>BODH OS
-Preview 0.3.0-preview.39
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Install Bodh OS on a PC</title><link rel="stylesheet" href="styles.css"></head><body><nav><a href="index.html">Download</a><a href="installation.html">VM guide</a></nav><h1>Install Bodh OS on a PC</h1><p><a href="BodhOS-Install-on-PC.txt">Plain text copy</a></p><pre>BODH OS
+Version 0.3.0
 Install on a real x86_64 PC without a virtual machine
 
 READ FIRST
 This guide is for an Intel or AMD x86_64 PC. It is not the installation guide
 for an Intel T2 Mac, Apple silicon, Raspberry Pi or an ARM computer.
-This is a development preview. Physical hardware compatibility is unverified.
+Wider physical hardware compatibility is unverified. Test your actual machine.
 Use a spare computer or a separate empty drive for your first installation.
 You do not need to install Windows or use Boot Camp to boot this PC image.
 
@@ -46,7 +46,7 @@ Do not use UNetbootin. Do not run disk writing commands you do not understand.
 4. BOOT THE USB AND TRY THE DESKTOP
 Plug the USB into the PC and restart it.
 Open its one time boot menu. The key varies by model, often F12, F9 or Esc.
-Use the computer maker&#x27;s instructions if those keys do not work.
+Use the computer maker&#39;s instructions if those keys do not work.
 On a UEFI computer, choose the UEFI entry for the USB when available.
 In the Bodh boot menu choose Try Bodh OS.
 Check the keyboard, pointer, display, sound, wired network and WiFi if present.
@@ -63,11 +63,16 @@ If the live desktop fails, do not install to try to fix it. Record the error.
 If it works, restart into the USB boot menu and choose Install Bodh OS.
 Use the graphical installer entry if it is offered and works on your display.
 Choose your language, keyboard and time zone.
-For Domain name, leave it blank unless school IT supplies one. A website
-domain or online account is not needed. Give each lab PC a distinct hostname.
-Leave the separate root password blank to use the first normal account for
-administrator access through sudo. Create your own account and password.
+For Domain name, leave it blank unless school IT supplies one. A web domain
+or online account is not needed. Use a distinct computer name for each lab PC.
+Leave the separate root password blank to use your first normal account for
+administrator access through sudo. Create that account and your own password.
 No validator test login is provided.
+
+Choose Install Bodh OS for the shorter offline installation.
+It uses the apps already on the media and skips domain, mirror and separate
+root password questions. Connect to your network after the first installed boot.
+Choose Install Bodh OS (advanced) if your school needs custom network setup.
 
 At partitioning, read the drive model and capacity carefully.
 The guided option to use the entire disk erases the selected target disk.
@@ -119,4 +124,4 @@ Debian USB guide: https://www.debian.org/releases/trixie/amd64/ch04s03.en.html
 Debian installer: https://www.debian.org/releases/trixie/amd64/ch06s03.en.html
 Rufus: https://rufus.ie/en/
 MacBookPro15,2 owners must read the separate experimental Mac hardware notes.
-</pre></html>
+</pre></body></html>

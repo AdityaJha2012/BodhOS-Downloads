@@ -1,0 +1,35 @@
+{
+  "version": "0.3.0",
+  "edition": "pc",
+  "runtime_source": "c002aaa1f2b1a72600089844491338159e2b0229",
+  "sha256": "2cb9c8d99a926ed0848f02a00677a9a94f738e01c0c2e6ce334a62b5a335c57a",
+  "bytes": 3122200576,
+  "permissions": "root-owned 0755 critical directories and executables",
+  "no_test_state": true,
+  "date": "2026-10-28",
+  "iso": "BodhOS-PC-0.3.0-desktop3-amd64.iso",
+  "tests": {
+    "bios_live": "PASS",
+    "uefi_live": "PASS",
+    "bios_installed_login": "PASS",
+    "uefi_installed_login": "PASS",
+    "incorrect_password_rejection": "PASS",
+    "correct_password_to_desktop": "PASS",
+    "source_tests": "273 run, 272 passed, one skipped",
+    "packaged_validation": "331 files",
+    "media_manifests": "948 SHA256 and 948 MD5 entries",
+    "windows_download_fixtures": "six passed"
+  },
+  "installed_login_method": "New greeter files copied into disposable overlays of the previously verified installed BIOS and UEFI systems. Actual LightDM authentication and desktop launch checked.",
+  "prior_full_installation": {
+    "iso": "BodhOS-PC-0.3.0-desktop2-amd64.iso",
+    "sha256": "6ed0d004ec27ed904f83eded2f45b284d1129e738353433471f108ec667693ca",
+    "bios": "four boots and fifteen integration checks passed",
+    "uefi": "four boots and fifteen integration checks passed"
+  },
+  "current_full_installation_suite_repeated": false,
+  "new_idle_ram_benchmark": false,
+  "physical_touchpad_verified": false,
+  "ota_enabled": false,
+  "parental_server_isos_changed": false
+}

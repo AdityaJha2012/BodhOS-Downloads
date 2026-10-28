@@ -1,12 +1,9 @@
-c8d1fb4e734c48a1f882985baba2910d359e9add6315df23a8969234653e80a5  BodhOS-PC-0.3.0-preview.39-amd64.iso
-7634fb3fe5c5cf61bddf2ea57dfb2e9b21091e2eefcfde3a3074769e79939ac6  BodhOS-PC-0.3.0-preview.39-amd64.iso.part01
-66593493a5428f6ac19e732c6c1802bb94de24dd9c723c61871773003f8fdc07  BodhOS-PC-0.3.0-preview.39-amd64.iso.part02
-86bbad29a03d0676d7b40469785ab599d5794b44981df45f9ee391710b7d0236  BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso
-4d9f3a82a682ef04ab14cc8824419cc339dc42cf3f044fa083d2fb64d379bb35  BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso.part01
-44c2499dc429897bd597c833af94bc03899bf9feecdc15c1dc64c78ae81e8f98  BodhOS-MacBookPro15-2-0.3.0-preview.39-experimental-amd64.iso.part02
-a9796a488d3861a16c93f0b723d2f04fefba1fd4c4384bb01ee24c79344cbaaa  BodhOS-Downloader-Apple-silicon-0.3.0-preview.39.dmg
-8853bf81a359af7c867528470f80207b2696f1a23efd2e09f7827ccc38fd8e52  BodhOS-Downloader-Intel-0.3.0-preview.39.dmg
-ac667294a304d733d2faacc4900d21a3ce8142572e83ecee5d9fcd9a61ae7725  Download-BodhOS-PC.cmd
-f943838275e7e0319ac069fcf90f4101fb3abfe79b8df7ea60e23fd6ca0e6fa0  Join Mac ISO.cmd
-979692d9fc9312a7781879225e2ca2a991dd079b9e9c37ae3e31f86650889d25  Join PC ISO.cmd
-a8bb64d97237eaa015e27e96e4f7f7e602de2fb4daf8b727ec08326a12d25a4a  BodhOS-0.3.0-preview.39-Guides.zip
+2cb9c8d99a926ed0848f02a00677a9a94f738e01c0c2e6ce334a62b5a335c57a  BodhOS-PC-0.3.0-desktop3-amd64.iso
+1d95a7ab79868534035c36b2b3d7895cb31dd39053f3f40164d705b62436f10b  BodhOS-PC-0.3.0-desktop3-amd64.iso.part01
+2e3c3a8aac6bce5538ed44956934380e43be606518c34f3d29dddb83a208c699  BodhOS-PC-0.3.0-desktop3-amd64.iso.part02
+e3b508595341bf63eca96f08ee669bd3c03fe778497863669d5edf2999348785  Download-BodhOS-PC.cmd
+ddfec8dfb0b779f63a58823082b48bfd01db85684741ec7d1c1635eb3cf79189  Join PC ISO.cmd
+1fb5e458bea74c08447e3787c3dd92520e1f6371477b713b6e58e90feac07486  BodhOS-0.3.0-Guides.zip
+cf8ae57f8cbc608ea368b3f462f0b337643aa7baae9b4592d156b954cb8f3903  release-files.json
+56b03e3fb332fad216347a12dda0d71a08b665e256fdf254cc77cae5da9fbf40  TEST-RESULTS.txt
+e3fce057073342effb4628493a1bbed73ac2c5cb634d6378b803661d04df8aca  goffy.pptx

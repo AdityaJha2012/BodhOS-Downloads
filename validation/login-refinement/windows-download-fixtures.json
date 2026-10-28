@@ -1,0 +1,11 @@
+{
+  "scope": "Real Windows cmd, certutil and curl against a local range-capable HTTP fixture. Synthetic data, not an OS boot test.",
+  "checks": {
+    "automatic": "passed",
+    "valid-existing": "passed",
+    "empty-existing": "passed",
+    "wrong-existing": "passed",
+    "resume": "passed",
+    "corrupt-part": "passed"
+  }
+}

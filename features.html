@@ -1,14 +1,35 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>What Bodh OS contains</title><style>body{font:18px/1.6 system-ui,sans-serif;background:#0b1727;color:#edf5fa;max-width:900px;margin:auto;padding:32px 22px}a{color:#55decc}pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere}h1{color:#55decc}</style><h1>What Bodh OS contains</h1><p><a href="START-HERE.html">Downloads and quick start</a> | <a href="BodhOS-Features.txt">Plain text copy</a></p><pre>BODH OS
-Preview 0.3.0-preview.39
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>What Bodh OS contains</title><link rel="stylesheet" href="styles.css"></head><body><nav><a href="index.html">Download</a><a href="features.html">Features</a><a href="installation.html">VM guide</a><a href="install-on-pc.html">PC guide</a></nav><main><h1>What Bodh OS contains</h1><p><a href="BodhOS-Features.txt">Plain text copy</a></p><p>The latest desktop adds twelve wallpapers, wallpaper based Auto styling, a separate Scheduled mode, clearer taskbar icons and a Spectrum login screen. <a href="Appearance-and-Gestures.txt">Read the appearance and optional touchpad guide</a>.</p><pre>BODH OS
+Version 0.3.0
 Features and included software
 
 WHAT THIS IS
 Bodh OS is a school desktop built on Debian 13 and XFCE for x86_64 PCs.
-It is a development preview. It is not yet certified for school deployment.
+This is the school desktop release. Larger deployments still need a local pilot.
 The separate Intel MacBookPro15,2 image is experimental. It is not macOS.
 Neither image supports Apple silicon or Raspberry Pi.
-This security preview refreshes available signed Debian package updates.
+Signed Debian repositories are checked during image preparation. Read the
+included security report for the check time and available package updates.
 Run bodh-mac-compat for a model report. Identification does not certify drivers.
+
+ACCOUNTS AND FAMILY TOOLS
+Win + R opens Run. Ctrl + Shift + Esc opens Task Manager.
+Accounts and Parental Lock is available from Settings and Welcome.
+Local standard child accounts can have allowed days, hours and daily minutes.
+An administrator can explicitly enroll a computer into a private Bodh server.
+Central identities use OpenLDAP and SSSD over verified TLS.
+The parent website controls child time and Assistant AI permission.
+Managed sessions report time and approximate app names, never screenshots,
+keystrokes, window titles, web history or project content.
+New central accounts get private persistent local homes. Project files are not
+automatically synchronized between computers. Keep project backups separately.
+Assistant account sign in is optional and keeps its session token in memory.
+The server needs a separately configured compatible model for AI conversation.
+The Parental Lock image emphasizes family setup. The Server image adds the
+directory and HTTPS gateway. Neither ships default server credentials or keys.
+Rules protect selected accounts. Disable guest and Classroom access on family
+computers. Local administrators can change or bypass the rules.
+These are development features. Read the matching build&#x27;s test results.
 
 START HERE
 Open Start to find applications. Use Coding Apps to choose a language.
@@ -30,11 +51,19 @@ DESKTOP AND EVERYDAY APPS
 CODING TOOLS
 * Python 3, Thonny IDE, pip and virtual environments.
 * C and C++ with GCC, G++, Make and Geany.
-* HTML, CSS and JavaScript with Geany and Firefox. No Node.js runtime is bundled.
+* HTML, CSS and JavaScript with Geany and Firefox.
+* Node.js, Java with the JDK, PHP and Go with matching Geany launchers.
+  Coding Apps can run their starter programs without extra downloads.
 * Arduino IDE. Extra board packages may require an Internet download.
 * SQLite command line and DB Browser for SQLite.
-* MariaDB client for connecting to an existing database server.
-  A MySQL or MariaDB server is not automatically installed or started.
+* Native MySQL Lab with SQL editing, query results and CSV export.
+* A private MariaDB engine starts only when requested and saves local tables.
+  It listens only on this PC. Stop it when finished to free its RAM.
+* Local database backup and restore with checksums and visible errors.
+* Packaged local database examples for Python, C, C++, Node.js, Java, PHP,
+  Go and shell. Browser and Arduino projects use a separate backend API.
+* Remote MySQL and MariaDB connections with verified TLS and no plaintext
+  fallback in the native client. Other connectors have their own TLS settings.
 * Shell scripting with the terminal and Geany.
 * Git and GitHub CLI. GitHub opens in Firefox. Sign in with your own account.
 * Starter projects in your Projects folder. Coding Apps opens the matching tool.
@@ -46,6 +75,7 @@ STUDENT WORK AND CLASSROOM ACCOUNTS
 * A separate shared Classroom account clears its temporary home after logout.
   Never keep your only copy of a project in that shared account.
 * Project backup and restore includes destination selection and integrity checks.
+  Back up MySQL data separately using MySQL Lab. It is outside Projects.
 * USB storage and file shares are available through the file manager.
   A particular school server, USB device or printer needs its own testing.
 * Administrators can configure workspace limits and storage warnings.
@@ -84,7 +114,7 @@ Proprietary NVIDIA installation is optional and needs separate verification.
 The Intel Mac image adds a pinned T2 kernel for MacBookPro15,2. Physical Mac
 devices and installation remain unverified. Read Mac-hardware-notes.txt first.
 Apple silicon, Raspberry Pi and final custom kernel work are separate milestones.
-No fixed minimum RAM or fresh performance figures are claimed for this preview.
+No fixed minimum RAM is promised. Read this release&#x27;s measured test results.
 Virtual machine results do not prove physical hardware or school readiness.
 
 INSTALL ON A REAL PC
@@ -102,4 +132,4 @@ Never publish passwords, recovery keys or personal student files.
 
 Built on Debian and other free software. Original projects retain their licenses.
 Bodh OS branding does not change Debian package compatibility or attribution.
-</pre></html>
+</pre></main><footer>Bodh OS 0.3.0 · Built on Debian 13 and XFCE · Updated 28 October 2026<br><a href="security-updates.html">Security and test scope</a> · <a href="recovery.html">Recovery</a> · <a href="mac-support.html">Mac compatibility</a></footer></body></html>

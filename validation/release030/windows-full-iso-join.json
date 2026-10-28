@@ -1,0 +1,6 @@
+{
+  "scope": "Real Windows cmd and certutil verified both final parts, assembled the complete ISO and verified the result.",
+  "sha256": "b3979abaf37e2cd5556b62f1509eb04d40160dfb9c65a22484e81a83b43ac6f7",
+  "bytes": 3099394048,
+  "result": "passed"
+}

@@ -1,0 +1,15 @@
+PASS: private local engine, idempotent start, SQL execution, restricted account and visible failure path
+PASS: verified local database backup and restore, overwrite refusal and corrupted backup rejection
+PASS: actual python database connector
+PASS: actual c database connector
+PASS: actual cpp database connector
+PASS: actual javascript database connector
+PASS: actual java database connector
+PASS: actual php database connector
+PASS: actual go database connector
+PASS: actual shell database connector
+PASS: Node.js, Java, PHP and Go starters run without downloads
+PASS: saved database survives engine stop and restart
+PASS: native GTK window starts the engine, runs SQL and displays 42; window (900, 700)
+PASS: native SQL window fits 800 by 600
+PASS: engine stopped after tests; no permanent database service

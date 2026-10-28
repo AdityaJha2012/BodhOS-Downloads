@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bodh OS full study guide</title><style>body{font:18px/1.7 system-ui,sans-serif;max-width:900px;margin:auto;padding:32px;background:#102030;color:#edf5fa}h1{color:#63ded0}pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere}@media print{body{background:white;color:black;font-size:11pt;padding:0}}</style><h1>Bodh OS study guide</h1><p>Read sections 1 to 8 first. Press Ctrl+P to print.</p><pre>BODH OS: YOUR FULL PROJECT STUDY GUIDE
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Study Bodh OS</title><link rel="stylesheet" href="styles.css"></head><body><nav><a href="index.html">Download</a><a href="school-security.html">Presentation</a></nav><h1>Study Bodh OS</h1><p><a href="BodhOS-Study-Guide.txt">Text copy</a></p><pre>BODH OS: YOUR FULL PROJECT STUDY GUIDE
 
 Read sections 1 to 8 first. Practise the short demonstration in section 18.
 Use the remaining sections as your reference when a teacher asks for detail.
@@ -122,12 +122,16 @@ Python: Thonny is the IDE. Open a starter, edit a print message and press F5.
 C: Geany is the editor and GCC is the compiler. Use Build and Execute.
 C++: Geany uses G++ to compile and run the program.
 HTML and CSS: edit a web page and view it in Firefox.
-JavaScript: the included web tools run examples in the browser. Node.js is
-not bundled as a separate JavaScript server runtime.
+JavaScript: web examples run in Firefox. Node.js also runs JavaScript outside
+the browser. Coding Apps can open and run its own Node starter.
+Java: Geany is the editor and the JDK compiles and runs the starter.
+PHP: Geany edits the script and the packaged PHP runtime runs it.
+Go: Geany edits the source and the Go compiler builds and runs it.
 Arduino: the IDE is included. Particular boards can require extra packages.
 SQLite: DB Browser for SQLite provides a graphical database tool.
-MariaDB: the client connects to a separately configured server. A client
-being installed does not mean a database server is running on every PC.
+MySQL Lab: a native SQL editor starts a private local MariaDB server only
+when requested. MariaDB uses the MySQL protocol. It also connects to remote
+servers with verified TLS. No local database daemon runs at every startup.
 Shell scripts: use Geany and the terminal.
 
 An IDE helps write, run and debug code. A compiler turns source code into
@@ -278,6 +282,8 @@ Bash coordinates Linux build and setup commands. HTML and CSS present
 guides and web content. JavaScript supports web examples and page behavior.
 PowerShell and batch scripts support Windows helpers. JSON and YAML hold
 configuration and automation definitions. The upstream kernel is mainly C.
+Student examples also use C, C++, Java, PHP, Go, SQL and Node.js. These are
+included learning environments, not all implementation languages of the OS.
 
 Begin at D:\EduCoreOS. Read README.md before the implementation.
 live/auto/config selects the Debian Live build options.
@@ -286,6 +292,10 @@ live/config/includes.chroot/ contains files copied into the installed system.
 Its usr/share/bodhos/ folder contains app.py, desktop.py, assistant.py,
 assistant_ai.py, project_storage.py, school_admin.py, school_management.py,
 security_tools.py and rescue_backend.py.
+mysql_lab.py manages the private engine, SQL connections and database backups.
+mysql_ui.py builds the native database window. mysql_examples.py runs the
+chosen connector. run_starter.py runs Java, PHP, Go and Node.js starters.
+scripts/generate-mysql-examples.py generates the packaged learning examples.
 scripts/ contains build and packaging tools. tests/ contains checks.
 docs/validation/ contains records supporting particular release claims.
 
@@ -301,7 +311,8 @@ Say this in your own words:
 &quot;Bodh OS is my school desktop project built on Debian Linux and XFCE. I want
 students to find learning and coding tools easily and help schools reuse
 suitable computers. It includes a familiar desktop, coding environments,
-student project tools and recovery support. The current version is a preview.
+student project tools and recovery support. The regular desktop version is
+0.3.0. Separate experimental images retain their own version and test scope.
 I have recorded VM results and I am now testing real school hardware.&quot;
 
 Practise opening Welcome, Coding Apps, Thonny, a C or C++ starter, Settings,
@@ -324,4 +335,76 @@ For tomorrow&#39;s test, record the PC model, CPU, RAM, boot mode, image version
 keyboard, mouse, display, sound, permitted network access and application
 results. Keep exact errors and photos. Say &quot;That part is not verified yet&quot;
 when it is the accurate answer. Reliable evidence makes the project stronger.
-</pre></html>
+
+19. MYSQL LAB AND THE NEW LANGUAGE TOOLS IN 0.3.0
+
+A database stores structured records in tables. SQL is the language used to
+create tables, insert records and ask questions about those records. MySQL is
+a database product and protocol family. Bodh&#39;s local lab uses Debian&#39;s MariaDB
+engine, which supports the MySQL protocol. It is not Oracle MySQL repackaged.
+
+Open MySQL Lab from Start or Coding Apps and choose Start local database.
+The engine runs as your normal account and listens only on this computer.
+Its data and connection files are private to your home. The app account can
+change the bodh_lab database but has no global database administration rights.
+For a first query, enter SELECT 6 * 7 AS answer; and choose Run SQL.
+
+The SQL editor displays up to 500 rows. Changes commit immediately. Use a
+practice database when learning DELETE or DROP. The app can export results
+as CSV and save or load SQL text. A saved SQL script is not a full backup.
+
+Open the examples folder from MySQL Lab. It includes working connectors for
+Python, C, C++, Node.js, Java JDBC, PHP PDO, Go and shell. A connector lets a
+program send SQL requests and read results. Credentials belong in private
+configuration files, never in a public Git repository or a browser page.
+HTML and Arduino should call a separately designed backend API. They should
+not embed a student&#39;s database password. The examples are learning starters,
+not a secure public website or a production multiuser database service.
+
+Java, PHP, Go and Node.js starters also run from Coding Apps without additional
+downloads. Python uses Thonny. C and C++ use Geany and GCC or G++. An editor
+helps write source. A compiler builds programs. A runtime executes supported
+code. A language existing on the system does not mean it runs continuously.
+
+Use MySQL Lab&#39;s database backup action before important changes. It produces
+a SQL dump and a SHA256 sidecar. Restore checks integrity and asks permission
+because it can replace existing tables. This interface accepts local backups
+up to 50 MB. Backups are not encrypted. Copy them to a protected destination.
+Student Files project backups cover Projects. Database files are outside that
+folder, so use the separate SQL backup action for tables.
+
+Personal installed accounts keep database data after stopping the engine or
+rebooting. A live session and the shared Classroom home are temporary. Export
+their work before leaving. The final Classroom logout also stops remaining
+processes belonging to that shared account. Personal accounts are separate.
+
+For a remote server, supply the host, port, database, account and trusted CA.
+MySQL Lab verifies the certificate and hostname and refuses plaintext fallback
+before sending credentials. Other language connectors have their own TLS and
+authentication settings. The packaged Node driver does not support every
+modern MySQL authentication plugin. Do not weaken a real server to fit a demo.
+
+Stop the private engine when finished to release RAM. Closing the window can
+offer to keep it running for your programming project. A compiler or database
+being available on disk does not consume its full runtime memory while idle.
+The Bluetooth tray also starts only when an adapter is detected at login.
+Bluetooth Manager and drivers remain available for later device connection.
+
+20. READING TEST RESULTS HONESTLY
+
+An ISO checksum identifies the exact file tested. A source commit identifies
+the code used. A passing test supports the behavior it checked on that setup.
+It does not prove that every hardware device works or that no bug can exist.
+
+The school feedback reports smooth operation on a Ryzen 3 family x86_64 PC
+with 4 GB RAM. The exact PC model, memory generation and image checksum were
+not supplied. Treat that as user feedback. Use the release records for the
+new ISO&#39;s BIOS and UEFI tests, repeated boots and measured performance.
+
+RAM figures use MemTotal minus MemAvailable inside the guest. Performance
+tests use three measured installed boots per configuration, then five minutes
+idle and five Settings openings on the third boot. Standard and Reduced modes
+are tested separately at 2 GB and 4 GB. Results are VM observations, not a
+universal physical minimum or proof of a percentage reduction from an older
+image tested under different conditions.
+</pre></body></html>

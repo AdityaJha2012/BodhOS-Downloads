@@ -1,0 +1,16 @@
+{
+  "label": "baseline40-2gb",
+  "mode": "standard",
+  "guest_ram_mib": 1967.63671875,
+  "vcpus": 2,
+  "idle_seconds": 300,
+  "samples": 61,
+  "ram_mib": {
+    "median": 529.15,
+    "minimum": 528.78,
+    "maximum": 575.23
+  },
+  "cpu_percent_mean": 0.262,
+  "memory_method": "MemTotal minus MemAvailable from guest /proc/meminfo",
+  "scope": "one installed VM boot, five minutes idle after Welcome closed, 30 seconds settle"
+}

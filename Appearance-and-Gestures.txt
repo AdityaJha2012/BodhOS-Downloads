@@ -1,0 +1,60 @@
+BODH PERSONAL APPEARANCE
+
+Open Personalize Bodh from Start, Settings or Welcome.
+
+Auto from wallpaper matches the taskbar, menus and windows to the brightness of
+your actual wallpaper. Dark images use Dark even in the daytime. Bright images
+use Light. Changes made in Bodh's picker apply immediately. Changes made through
+XFCE Desktop Settings are detected within ten seconds without replacing them.
+
+Light and Dark are manual overrides. Scheduled is a separate clock based option
+with independent daytime and evening wallpapers and the local times you choose.
+Your earlier saved times and wallpaper choices remain available there. The old
+Auto setting now follows the wallpaper as requested. No animated wallpaper or
+permanent Python theme process is added.
+
+From wallpaper chooses an accent from a small image sample when a wallpaper
+changes. Colours are adjusted for readable selection and keyboard focus.
+My colour keeps presets and a custom colour available. Your saved preference
+remains separate from the adjusted colour used by a Light or Dark theme.
+
+Choose Apply to save. Your projects and taskbar arrangement are kept. If a
+desktop change fails, Bodh attempts to restore the preceding appearance and
+shows the error. Open Settings and use Reset Bodh OS desktop only when you
+deliberately want its original layout. The reset backs up existing settings.
+
+Standard uses XFWM compositing and short GTK transitions. Reduced disables
+compositing and theme transitions. Glass remains removed.
+
+Auto and Scheduled use bodh-appearance.timer and a short bodh-appearance.service in your
+graphical user session. Manual appearance stops the timer. Nothing is enabled
+as a permanent background Python process. Logs for desktop changes are under
+~/.local/state/bodhos/desktop.log. Timer failures are also in the user journal.
+
+Existing saved manual profiles and the older wallpaper choices are supported.
+Unrelated user CSS is retained. Earlier user accounts without a Bodh appearance
+profile keep their customizations until they choose Apply.
+
+The regular OS candidate includes this appearance work. Cloud file sync,
+expanded app limits and a production default custom kernel are separate work.
+The private Parental and Server ISO files have not been changed.
+
+The taskbar keeps Start, a browser, Files, grouped running apps and status tools.
+Student applications are on the desktop and in Coding Apps. The one-time
+migration removes only recognized Bodh coding and Settings launchers from the
+panel. Unrelated pins, custom launchers, projects and existing desktop files
+are kept. The prior panel IDs are saved in the Bodh user configuration folder.
+
+Touchpad Gestures in Settings provides optional three finger workspace,
+launcher and desktop gestures, four finger app switching and supported app
+pinch zoom. Mouse and Touchpad settings controls ordinary scrolling. The native
+Touchégg backend is pinned from its upstream release rather than Debian's
+repositories. No input group access is granted to student accounts. Its client
+is off until enabled and does not run without a detected touchpad. Physical
+gesture recognition still needs a supported touchpad test. VM mouse tests do
+not prove physical multi-touch hardware. Reduced mode keeps animations off.
+
+Builders: build-live.sh verifies the pinned upstream package and stages it in
+live/config/packages.chroot before live-build. The ordinary image build also
+generates the same boot artwork and applies the same menu normalization as the
+audited factory repack. The download cache is excluded from source history.

@@ -1,0 +1,90 @@
+[
+  {
+    "configuration": "ram2-standard",
+    "assigned_mib": 2048,
+    "mode": "standard",
+    "used_mib_average": 527.0,
+    "used_mib_min": 526.81,
+    "used_mib_max": 527.48,
+    "cpu_average_percent": 0.063,
+    "settings_open_seconds_median": 0.234,
+    "settings_open_seconds_all": [
+      0.22748771000000545,
+      0.24336738899999943,
+      0.23814095800000246,
+      0.2316643619999894,
+      0.23404367300000217
+    ],
+    "systemd_boots": [
+      "Startup finished in 3.035s (kernel) + 3.991s (userspace) = 7.026s \ngraphical.target reached after 3.791s in userspace.",
+      "Startup finished in 3.079s (kernel) + 5.237s (userspace) = 8.317s \ngraphical.target reached after 5.237s in userspace.",
+      "Startup finished in 3.059s (kernel) + 3.897s (userspace) = 6.957s \ngraphical.target reached after 3.688s in userspace."
+    ]
+  },
+  {
+    "configuration": "ram2-reduced",
+    "assigned_mib": 2048,
+    "mode": "reduced",
+    "used_mib_average": 505.55,
+    "used_mib_min": 504.07,
+    "used_mib_max": 506.24,
+    "cpu_average_percent": 0.072,
+    "settings_open_seconds_median": 0.216,
+    "settings_open_seconds_all": [
+      0.3296102149999953,
+      0.236752500999998,
+      0.21350875200000985,
+      0.21267765500000735,
+      0.21600188499999717
+    ],
+    "systemd_boots": [
+      "Startup finished in 2.979s (kernel) + 3.912s (userspace) = 6.892s \ngraphical.target reached after 3.735s in userspace.",
+      "Startup finished in 3.264s (kernel) + 3.815s (userspace) = 7.079s \ngraphical.target reached after 3.813s in userspace.",
+      "Startup finished in 3.290s (kernel) + 3.945s (userspace) = 7.235s \ngraphical.target reached after 3.778s in userspace."
+    ]
+  },
+  {
+    "configuration": "ram4-standard",
+    "assigned_mib": 4096,
+    "mode": "standard",
+    "used_mib_average": 614.64,
+    "used_mib_min": 613.72,
+    "used_mib_max": 615.23,
+    "cpu_average_percent": 0.067,
+    "settings_open_seconds_median": 0.248,
+    "settings_open_seconds_all": [
+      0.3460819099999952,
+      0.24754764699999754,
+      0.24073833900000352,
+      0.2277064390000021,
+      0.25085238300000867
+    ],
+    "systemd_boots": [
+      "Startup finished in 3.301s (kernel) + 4.847s (userspace) = 8.149s \ngraphical.target reached after 3.611s in userspace.",
+      "Startup finished in 3.207s (kernel) + 3.662s (userspace) = 6.869s \ngraphical.target reached after 3.661s in userspace.",
+      "Startup finished in 3.395s (kernel) + 3.943s (userspace) = 7.338s \ngraphical.target reached after 3.738s in userspace."
+    ]
+  },
+  {
+    "configuration": "ram4-reduced",
+    "assigned_mib": 4096,
+    "mode": "reduced",
+    "used_mib_average": 600.99,
+    "used_mib_min": 600.04,
+    "used_mib_max": 601.46,
+    "cpu_average_percent": 0.085,
+    "settings_open_seconds_median": 0.218,
+    "settings_open_seconds_all": [
+      0.22351538000000204,
+      0.2203993840000038,
+      0.215869713999993,
+      0.21771788899999933,
+      0.21304115600000273
+    ],
+    "systemd_boots": [
+      "Startup finished in 3.162s (kernel) + 5.342s (userspace) = 8.504s \ngraphical.target reached after 5.181s in userspace.",
+      "Startup finished in 3.145s (kernel) + 3.651s (userspace) = 6.796s \ngraphical.target reached after 3.650s in userspace.",
+      "Startup finished in 3.227s (kernel) + 3.777s (userspace) = 7.004s \ngraphical.target reached after 3.596s in userspace."
+    ]
+  }
+]

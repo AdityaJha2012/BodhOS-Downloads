@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-10-27T16:58:18.222130+00:00",
+  "method": "Fresh signed APT index update with strict update error mode, no-removal full-upgrade simulation and dpkg audit",
+  "pending_changes": [],
+  "pending_upgrades": 0,
+  "dpkg_audit_passed": true
+}

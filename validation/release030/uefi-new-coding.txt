@@ -1,0 +1,17 @@
+Captured from the running UEFI guest serial output on installed boot 2.
+Later boots replace the serial file. These lines were observed before reboot.
+ISO SHA256: b3979abaf37e2cd5556b62f1509eb04d40160dfb9c65a22484e81a83b43ac6f7
+
+PASS: installed node starter runs offline as a student
+PASS: installed java starter runs offline as a student
+PASS: installed php starter runs offline as a student
+PASS: installed go starter runs offline as a student
+PASS: installed python database connector returns 42
+PASS: installed c database connector returns 42
+PASS: installed cpp database connector returns 42
+PASS: installed javascript database connector returns 42
+PASS: installed java database connector returns 42
+PASS: installed php database connector returns 42
+PASS: installed go database connector returns 42
+PASS: installed shell database connector returns 42
+PASS: installed MySQL engine stopped after examples
