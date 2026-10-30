@@ -1,0 +1,40 @@
+BODH OS 0.3.1 TEST RESULTS
+Runtime source: cb0cb289ec1542125c9418327229fa4730bd5f46
+PC ISO SHA256: 5bb7ec9b1b61e80149885f4e40689abd8255fc048514a1f5cd02a72a7c0da62e
+
+PASS: BIOS and UEFI live boot and fresh installation.
+PASS: repeated reboot, wired VM network and saved coding project.
+PASS: coding apps and starter tools, temporary Classroom reset, backup integrity,
+storage quota, Standard and Reduced, Rescue diagnostics and backup, GRUB repair,
+snapshot creation, update rollback and restored installation boot.
+PASS: actual ISO menu starts the rebuilt graphical installer.
+PASS: 800 by 600 native window sizing, focus traversal, right side controls,
+missing microphone response and simulated disconnected search error.
+PASS: wallpaper matched surfaces, primary controls, selected tabs and native
+Bodh app icon accents, plus preservation of a custom icon theme.
+PASS: Windows joins the actual parts, verifies the complete hash and VirtualBox
+recognizes the complete DVD image.
+Source checks: 274 tests run, 273 passed, one existing skip.
+Internal ISO manifests: 948 SHA256 entries and 948 MD5 entries verified.
+Signed configured network APT repositories refreshed. Firefox ESR 153.6.0esr-1~deb13u1.
+No pending upgrades at the recorded preparation check. This is not a promise
+that every vulnerability or every physical device has been tested.
+
+PERFORMANCE
+QEMU KVM, UEFI, two virtual CPUs, std VGA, GL disabled, e1000 NAT. Each image has a separate pristine installation saved before first boot. Each case uses an independent disk copy. Old and new cases run as a simultaneous pair for each identical RAM and effects setting. No functional test VMs run during measurement. Paired host contention can affect timings. Onboarding is dismissed, with a terminal and measurement helper present. No management agent is installed. Default guest services remain. Three systemd boot measurements, five Settings window mappings and 300 seconds of idle sampling. Memory is MemTotal minus MemAvailable. Physical device performance and Parental edition performance are not certified by these PC measurements.
+
+RAM | Effects | Image | Idle MiB avg | CPU avg % | Boot median s | Settings median s
+2048 | reduced | new | 537.2 | 0.40 | 6.36 | 0.217
+2048 | reduced | old | 539.0 | 0.42 | 6.27 | 0.236
+2048 | standard | new | 540.3 | 0.61 | 6.20 | 0.238
+2048 | standard | old | 541.8 | 0.93 | 6.46 | 0.233
+4096 | reduced | new | 626.6 | 5.41 | 6.83 | 0.237
+4096 | reduced | old | 630.9 | 5.45 | 7.01 | 0.235
+4096 | standard | new | 628.5 | 0.43 | 6.53 | 0.246
+4096 | standard | old | 638.9 | 0.44 | 7.06 | 0.239
+
+Old is the previous published 0.3.0 desktop3 image. New is the final 0.3.1 image.
+Results describe these VMs. Touchpad gestures, microphones, WiFi, printers,
+graphics cards and school deployment need physical hardware checks.
+No native ARM64, Raspberry Pi or Apple silicon image is included.
+Bodh ID cloud login remains design only. No production Bodh OTA endpoint is enabled.

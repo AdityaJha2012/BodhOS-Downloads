@@ -1,5 +1,5 @@
 BODH OS
-Version 0.3.0
+Version 0.3.1
 Features and included software
 
 WHAT THIS IS
@@ -13,32 +13,22 @@ Run bodh-mac-compat for a model report. Identification does not certify drivers.
 
 ACCOUNTS AND FAMILY TOOLS
 Win + R opens Run. Ctrl + Shift + Esc opens Task Manager.
-Accounts and Parental Lock is available from Settings and Welcome.
-Local standard child accounts can have allowed days, hours and daily minutes.
-An administrator can explicitly enroll a computer into a private Bodh server.
-Central identities use OpenLDAP and SSSD over verified TLS.
-The parent website controls child time and Assistant AI permission.
-Managed sessions report time and approximate app names, never screenshots,
-keystrokes, window titles, web history or project content.
-New central accounts get private persistent local homes. Project files are not
-automatically synchronized between computers. Keep project backups separately.
-Assistant account sign in is optional and keeps its session token in memory.
-The server needs a separately configured compatible model for AI conversation.
-The Parental Lock image emphasizes family setup. The Server image adds the
-directory and HTTPS gateway. Neither ships default server credentials or keys.
-Rules protect selected accounts. Disable guest and Classroom access on family
-computers. Local administrators can change or bypass the rules.
-These are development features. Read the matching build's test results.
+Local Parental Controls is available from Settings and Welcome.
+A local administrator can set allowed days, hours and daily minutes for standard child accounts.
+Rules are stored on the computer. Project files are kept when rules are removed.
+Remote parent websites, server enrollment and generative AI are not included in 0.3.1.
+Disable guest and Classroom access on family computers so children use their restricted accounts.
+
 
 START HERE
-Open Start to find applications. Use Coding Apps to choose a language.
+Open Apps at the top left to find applications. Use Coding Apps to choose a language.
 Open Welcome for links to this file, installation help and the main tools.
 These guides are also in /usr/share/bodhos and at the top of the ISO.
 The installed system keeps personal files and installed applications.
 An ordinary live USB or live VM session is temporary. Back up your work.
 
 DESKTOP AND EVERYDAY APPS
-* A personal Bodh desktop, familiar Start menu, uncluttered taskbar and desktop app shortcuts.
+* A personal Bodh desktop, slim Apps bar, centered dock and desktop app shortcuts.
 * Auto from wallpaper matches Dark or Light to the image, even during the day.
 * Manual Light and Dark, plus a separate Scheduled mode using your local times.
 * Twelve original premium still wallpapers, with separate Light and Dark choices.
@@ -96,9 +86,8 @@ BODH TOOLS
 * Assistant gives local help and can open tools. It runs when opened.
 * Offline voice commands use PocketSphinx and eSpeak NG when activated.
   Microphone compatibility and recognition quality need real hardware tests.
-* An optional school AI server can be configured by an administrator.
-  No AI model, cloud subscription or permanent AI server ships in the ISO.
-  Server use requires student opt in. A network connection may be needed.
+* Voice commands are recognised locally. Search requests open in Firefox.
+  Only the requested search phrase is sent online. No generative AI is used.
 * Study Tools and Quick Help provide local learning and troubleshooting help.
 
 ADMINISTRATION, SECURITY AND RECOVERY
@@ -112,7 +101,7 @@ ADMINISTRATION, SECURITY AND RECOVERY
 * UFW firewall tools, ClamAV malware tools and optional USBGuard enrollment.
   USBGuard blocking is not enabled in the factory image.
 * Optional explicit school management enrollment. No factory management keys,
-  test login, preconfigured school AI server or active remote access is included.
+  test login or active remote access is included.
 * Security lab commands: nmap, lynis, tshark, tcpdump, dig and openssl.
   These are Debian packages, not a Kali Linux installation or Kali repository.
   They are terminal tools. Use only on systems your teacher permits you to test.
@@ -142,3 +131,6 @@ Never publish passwords, recovery keys or personal student files.
 
 Built on Debian and other free software. Original projects retain their licenses.
 Bodh OS branding does not change Debian package compatibility or attribution.
+
+ADDITIONAL CODING WORKSPACES
+Ruby, Lua and Perl open in Geany and include runnable starter files. Their runtimes run only when requested.

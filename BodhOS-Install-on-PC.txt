@@ -1,5 +1,5 @@
 BODH OS
-Version 0.3.0
+Version 0.3.1
 Install on a real x86_64 PC without a virtual machine
 
 READ FIRST

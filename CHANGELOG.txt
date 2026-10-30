@@ -1,0 +1,13 @@
+BODH OS 0.3.1
+
+
+- Retain the original book identity with refreshed PC and Parental colours.
+- Replace fixed teal branding with a blue, violet, rose and amber book gradient. Let native app icons, surfaces, notebook highlights and action buttons follow the wallpaper while preserving custom icon themes.
+- Refine the slim Apps bar and centered dock, keep desktop coding shortcuts and fix small screen window sizing.
+- Refresh native app colours and icons for each edition. Add Ruby, Lua and Perl editor workspaces and runnable starter projects without background services.
+- Use green maximize, yellow minimize and red close buttons on the right. Retain optional macOS style workspace, app switching, desktop and zoom touchpad gestures with hardware checks.
+- Replace optional generative AI and server login with local voice commands and explicit browser searches.
+- Keep parental schedules and daily allowances local, with guarded retirement of older server enrollment.
+- Retire SSSD bindings from every NSS lookup database while preserving local files, DNS and unrelated providers.
+- Retire Server OS and the proposed fourth ISO. Keep cloud login and Projects sync as design work only.
+- Deliver the checked six page private Parental Word guide. Verify both editions through BIOS and UEFI installation and recovery. Record 537.2 to 628.5 MiB average idle use across the measured PC cases. See docs/Release-0.3.1.md for results and hardware limits.
