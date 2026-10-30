@@ -1,23 +1,23 @@
 [
   {
     "profile": "pc",
-    "name": "BodhOS-PC-0.3.1-amd64.iso",
-    "bytes": 3128623104,
-    "sha256": "5bb7ec9b1b61e80149885f4e40689abd8255fc048514a1f5cd02a72a7c0da62e",
+    "name": "BodhOS-PC-0.3.2-amd64.iso",
+    "bytes": 3129147392,
+    "sha256": "2bd98635525ff40e8269fd8f8fa0e3a2ab77782dd706c1ad697313eca0fc6477",
     "parts": [
       {
-        "name": "BodhOS-PC-0.3.1-amd64.iso.part01",
+        "name": "BodhOS-PC-0.3.2-amd64.iso.part01",
         "bytes": 1610612736,
-        "sha256": "0e13df177836bdb3c220e19f4691be58990a7ba3af84d5f0308bedd667d1c9c8"
+        "sha256": "87f11bd5f1c6e83d622b2b788161d2bc2907c4346ee8ce5ae9e8534b32e338de"
       },
       {
-        "name": "BodhOS-PC-0.3.1-amd64.iso.part02",
-        "bytes": 1518010368,
-        "sha256": "a2c73ae62da777a92bbe949c83848d999ab95caa9cf42c2e4ec71bb4554cd386"
+        "name": "BodhOS-PC-0.3.2-amd64.iso.part02",
+        "bytes": 1518534656,
+        "sha256": "c8bcfbe2b038c87462dd5669778a6a23347ccfe07380f5b8b80a79e9092fb76a"
       }
     ],
     "directory": "PC",
     "local_full_and_reassembled_parts_verified": true,
-    "runtime_source_commit": "cb0cb289ec1542125c9418327229fa4730bd5f46"
+    "runtime_source_commit": "df728eb65464ea8b774abd5e771c5736fc621228"
   }
 ]

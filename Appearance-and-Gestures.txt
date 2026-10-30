@@ -1,12 +1,12 @@
-BODH OS 0.3.1 APPEARANCE AND TOUCHPAD SHORTCUTS
+BODH OS 0.3.2 APPEARANCE AND TOUCHPAD SHORTCUTS
 
-Open Apps at the top left. The dock keeps Files, Firefox and grouped running apps close by. Coding app shortcuts stay on the desktop. Your personal layout and files are preserved. Use the explicit desktop reset action when you want the Bodh defaults again.
+Open Apps at the top left. The dock keeps Files, Firefox, Coding Apps, Assistant, Writer, Settings and grouped running apps close by. Coding app shortcuts stay on the desktop. Your personal layout and files are preserved. Use the explicit desktop reset action when you want the Bodh defaults again.
 
 Native window controls are on the right. Green maximizes, yellow minimizes and red closes. Some applications draw their own controls.
 
 Standard uses native XFWM compositing. Reduced uses opaque surfaces with effects disabled. Glass is not included. CLI compatibility remains: bodh-visuals normal and bodh-visuals reduced.
 
-Make Bodh yours offers twelve still wallpapers, wallpaper brightness based Auto, manual Light and Dark and a separate Scheduled mode. Colours follow the wallpaper or your chosen accent. No browser desktop shell is running.
+Make Bodh yours offers thirteen still wallpapers, wallpaper brightness based Auto, manual Light and Dark and a separate Scheduled mode. Colours follow the wallpaper or your chosen accent. No browser desktop shell is running.
 
 Optional macOS style touchpad shortcuts are in Settings, Touchpad gestures. Three finger left and right changes workspace, up opens Apps and down shows the desktop. Four finger left and right switches applications. Two finger pinch zoom works in supporting apps. Mouse and keyboard controls remain available.
 

@@ -2,27 +2,27 @@
 setlocal DisableDelayedExpansion
 pushd "%~dp0" || exit /b 1
 echo Checking the Bodh OS download. This can take several minutes.
-if exist "BodhOS-PC-0.3.1-amd64.iso" (
-  for %%F in ("BodhOS-PC-0.3.1-amd64.iso") do if %%~zF EQU 0 goto preserve_empty
+if exist "BodhOS-PC-0.3.2-amd64.iso" (
+  for %%F in ("BodhOS-PC-0.3.2-amd64.iso") do if %%~zF EQU 0 goto preserve_empty
   goto existing
 )
 :join_start
-if exist "BodhOS-PC-0.3.1-amd64.iso.partial" goto partial
-if not exist "BodhOS-PC-0.3.1-amd64.iso.part01" goto missing
-certutil -hashfile "BodhOS-PC-0.3.1-amd64.iso.part01" SHA256 | findstr /i /x /c:"0e13df177836bdb3c220e19f4691be58990a7ba3af84d5f0308bedd667d1c9c8" >nul
+if exist "BodhOS-PC-0.3.2-amd64.iso.partial" goto partial
+if not exist "BodhOS-PC-0.3.2-amd64.iso.part01" goto missing
+certutil -hashfile "BodhOS-PC-0.3.2-amd64.iso.part01" SHA256 | findstr /i /x /c:"87f11bd5f1c6e83d622b2b788161d2bc2907c4346ee8ce5ae9e8534b32e338de" >nul
 if errorlevel 1 goto badhash
-if not exist "BodhOS-PC-0.3.1-amd64.iso.part02" goto missing
-certutil -hashfile "BodhOS-PC-0.3.1-amd64.iso.part02" SHA256 | findstr /i /x /c:"a2c73ae62da777a92bbe949c83848d999ab95caa9cf42c2e4ec71bb4554cd386" >nul
+if not exist "BodhOS-PC-0.3.2-amd64.iso.part02" goto missing
+certutil -hashfile "BodhOS-PC-0.3.2-amd64.iso.part02" SHA256 | findstr /i /x /c:"c8bcfbe2b038c87462dd5669778a6a23347ccfe07380f5b8b80a79e9092fb76a" >nul
 if errorlevel 1 goto badhash
-copy /b "BodhOS-PC-0.3.1-amd64.iso.part01"+"BodhOS-PC-0.3.1-amd64.iso.part02" "BodhOS-PC-0.3.1-amd64.iso.partial" >nul
+copy /b "BodhOS-PC-0.3.2-amd64.iso.part01"+"BodhOS-PC-0.3.2-amd64.iso.part02" "BodhOS-PC-0.3.2-amd64.iso.partial" >nul
 if errorlevel 1 goto failed
-certutil -hashfile "BodhOS-PC-0.3.1-amd64.iso.partial" SHA256 | findstr /i /x /c:"5bb7ec9b1b61e80149885f4e40689abd8255fc048514a1f5cd02a72a7c0da62e" >nul
+certutil -hashfile "BodhOS-PC-0.3.2-amd64.iso.partial" SHA256 | findstr /i /x /c:"2bd98635525ff40e8269fd8f8fa0e3a2ab77782dd706c1ad697313eca0fc6477" >nul
 if errorlevel 1 goto badhash
-ren "BodhOS-PC-0.3.1-amd64.iso.partial" "BodhOS-PC-0.3.1-amd64.iso"
+ren "BodhOS-PC-0.3.2-amd64.iso.partial" "BodhOS-PC-0.3.2-amd64.iso"
 if errorlevel 1 goto failed
 goto success
 :existing
-certutil -hashfile "BodhOS-PC-0.3.1-amd64.iso" SHA256 | findstr /i /x /c:"5bb7ec9b1b61e80149885f4e40689abd8255fc048514a1f5cd02a72a7c0da62e" >nul
+certutil -hashfile "BodhOS-PC-0.3.2-amd64.iso" SHA256 | findstr /i /x /c:"2bd98635525ff40e8269fd8f8fa0e3a2ab77782dd706c1ad697313eca0fc6477" >nul
 if errorlevel 1 goto existingbad
 goto success
 :missing
@@ -43,16 +43,16 @@ if not defined BODH_JOIN_NO_PAUSE pause
 exit /b 1
 :success
 echo SUCCESS - VERIFIED ISO READY
-echo Verified ISO ready: %CD%\BodhOS-PC-0.3.1-amd64.iso
-if not defined BODH_JOIN_NO_PAUSE explorer.exe /select,"%CD%\BodhOS-PC-0.3.1-amd64.iso"
+echo Verified ISO ready: %CD%\BodhOS-PC-0.3.2-amd64.iso
+if not defined BODH_JOIN_NO_PAUSE explorer.exe /select,"%CD%\BodhOS-PC-0.3.2-amd64.iso"
 popd
 if not defined BODH_JOIN_NO_PAUSE pause
 exit /b 0
 
 :preserve_empty
-set "BODH_EMPTY_BACKUP=BodhOS-PC-0.3.1-amd64.iso.empty-preserved-%RANDOM%.txt"
+set "BODH_EMPTY_BACKUP=BodhOS-PC-0.3.2-amd64.iso.empty-preserved-%RANDOM%.txt"
 if exist "%BODH_EMPTY_BACKUP%" goto preserve_empty
-ren "BodhOS-PC-0.3.1-amd64.iso" "%BODH_EMPTY_BACKUP%"
+ren "BodhOS-PC-0.3.2-amd64.iso" "%BODH_EMPTY_BACKUP%"
 if errorlevel 1 goto failed
 echo Preserved the earlier empty file as "%BODH_EMPTY_BACKUP%".
 goto join_start
